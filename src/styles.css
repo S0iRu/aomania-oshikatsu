@@ -493,7 +493,11 @@ h1 span { white-space: nowrap; }
 .dot.配信予定 { background: #6aa0e0; }
 .dot.雑談 { background: #7dbb8a; }
 
-.theme-box { margin-top: 14px; }
+.theme-box.for-narrow { display: none; }
+@media (max-width: 959px) {
+  .theme-box.for-wide { display: none; }
+  .theme-box.for-narrow { display: block; margin-top: 18px; }
+}
 .theme-box h2 { font-size: 13px; color: #66788a; margin-bottom: 8px; }
 .swatches { display: flex; flex-wrap: wrap; gap: 8px; }
 .swatch {

@@ -237,14 +237,15 @@ function App() {
             />
             <Legend enabled={legend} onToggle={(name) => setLegend({ ...legend, [name]: !legend[name] })} />
             <ThemePicker
+              className="theme-box for-wide"
               manual={manual}
               draftColor={draftColor}
               saving={saving}
               onDraft={setDraftColor}
               onCommit={async (next) => {
                 const saved = await commitManual(next)
-                if (saved) setDraftColor(null)
-                else setDraftColor(null)
+                setDraftColor(null)
+                return saved
               }}
             />
           </>
@@ -282,6 +283,20 @@ function App() {
           )}
         </section>
       </main>
+      {mode !== 'game' && (
+        <ThemePicker
+          className="theme-box for-narrow"
+          manual={manual}
+          draftColor={draftColor}
+          saving={saving}
+          onDraft={setDraftColor}
+          onCommit={async (next) => {
+            const saved = await commitManual(next)
+            setDraftColor(null)
+            return saved
+          }}
+        />
+      )}
       {yearOpen && (
         <YearPicker
           cursor={cursor}
@@ -544,22 +559,24 @@ function DeadlineCard({
 }
 
 function ThemePicker({
+  className,
   manual,
   draftColor,
   saving,
   onDraft,
   onCommit,
 }: {
+  className: string
   manual: ManualFile
   draftColor: string | null
   saving: boolean
   onDraft: (color: string | null) => void
-  onCommit: (next: ManualFile) => Promise<void>
+  onCommit: (next: ManualFile) => Promise<boolean>
 }) {
   const active = draftColor ? 'custom' : manual.theme
   const pickerValue = draftColor || (active === 'custom' ? manual.customColor : '#8eabc4')
   return (
-    <section className="theme-box">
+    <section className={className}>
       <h2>色</h2>
       <div className="swatches">
         {BUILTIN_THEMES.map((item) => (
