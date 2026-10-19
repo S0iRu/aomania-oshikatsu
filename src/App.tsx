@@ -573,31 +573,53 @@ function ThemePicker({
   onDraft: (color: string | null) => void
   onCommit: (next: ManualFile) => Promise<boolean>
 }) {
+  const [pendingDelete, setPendingDelete] = useState<string | null>(null)
   const active = draftColor ? 'custom' : manual.theme
   const pickerValue = draftColor || (active === 'custom' ? manual.customColor : '#8eabc4')
+  const builtins = BUILTIN_THEMES.filter((item) => item.id === 'default' || !manual.hiddenThemes.includes(item.id))
+  function withoutTheme(id: string): ManualFile {
+    return {
+      ...manual,
+      theme: manual.theme === id ? 'default' : manual.theme,
+      hiddenThemes: BUILTIN_THEMES.some((item) => item.id === id)
+        ? [...new Set([...manual.hiddenThemes, id])]
+        : manual.hiddenThemes,
+      presets: manual.presets.filter((item) => item.id !== id),
+    }
+  }
   return (
     <section className={className}>
       <h2>色</h2>
       <div className="swatches">
-        {BUILTIN_THEMES.map((item) => (
-          <button
-            key={item.id}
-            className={active === item.id ? 'swatch on' : 'swatch'}
-            style={{ background: item.color }}
-            aria-label={item.id === 'default' ? '初期色' : item.id}
-            disabled={saving}
-            onClick={() => void onCommit({ ...manual, theme: item.id })}
-          />
+        {builtins.map((item) => (
+          <span className="swatch-wrap" key={item.id}>
+            <button
+              className={active === item.id ? 'swatch on' : 'swatch'}
+              style={{ background: item.color }}
+              aria-label={item.id === 'default' ? '初期色' : item.id}
+              disabled={saving}
+              onClick={() => void onCommit({ ...manual, theme: item.id })}
+            />
+            {item.id !== 'default' && (
+              <button className="swatch-x" aria-label="この色を削除" disabled={saving} onClick={() => setPendingDelete(item.id)}>
+                ×
+              </button>
+            )}
+          </span>
         ))}
         {manual.presets.map((item) => (
-          <button
-            key={item.id}
-            className={active === item.id ? 'swatch on' : 'swatch'}
-            style={{ background: item.color }}
-            aria-label="保存した色"
-            disabled={saving}
-            onClick={() => void onCommit({ ...manual, theme: item.id })}
-          />
+          <span className="swatch-wrap" key={item.id}>
+            <button
+              className={active === item.id ? 'swatch on' : 'swatch'}
+              style={{ background: item.color }}
+              aria-label="保存した色"
+              disabled={saving}
+              onClick={() => void onCommit({ ...manual, theme: item.id })}
+            />
+            <button className="swatch-x" aria-label="この色を削除" disabled={saving} onClick={() => setPendingDelete(item.id)}>
+              ×
+            </button>
+          </span>
         ))}
       </div>
       <div className="theme-actions">
@@ -631,6 +653,29 @@ function ThemePicker({
           初期色に戻す
         </button>
       </div>
+      {pendingDelete && (
+        <div className="scrim" onClick={() => setPendingDelete(null)}>
+          <div className="paper add" onClick={(event) => event.stopPropagation()}>
+            <p>この色を削除しますか？</p>
+            <button
+              className="open"
+              type="button"
+              disabled={saving}
+              onClick={() => {
+                const next = withoutTheme(pendingDelete)
+                void onCommit(next).then((saved) => {
+                  if (saved) setPendingDelete(null)
+                })
+              }}
+            >
+              削除する
+            </button>
+            <button className="cancel" type="button" disabled={saving} onClick={() => setPendingDelete(null)}>
+              やめる
+            </button>
+          </div>
+        </div>
+      )}
     </section>
   )
 }

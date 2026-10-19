@@ -33,6 +33,7 @@ export type ManualFile = {
   theme: string
   customColor: string
   presets: ThemePreset[]
+  hiddenThemes: string[]
 }
 
 export type StreamFile = {
@@ -324,6 +325,7 @@ export function emptyManual(): ManualFile {
     theme: 'default',
     customColor: '#8eabc4',
     presets: [],
+    hiddenThemes: [],
   }
 }
 

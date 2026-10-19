@@ -25,8 +25,12 @@ h1, h2, h3, p { margin: 0; }
   color: var(--ink);
 }
 .week, .month, .game-list, .stat, .games button, .more, .paper, .detail, .year-card, .add,
-.datebar > button.today, .theme-actions button, .theme-color, .delete-memo {
+.datebar > button.today, .theme-actions button, .theme-color, .delete-memo,
+.chips span, .chips button, .game-menu button, .legend button, .year-grid button, .partners button {
   color: #2c3a4a;
+}
+.year-grid button.on, .fetch-btn, .add-btn, .open {
+  color: var(--button-text);
 }
 
 .title-row {
@@ -130,7 +134,7 @@ h1 span { white-space: nowrap; }
   color: var(--button-text);
 }
 .fetch-btn:disabled { opacity: 0.6; }
-.fetch-label { font-size: 13px; color: #4f6790; }
+.fetch-label { font-size: 13px; color: var(--ink); }
 .fetch-label.failed { color: #a33d4a; }
 .datebar > button.date-label {
   height: auto;
@@ -428,6 +432,13 @@ h1 span { white-space: nowrap; }
   padding: 10px 12px;
   width: 100%;
 }
+.add .cancel {
+  border: 0;
+  border-radius: 999px;
+  background: white;
+  color: #2c3a4a;
+  padding: 10px 12px;
+}
 .partners { margin-top: 14px; }
 .partners h3 { font-size: 13px; color: #66788a; margin-bottom: 8px; }
 .partners div {
@@ -509,6 +520,22 @@ h1 span { white-space: nowrap; }
   padding: 0;
 }
 .swatch.on { box-shadow: 0 0 0 2px var(--button); }
+.swatch-wrap { position: relative; display: inline-flex; }
+.swatch-x {
+  position: absolute;
+  top: -6px;
+  right: -6px;
+  width: 16px;
+  height: 16px;
+  min-width: 16px;
+  border: 0;
+  border-radius: 50%;
+  background: white;
+  color: #2c3a4a;
+  font-size: 11px;
+  line-height: 16px;
+  padding: 0;
+}
 .theme-actions { display: flex; flex-wrap: wrap; gap: 8px; margin-top: 8px; align-items: center; }
 .theme-actions button, .theme-color {
   border: 0;
@@ -573,8 +600,8 @@ h1 span { white-space: nowrap; }
   }
   .legend { margin-top: 14px; }
   .legend button {
-    background: transparent;
-    padding: 0;
+    background: white;
+    color: #2c3a4a;
   }
   .cell { min-height: 108px; }
   .mosaic { height: 72px; }
