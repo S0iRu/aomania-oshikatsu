@@ -53,12 +53,56 @@ h1 span { white-space: nowrap; }
 }
 .segment button { padding: 0 12px; }
 
-.date-block { margin-top: 12px; }
+.side .title-row {
+  flex-direction: column;
+  align-items: stretch;
+  gap: 10px;
+}
+.side h1 {
+  flex-direction: column;
+  align-items: flex-start;
+  font-size: 26px;
+  line-height: 1.2;
+  row-gap: 0;
+}
+.side .segment {
+  width: 100%;
+  border-radius: 14px;
+  background: #e6eef6;
+  padding: 4px;
+}
+.side .segment button {
+  flex: 1;
+  height: 40px;
+  border-radius: 12px;
+  color: #2c3a4a;
+}
+.side .segment button.on {
+  background: #c5d6ea;
+  color: #2c3a4a;
+}
+
+.date-block { margin-top: 14px; }
 .datebar {
-  display: flex;
-  flex-wrap: wrap;
+  display: grid;
+  grid-template-columns: 32px minmax(0, 1fr) 52px 32px;
   align-items: center;
-  gap: 6px;
+  gap: 4px;
+}
+.date-label strong {
+  font-size: 26px;
+  line-height: 1.1;
+  white-space: nowrap;
+}
+.datebar > button.today {
+  width: 52px;
+  height: 52px;
+  min-width: 52px;
+  padding: 0;
+  border-radius: 50%;
+  background: white;
+  color: #2c3a4a;
+  font-size: 14px;
 }
 .fetch-row {
   display: flex;
@@ -76,18 +120,14 @@ h1 span { white-space: nowrap; }
 .fetch-btn:disabled { opacity: 0.6; }
 .fetch-label { font-size: 13px; color: #4f6790; }
 .fetch-label.failed { color: #a33d4a; }
-.date-label {
-  border: 0;
+.datebar > button.date-label {
+  height: auto;
+  min-width: 0;
   background: transparent;
-  text-align: center;
 }
-.date-label small { display: block; color: #7e8c9b; font-size: 11px; }
-.date-label strong { font-size: 16px; }
-.datebar > button.today {
-  padding: 0 12px;
-  background: white;
-  color: #2c3a4a;
-}
+.date-label { text-align: center; }
+.date-label small { display: block; color: #7e8c9b; font-size: 12px; }
+.date-label strong { font-size: 26px; line-height: 1.1; white-space: nowrap; }
 
 .chips {
   display: flex;
@@ -187,7 +227,8 @@ h1 span { white-space: nowrap; }
   border: 0;
   background: white;
   border-radius: 999px;
-  padding: 4px 8px;
+  padding: 4px 10px;
+  white-space: nowrap;
 }
 .notice { color: #a33d4a; font-size: 13px; }
 
@@ -443,7 +484,7 @@ h1 span { white-space: nowrap; }
 @media (min-width: 960px) {
   .app {
     display: grid;
-    grid-template-columns: 340px minmax(0, 1fr);
+    grid-template-columns: 380px minmax(0, 1fr);
     gap: 18px;
     max-width: 1180px;
     margin: 0 auto;
@@ -459,18 +500,43 @@ h1 span { white-space: nowrap; }
   }
   .stat {
     background: white;
-    border-radius: 14px;
-    padding: 8px;
+    border-radius: 16px;
+    padding: 10px 8px 8px;
+    text-align: center;
   }
-  .stat span { display: block; color: #7e8c9b; font-size: 11px; }
+  .stat span { display: block; color: #8ea0b3; font-size: 11px; letter-spacing: 0.04em; }
+  .stat b { font-size: 28px; line-height: 1.1; }
+  .stat small { font-size: 12px; font-weight: 600; margin-left: 1px; }
   .games {
     grid-column: 1 / -1;
     display: flex;
     flex-wrap: wrap;
     gap: 6px;
+    margin-top: 4px;
   }
-  .deadlines { margin-top: 16px; display: flex; flex-direction: column; gap: 8px; }
-  .legend { margin-top: 16px; }
+  .deadlines {
+    margin-top: 14px;
+    display: flex;
+    flex-direction: column;
+    gap: 4px;
+    padding: 12px;
+    border-radius: 16px;
+    background-color: #f6f3e8;
+    background-image:
+      linear-gradient(#e4edf5 1px, transparent 1px),
+      linear-gradient(90deg, #e4edf5 1px, transparent 1px);
+    background-size: 18px 18px;
+  }
+  .deadlines .deadline {
+    background: transparent;
+    background-image: none;
+    padding: 6px 2px;
+  }
+  .legend { margin-top: 14px; }
+  .legend button {
+    background: transparent;
+    padding: 0;
+  }
   .cell { min-height: 108px; }
   .mosaic { height: 72px; }
   .week-body { height: 760px; }
@@ -480,7 +546,6 @@ h1 span { white-space: nowrap; }
   .week-head b { font-size: 13px; }
   .week-body { height: 560px; }
   .block span { font-size: 9px; }
-  h1 { font-size: 14px; }
-  .today { padding: 0 8px; }
-  .date-label strong { font-size: 14px; }
+  h1 { font-size: 22px; }
+  .date-label strong { font-size: 22px; }
 }

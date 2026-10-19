@@ -383,15 +383,23 @@ function Stats({
     <div className="stats">
       <div className="stat">
         <span>STREAM</span>
-        <b>{inView.length}回</b>
+        <b>
+          {inView.length}
+          <small>回</small>
+        </b>
       </div>
       <div className="stat">
         <span>HOURS</span>
-        <b>{formatHours(hours)}時間</b>
+        <b>
+          {formatHours(hours)}
+          <small>時間</small>
+        </b>
       </div>
       <div className="stat">
         <span>POST</span>
-        <b>0件</b>
+        <b>
+          0<small>件</small>
+        </b>
       </div>
       <div className="games">
         {shown.map(([name, sec]) => (
