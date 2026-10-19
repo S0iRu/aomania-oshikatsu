@@ -1,8 +1,8 @@
 {
   "backfillComplete": true,
   "resume": {
-    "UC6WFKwYptsxVue56Lx218vg": "",
-    "UCX7YkU9nEeaoZbkVLVajcMg": ""
+    "UC6WFKwYptsxVue56Lx218vg": "EAAaHlBUOkNHUWlFREJHTkRFMk1FSTJSa1JFUkRWRVFUZw",
+    "UCX7YkU9nEeaoZbkVLVajcMg": "EAAaHlBUOkNHUWlFRVZCTnpjeU56STJOekJGTnpBMVJqUQ"
   },
   "scanned": {
     "UC6WFKwYptsxVue56Lx218vg": true,
@@ -15445,9 +15445,7 @@
       "durationSec": 6228,
       "status": "past",
       "games": [],
-      "tags": [
-        "コラボ"
-      ],
+      "tags": [],
       "isOwn": true
     },
     {
@@ -15464,9 +15462,7 @@
       "durationSec": 1364,
       "status": "past",
       "games": [],
-      "tags": [
-        "コラボ"
-      ],
+      "tags": [],
       "isOwn": true
     },
     {
@@ -15485,9 +15481,7 @@
       "games": [
         "VCR"
       ],
-      "tags": [
-        "コラボ"
-      ],
+      "tags": [],
       "isOwn": true
     },
     {
@@ -15658,9 +15652,7 @@
       "games": [
         "VCR"
       ],
-      "tags": [
-        "コラボ"
-      ],
+      "tags": [],
       "isOwn": true
     },
     {
@@ -17143,6 +17135,24 @@
       "end": "2026-10-18T16:30:36Z",
       "durationSec": 10403,
       "status": "past",
+      "games": [
+        "OW"
+      ],
+      "tags": [],
+      "isOwn": true
+    },
+    {
+      "id": "CgP8spTPZs4",
+      "videoId": "CgP8spTPZs4",
+      "url": "https://www.youtube.com/watch?v=CgP8spTPZs4",
+      "title": "【OW】にじOW練習【小柳ロウ/にじさんじ】",
+      "thumbnail": "https://i.ytimg.com/vi/CgP8spTPZs4/mqdefault_live.jpg",
+      "channelId": "UC6WFKwYptsxVue56Lx218vg",
+      "channelTitle": "小柳ロウ / Koyanagi Rou【にじさんじ】",
+      "shortName": "小柳ロウ",
+      "start": "2026-10-19T11:00:00Z",
+      "durationSec": 0,
+      "status": "upcoming",
       "games": [
         "OW"
       ],
