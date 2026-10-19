@@ -3,8 +3,8 @@
   "hiddenIds": [],
   "thumbnailOverrides": {},
   "extraStreams": [],
-  "theme": "preset-1792410387015",
-  "customColor": "#0005a5",
+  "theme": "custom",
+  "customColor": "#000005",
   "presets": [
     {
       "id": "preset-1792408719035",
