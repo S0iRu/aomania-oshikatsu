@@ -8,6 +8,6 @@ GitHub の Settings → Pages で、Build and deployment の Source を GitHub A
 
 ## 配信の自動取得
 
-リポジトリの Secrets に `YOUTUBE_API_KEY` を追加します。値は Google Cloud で作った YouTube Data API v3 の API キーです。キーが無いあいだは、同梱のサンプルデータで画面を確認できます。
+リポジトリの Secrets に `YOUTUBE_API_KEY` を追加します。値は Google Cloud で作った YouTube Data API v3 の API キーです。
 
-キーを入れたあと、Actions の `fetch` を手動実行すると取得が始まります。以降は 30 分ごとに動きます。
+キーを入れたあと、Actions の `fetch` を手動実行すると取得が始まります。取得結果はサイトへ公開されます。以降は 30 分ごとに動きます。

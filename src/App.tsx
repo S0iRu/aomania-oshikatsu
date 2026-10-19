@@ -91,8 +91,8 @@ function App() {
   useEffect(() => {
     const base = import.meta.env.BASE_URL
     Promise.all([
-      fetch(`${base}data/streams.json`).then((res) => res.json()),
-      fetch(`${base}data/manual.json`).then((res) => res.json()),
+      fetch(`${base}data/streams.json`, { cache: 'no-store' }).then((res) => res.json()),
+      fetch(`${base}data/manual.json`, { cache: 'no-store' }).then((res) => res.json()),
     ])
       .then(([streamFile, manual]: [StreamFile, ManualFile]) => {
         setStreams(streamFile.streams ?? [])

@@ -182,7 +182,7 @@ function keep(stream) {
 }
 
 const channels = [config.ownChannel, ...config.channels]
-const knownIds = new Set((previous.streams || []).filter((stream) => !stream.sample).map((stream) => stream.id))
+const knownIds = new Set((previous.streams || []).map((stream) => stream.id))
 const resume = { ...(previous.resume || {}) }
 const scanned = { ...(previous.scanned || {}) }
 const collected = []
@@ -190,7 +190,7 @@ const collected = []
 for (const channel of channels) {
   const isOwn = channel.id === config.ownChannel.id
   const refreshIds = (previous.streams || [])
-    .filter((stream) => !stream.sample && stream.channelId === channel.id && (!stream.end || stream.status !== 'past'))
+    .filter((stream) => stream.channelId === channel.id && (!stream.end || stream.status !== 'past'))
     .map((stream) => stream.videoId)
     .filter(Boolean)
   const page = await collect(channel, isOwn, knownIds)
@@ -229,7 +229,7 @@ for (const stream of own) {
 
 const fresh = [...own, ...others]
 const freshIds = new Set(fresh.map((stream) => stream.id))
-const carried = (previous.streams || []).filter((stream) => !stream.sample && !freshIds.has(stream.id))
+const carried = (previous.streams || []).filter((stream) => !freshIds.has(stream.id))
 const streams = (fresh.length === 0 && carried.length === 0 ? previous.streams || [] : [...fresh.map(keep), ...carried.map(keep)]).sort(
   (a, b) => a.start.localeCompare(b.start),
 )

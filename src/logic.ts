@@ -15,7 +15,6 @@ export type Stream = {
   tags: string[]
   isOwn: boolean
   noOwnStream?: boolean
-  sample?: boolean
 }
 
 export type Deadline = {
@@ -334,7 +333,7 @@ export function mergeManual(base: ManualFile, extra: ManualFile): ManualFile {
 
 export function applyManual(streams: Stream[], manual: ManualFile): Stream[] {
   const hidden = new Set(manual.hiddenIds)
-  const merged = [...streams.filter((s) => !s.sample), ...streams.filter((s) => s.sample), ...manual.extraStreams]
+  const merged = [...streams, ...manual.extraStreams]
   const byId = new Map<string, Stream>()
   for (const stream of merged) {
     if (hidden.has(stream.id)) continue
