@@ -23,11 +23,16 @@ export type Deadline = {
   at: string
 }
 
+export type ThemePreset = { id: string; color: string }
+
 export type ManualFile = {
   deadlines: Deadline[]
   hiddenIds: string[]
   thumbnailOverrides: Record<string, string>
   extraStreams: Stream[]
+  theme: string
+  customColor: string
+  presets: ThemePreset[]
 }
 
 export type StreamFile = {
@@ -311,7 +316,15 @@ export function displayChips(stream: Stream): string[] {
 }
 
 export function emptyManual(): ManualFile {
-  return { deadlines: [], hiddenIds: [], thumbnailOverrides: {}, extraStreams: [] }
+  return {
+    deadlines: [],
+    hiddenIds: [],
+    thumbnailOverrides: {},
+    extraStreams: [],
+    theme: 'default',
+    customColor: '#8eabc4',
+    presets: [],
+  }
 }
 
 export function applyManual(streams: Stream[], manual: ManualFile): Stream[] {

@@ -14,6 +14,11 @@ export function normalizeManual(value: Partial<ManualFile> | null | undefined): 
     hiddenIds: value?.hiddenIds ?? [],
     thumbnailOverrides: value?.thumbnailOverrides ?? {},
     extraStreams: value?.extraStreams ?? [],
+    theme: value?.theme || 'default',
+    customColor: value?.customColor || '#8eabc4',
+    presets: (value?.presets ?? [])
+      .filter((item) => item && typeof item.id === 'string' && typeof item.color === 'string')
+      .map((item) => ({ id: item.id, color: item.color })),
   }
 }
 

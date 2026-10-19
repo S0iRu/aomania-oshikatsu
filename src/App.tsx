@@ -36,6 +36,7 @@ import {
   weekdayOf,
 } from './logic'
 import { fetchRemoteManual, listFetchRuns, normalizeManual, startFetch, writeManual } from './github'
+import { applyTheme, BUILTIN_THEMES } from './theme'
 
 const AXIS_START = 60
 const AXIS_END = 24 * 60
@@ -89,6 +90,11 @@ function App() {
   const [legend, setLegend] = useState<Record<string, boolean>>(() =>
     Object.fromEntries(LEGEND.map((name) => [name, true])),
   )
+  const [draftColor, setDraftColor] = useState<string | null>(null)
+
+  useEffect(() => {
+    applyTheme(draftColor ? 'custom' : manual.theme, draftColor ?? manual.customColor, manual.presets)
+  }, [manual.theme, manual.customColor, manual.presets, draftColor])
 
   useEffect(() => {
     const base = import.meta.env.BASE_URL
@@ -230,6 +236,17 @@ function App() {
               }
             />
             <Legend enabled={legend} onToggle={(name) => setLegend({ ...legend, [name]: !legend[name] })} />
+            <ThemePicker
+              manual={manual}
+              draftColor={draftColor}
+              saving={saving}
+              onDraft={setDraftColor}
+              onCommit={async (next) => {
+                const saved = await commitManual(next)
+                if (saved) setDraftColor(null)
+                else setDraftColor(null)
+              }}
+            />
           </>
         )}
       </aside>
@@ -523,6 +540,81 @@ function DeadlineCard({
         削除
       </button>
     </article>
+  )
+}
+
+function ThemePicker({
+  manual,
+  draftColor,
+  saving,
+  onDraft,
+  onCommit,
+}: {
+  manual: ManualFile
+  draftColor: string | null
+  saving: boolean
+  onDraft: (color: string | null) => void
+  onCommit: (next: ManualFile) => Promise<void>
+}) {
+  const active = draftColor ? 'custom' : manual.theme
+  const pickerValue = draftColor || (active === 'custom' ? manual.customColor : '#8eabc4')
+  return (
+    <section className="theme-box">
+      <h2>色</h2>
+      <div className="swatches">
+        {BUILTIN_THEMES.map((item) => (
+          <button
+            key={item.id}
+            className={active === item.id ? 'swatch on' : 'swatch'}
+            style={{ background: item.color }}
+            aria-label={item.id === 'default' ? '初期色' : item.id}
+            disabled={saving}
+            onClick={() => void onCommit({ ...manual, theme: item.id })}
+          />
+        ))}
+        {manual.presets.map((item) => (
+          <button
+            key={item.id}
+            className={active === item.id ? 'swatch on' : 'swatch'}
+            style={{ background: item.color }}
+            aria-label="保存した色"
+            disabled={saving}
+            onClick={() => void onCommit({ ...manual, theme: item.id })}
+          />
+        ))}
+      </div>
+      <div className="theme-actions">
+        <label className="theme-color">
+          自由な色
+          <input
+            type="color"
+            value={/^#[0-9a-fA-F]{6}$/.test(pickerValue) ? pickerValue : '#8eabc4'}
+            disabled={saving}
+            onInput={(event) => onDraft(event.currentTarget.value)}
+            onChange={(event) => void onCommit({ ...manual, theme: 'custom', customColor: event.currentTarget.value })}
+          />
+        </label>
+        <button
+          type="button"
+          disabled={saving || !(draftColor || manual.theme === 'custom')}
+          onClick={() => {
+            const color = draftColor || manual.customColor
+            const id = `preset-${Date.now()}`
+            void onCommit({
+              ...manual,
+              theme: id,
+              customColor: color,
+              presets: [...manual.presets, { id, color }],
+            })
+          }}
+        >
+          プリセットに保存
+        </button>
+        <button type="button" disabled={saving} onClick={() => void onCommit({ ...manual, theme: 'default' })}>
+          初期色に戻す
+        </button>
+      </div>
+    </section>
   )
 }
 
