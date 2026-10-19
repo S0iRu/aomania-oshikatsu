@@ -35,7 +35,7 @@ import {
   weekdayLabel,
   weekdayOf,
 } from './logic'
-import { clearToken, fetchRemoteManual, loadToken, normalizeManual, saveToken, writeManual } from './github'
+import { fetchRemoteManual, normalizeManual, writeManual } from './github'
 
 const AXIS_START = 60
 const AXIS_END = 24 * 60
@@ -77,7 +77,6 @@ function App() {
   const [ready, setReady] = useState(false)
   const [saving, setSaving] = useState(false)
   const [notice, setNotice] = useState<string | null>(null)
-  const [pendingManual, setPendingManual] = useState<ManualFile | null>(null)
   const [mode, setMode] = useState<'week' | 'month' | 'game'>('week')
   const [cursor, setCursor] = useState(todayKey)
   const [game, setGame] = useState<string | null>(null)
@@ -113,35 +112,19 @@ function App() {
   const selected = listed.find((stream) => stream.id === selectedId) ?? null
   const today = todayKey()
 
-  async function persist(next: ManualFile, token: string): Promise<boolean> {
+  async function commitManual(next: ManualFile): Promise<boolean> {
     setSaving(true)
     setNotice(null)
     try {
-      await writeManual(next, token)
-      setManual(next)
-      setPendingManual(null)
+      await writeManual(next)
+      setManual(normalizeManual(next))
       return true
     } catch (error) {
-      const message = error instanceof Error ? error.message : '保存に失敗しました'
-      if (message === 'トークンが無効です') {
-        clearToken()
-        setPendingManual(next)
-      }
-      setNotice(message)
+      setNotice(error instanceof Error ? error.message : '保存に失敗しました')
       return false
     } finally {
       setSaving(false)
     }
-  }
-
-  async function commitManual(next: ManualFile): Promise<boolean> {
-    const token = loadToken()
-    if (!token) {
-      setNotice(null)
-      setPendingManual(next)
-      return false
-    }
-    return persist(next, token)
   }
 
   function openGame(name: string) {
@@ -263,22 +246,10 @@ function App() {
           onClose={() => setAddOpen(false)}
           onDeadline={async (item) => {
             const saved = await commitManual({ ...manual, deadlines: [...manual.deadlines, item] })
-            if (saved || !loadToken()) setAddOpen(false)
+            if (saved) setAddOpen(false)
           }}
           onStream={async (item) => {
             const saved = await commitManual({ ...manual, extraStreams: [...manual.extraStreams, item] })
-            if (saved || !loadToken()) setAddOpen(false)
-          }}
-        />
-      )}
-      {pendingManual && (
-        <TokenDialog
-          notice={notice}
-          saving={saving}
-          onClose={() => setPendingManual(null)}
-          onSubmit={async (token) => {
-            saveToken(token)
-            const saved = await persist(pendingManual, token)
             if (saved) setAddOpen(false)
           }}
         />
@@ -946,40 +917,6 @@ function AddDialog({
         {notice && <p className="notice">{notice}</p>}
         <button className="open" type="submit" disabled={saving}>
           追加する
-        </button>
-      </form>
-    </div>
-  )
-}
-
-function TokenDialog({
-  notice,
-  saving,
-  onClose,
-  onSubmit,
-}: {
-  notice: string | null
-  saving: boolean
-  onClose: () => void
-  onSubmit: (token: string) => Promise<void>
-}) {
-  function submit(event: FormEvent<HTMLFormElement>) {
-    event.preventDefault()
-    const token = String(new FormData(event.currentTarget).get('token') || '').trim()
-    if (!token) return
-    void onSubmit(token)
-  }
-  return (
-    <div className="scrim" onClick={onClose}>
-      <form className="paper add" onClick={(event) => event.stopPropagation()} onSubmit={submit}>
-        <p>このブラウザだけがメモを保存できます。リポジトリへ書き込むトークンを入れてください。</p>
-        <label>
-          トークン
-          <input name="token" type="password" required autoComplete="off" />
-        </label>
-        {notice && <p className="notice">{notice}</p>}
-        <button className="open" type="submit" disabled={saving}>
-          保存する
         </button>
       </form>
     </div>
