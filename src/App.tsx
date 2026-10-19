@@ -140,6 +140,7 @@ function App() {
           runs.filter((run) => run.status === 'completed').map((run) => run.id),
         )
       }
+      const known = finishedAtLoad.current
       const active = runs.some((run) => run.status === 'queued' || run.status === 'in_progress')
       const fresh = runs.filter((run) => run.status === 'completed' && !known.has(run.id))
       if (active) {
