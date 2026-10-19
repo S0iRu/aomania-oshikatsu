@@ -1,11 +1,5 @@
 {
-  "deadlines": [
-    {
-      "id": "memo-1792408176073",
-      "title": "テスト2",
-      "at": "2026-10-31T20:09:00+09:00"
-    }
-  ],
+  "deadlines": [],
   "hiddenIds": [],
   "thumbnailOverrides": {},
   "extraStreams": []
