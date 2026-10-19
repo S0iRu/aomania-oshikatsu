@@ -1,11 +1,5 @@
 {
-  "deadlines": [
-    {
-      "id": "memo-1792424619084",
-      "title": "お誕生日グッズ受注",
-      "at": "2026-12-01T23:59:00+09:00"
-    }
-  ],
+  "deadlines": [],
   "hiddenIds": [],
   "thumbnailOverrides": {},
   "extraStreams": [],
