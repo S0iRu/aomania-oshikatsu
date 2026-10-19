@@ -1,4 +1,4 @@
-import { FormEvent, useEffect, useMemo, useState } from 'react'
+import { FormEvent, useEffect, useMemo, useRef, useState } from 'react'
 import {
   Deadline,
   LEGEND,
@@ -35,7 +35,7 @@ import {
   weekdayLabel,
   weekdayOf,
 } from './logic'
-import { fetchRemoteManual, normalizeManual, writeManual } from './github'
+import { fetchRemoteManual, listFetchRuns, normalizeManual, startFetch, writeManual } from './github'
 
 const AXIS_START = 60
 const AXIS_END = 24 * 60
@@ -77,6 +77,9 @@ function App() {
   const [ready, setReady] = useState(false)
   const [saving, setSaving] = useState(false)
   const [notice, setNotice] = useState<string | null>(null)
+  const [fetchLabel, setFetchLabel] = useState<'idle' | 'running' | 'done' | 'failed'>('idle')
+  const finishedAtLoad = useRef<Set<number> | null>(null)
+  const waitingForStart = useRef(false)
   const [mode, setMode] = useState<'week' | 'month' | 'game'>('week')
   const [cursor, setCursor] = useState(todayKey)
   const [game, setGame] = useState<string | null>(null)
@@ -127,6 +130,49 @@ function App() {
     }
   }
 
+  useEffect(() => {
+    let stopped = false
+    async function poll() {
+      const runs = await listFetchRuns()
+      if (stopped) return
+      if (finishedAtLoad.current === null) {
+        finishedAtLoad.current = new Set(
+          runs.filter((run) => run.status === 'completed').map((run) => run.id),
+        )
+      }
+      const active = runs.some((run) => run.status === 'queued' || run.status === 'in_progress')
+      const fresh = runs.filter((run) => run.status === 'completed' && !known.has(run.id))
+      if (active) {
+        waitingForStart.current = false
+        setFetchLabel('running')
+        return
+      }
+      if (fresh.length > 0) {
+        waitingForStart.current = false
+        setFetchLabel(fresh[0].conclusion === 'success' ? 'done' : 'failed')
+        return
+      }
+      if (waitingForStart.current) setFetchLabel('running')
+    }
+    void poll()
+    const timer = window.setInterval(() => void poll(), 5000)
+    return () => {
+      stopped = true
+      window.clearInterval(timer)
+    }
+  }, [])
+
+  async function beginFetch() {
+    waitingForStart.current = true
+    setFetchLabel('running')
+    try {
+      await startFetch()
+    } catch {
+      waitingForStart.current = false
+      setFetchLabel('failed')
+    }
+  }
+
   function openGame(name: string) {
     setGame(name)
     setMode('game')
@@ -155,6 +201,8 @@ function App() {
         <DateBar
           mode={mode === 'game' ? 'month' : mode}
           cursor={cursor}
+          fetchLabel={fetchLabel}
+          onFetch={() => void beginFetch()}
           onPrev={() => setCursor(mode === 'month' || mode === 'game' ? shiftMonth(cursor, -1) : addDays(cursor, -7))}
           onNext={() => setCursor(mode === 'month' || mode === 'game' ? shiftMonth(cursor, 1) : addDays(cursor, 7))}
           onToday={() => setCursor(today)}
@@ -262,6 +310,8 @@ function App() {
 function DateBar({
   mode,
   cursor,
+  fetchLabel,
+  onFetch,
   onPrev,
   onNext,
   onToday,
@@ -269,6 +319,8 @@ function DateBar({
 }: {
   mode: 'week' | 'month'
   cursor: string
+  fetchLabel: 'idle' | 'running' | 'done' | 'failed'
+  onFetch: () => void
   onPrev: () => void
   onNext: () => void
   onToday: () => void
@@ -295,6 +347,12 @@ function DateBar({
       <button onClick={onNext} aria-label="次へ">
         ›
       </button>
+      <button className="fetch-btn" onClick={onFetch} disabled={fetchLabel === 'running'}>
+        手動取得
+      </button>
+      {fetchLabel === 'running' && <span className="fetch-label">取得中</span>}
+      {fetchLabel === 'done' && <span className="fetch-label">取得完了</span>}
+      {fetchLabel === 'failed' && <span className="fetch-label failed">取得に失敗しました</span>}
     </div>
   )
 }

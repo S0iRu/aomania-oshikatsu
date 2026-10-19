@@ -65,3 +65,43 @@ export async function writeManual(manual: ManualFile): Promise<void> {
   })
   if (!response.ok) throw new Error(`保存に失敗しました (${response.status})`)
 }
+
+export type FetchRun = {
+  id: number
+  status: string
+  conclusion: string | null
+}
+
+function authHeaders(): Record<string, string> {
+  const headers: Record<string, string> = { Accept: 'application/vnd.github+json' }
+  const token = import.meta.env.VITE_MEMO_TOKEN
+  if (token) headers.Authorization = `Bearer ${token}`
+  return headers
+}
+
+export async function listFetchRuns(): Promise<FetchRun[]> {
+  const response = await fetch(
+    `https://api.github.com/repos/${REPO}/actions/workflows/fetch.yml/runs?per_page=5`,
+    { headers: authHeaders(), cache: 'no-store' },
+  )
+  if (!response.ok) return []
+  const data = (await response.json()) as {
+    workflow_runs?: { id: number; status: string; conclusion: string | null }[]
+  }
+  return (data.workflow_runs ?? []).map((run) => ({
+    id: run.id,
+    status: run.status,
+    conclusion: run.conclusion,
+  }))
+}
+
+export async function startFetch(): Promise<void> {
+  const token = import.meta.env.VITE_MEMO_TOKEN
+  if (!token) throw new Error('取得を開始できませんでした')
+  const response = await fetch(`https://api.github.com/repos/${REPO}/actions/workflows/fetch.yml/dispatches`, {
+    method: 'POST',
+    headers: { ...authHeaders(), 'Content-Type': 'application/json' },
+    body: JSON.stringify({ ref: BRANCH }),
+  })
+  if (!response.ok) throw new Error('取得を開始できませんでした')
+}

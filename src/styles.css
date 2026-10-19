@@ -54,12 +54,20 @@ h1 span { white-space: nowrap; }
 .segment button { padding: 0 12px; }
 
 .datebar {
-  display: grid;
-  grid-template-columns: 36px 1fr auto 36px;
+  display: flex;
+  flex-wrap: wrap;
   align-items: center;
   gap: 6px;
   margin-top: 12px;
 }
+.fetch-btn {
+  border: 0;
+  border-radius: 999px;
+  padding: 6px 12px;
+  background: white;
+}
+.fetch-label { font-size: 13px; color: #4f6790; }
+.fetch-label.failed { color: #a33d4a; }
 .date-label {
   border: 0;
   background: transparent;
