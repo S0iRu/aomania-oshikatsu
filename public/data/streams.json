@@ -1,0 +1,1071 @@
+{
+  "backfillComplete": false,
+  "resume": {},
+  "scanned": {},
+  "streams": [
+    {
+      "id": "sample-1-0",
+      "sample": true,
+      "url": "https://www.youtube.com/@KoyanagiRou",
+      "title": "【APEX】サンプル配信【小柳ロウ/にじさんじ】",
+      "thumbnail": "",
+      "channelId": "UC6WFKwYptsxVue56Lx218vg",
+      "channelTitle": "小柳ロウ / Koyanagi Rou【にじさんじ】",
+      "shortName": "小柳ロウ",
+      "isOwn": true,
+      "start": "2026-01-03T11:00:00.000Z",
+      "end": "2026-01-03T14:00:00.000Z",
+      "durationSec": 10800,
+      "status": "past",
+      "games": [
+        "APEX"
+      ],
+      "tags": [],
+      "noOwnStream": false
+    },
+    {
+      "id": "sample-1-1",
+      "sample": true,
+      "url": "https://www.youtube.com/@KoyanagiRou",
+      "title": "【VALORANT】サンプル配信【小柳ロウ/にじさんじ】",
+      "thumbnail": "",
+      "channelId": "UC6WFKwYptsxVue56Lx218vg",
+      "channelTitle": "小柳ロウ / Koyanagi Rou【にじさんじ】",
+      "shortName": "小柳ロウ",
+      "isOwn": true,
+      "start": "2026-01-11T11:00:00.000Z",
+      "end": "2026-01-11T15:00:00.000Z",
+      "durationSec": 14400,
+      "status": "past",
+      "games": [
+        "VALORANT"
+      ],
+      "tags": [],
+      "noOwnStream": false
+    },
+    {
+      "id": "sample-1-2",
+      "sample": true,
+      "url": "https://www.youtube.com/@KoyanagiRou",
+      "title": "【スプラ】サンプル配信【小柳ロウ/にじさんじ】",
+      "thumbnail": "",
+      "channelId": "UC6WFKwYptsxVue56Lx218vg",
+      "channelTitle": "小柳ロウ / Koyanagi Rou【にじさんじ】",
+      "shortName": "小柳ロウ",
+      "isOwn": true,
+      "start": "2026-01-19T11:00:00.000Z",
+      "end": "2026-01-19T16:00:00.000Z",
+      "durationSec": 18000,
+      "status": "past",
+      "games": [
+        "スプラ"
+      ],
+      "tags": [],
+      "noOwnStream": false
+    },
+    {
+      "id": "sample-2-0",
+      "sample": true,
+      "url": "https://www.youtube.com/@KoyanagiRou",
+      "title": "【VALORANT】サンプル配信【小柳ロウ/にじさんじ】",
+      "thumbnail": "",
+      "channelId": "UC6WFKwYptsxVue56Lx218vg",
+      "channelTitle": "小柳ロウ / Koyanagi Rou【にじさんじ】",
+      "shortName": "小柳ロウ",
+      "isOwn": true,
+      "start": "2026-02-03T11:00:00.000Z",
+      "end": "2026-02-03T15:00:00.000Z",
+      "durationSec": 14400,
+      "status": "past",
+      "games": [
+        "VALORANT"
+      ],
+      "tags": [],
+      "noOwnStream": false
+    },
+    {
+      "id": "sample-2-1",
+      "sample": true,
+      "url": "https://www.youtube.com/@KoyanagiRou",
+      "title": "【スプラ】サンプル配信【小柳ロウ/にじさんじ】",
+      "thumbnail": "",
+      "channelId": "UC6WFKwYptsxVue56Lx218vg",
+      "channelTitle": "小柳ロウ / Koyanagi Rou【にじさんじ】",
+      "shortName": "小柳ロウ",
+      "isOwn": true,
+      "start": "2026-02-11T11:00:00.000Z",
+      "end": "2026-02-11T16:00:00.000Z",
+      "durationSec": 18000,
+      "status": "past",
+      "games": [
+        "スプラ"
+      ],
+      "tags": [],
+      "noOwnStream": false
+    },
+    {
+      "id": "sample-2-2",
+      "sample": true,
+      "url": "https://www.youtube.com/@KoyanagiRou",
+      "title": "【PUBG】サンプル配信【小柳ロウ/にじさんじ】",
+      "thumbnail": "",
+      "channelId": "UC6WFKwYptsxVue56Lx218vg",
+      "channelTitle": "小柳ロウ / Koyanagi Rou【にじさんじ】",
+      "shortName": "小柳ロウ",
+      "isOwn": true,
+      "start": "2026-02-19T11:00:00.000Z",
+      "end": "2026-02-19T13:00:00.000Z",
+      "durationSec": 7200,
+      "status": "past",
+      "games": [
+        "PUBG"
+      ],
+      "tags": [],
+      "noOwnStream": false
+    },
+    {
+      "id": "sample-3-0",
+      "sample": true,
+      "url": "https://www.youtube.com/@KoyanagiRou",
+      "title": "【スプラ】サンプル配信【小柳ロウ/にじさんじ】",
+      "thumbnail": "",
+      "channelId": "UC6WFKwYptsxVue56Lx218vg",
+      "channelTitle": "小柳ロウ / Koyanagi Rou【にじさんじ】",
+      "shortName": "小柳ロウ",
+      "isOwn": true,
+      "start": "2026-03-03T11:00:00.000Z",
+      "end": "2026-03-03T16:00:00.000Z",
+      "durationSec": 18000,
+      "status": "past",
+      "games": [
+        "スプラ"
+      ],
+      "tags": [],
+      "noOwnStream": false
+    },
+    {
+      "id": "sample-3-1",
+      "sample": true,
+      "url": "https://www.youtube.com/@KoyanagiRou",
+      "title": "【PUBG】サンプル配信【小柳ロウ/にじさんじ】",
+      "thumbnail": "",
+      "channelId": "UC6WFKwYptsxVue56Lx218vg",
+      "channelTitle": "小柳ロウ / Koyanagi Rou【にじさんじ】",
+      "shortName": "小柳ロウ",
+      "isOwn": true,
+      "start": "2026-03-11T11:00:00.000Z",
+      "end": "2026-03-11T13:00:00.000Z",
+      "durationSec": 7200,
+      "status": "past",
+      "games": [
+        "PUBG"
+      ],
+      "tags": [],
+      "noOwnStream": false
+    },
+    {
+      "id": "sample-3-2",
+      "sample": true,
+      "url": "https://www.youtube.com/@KoyanagiRou",
+      "title": "【MADTOWN】サンプル配信【小柳ロウ/にじさんじ】",
+      "thumbnail": "",
+      "channelId": "UC6WFKwYptsxVue56Lx218vg",
+      "channelTitle": "小柳ロウ / Koyanagi Rou【にじさんじ】",
+      "shortName": "小柳ロウ",
+      "isOwn": true,
+      "start": "2026-03-19T11:00:00.000Z",
+      "end": "2026-03-19T14:00:00.000Z",
+      "durationSec": 10800,
+      "status": "past",
+      "games": [
+        "MADTOWN"
+      ],
+      "tags": [],
+      "noOwnStream": false
+    },
+    {
+      "id": "sample-4-0",
+      "sample": true,
+      "url": "https://www.youtube.com/@KoyanagiRou",
+      "title": "【PUBG】サンプル配信【小柳ロウ/にじさんじ】",
+      "thumbnail": "",
+      "channelId": "UC6WFKwYptsxVue56Lx218vg",
+      "channelTitle": "小柳ロウ / Koyanagi Rou【にじさんじ】",
+      "shortName": "小柳ロウ",
+      "isOwn": true,
+      "start": "2026-04-03T11:00:00.000Z",
+      "end": "2026-04-03T13:00:00.000Z",
+      "durationSec": 7200,
+      "status": "past",
+      "games": [
+        "PUBG"
+      ],
+      "tags": [],
+      "noOwnStream": false
+    },
+    {
+      "id": "sample-4-1",
+      "sample": true,
+      "url": "https://www.youtube.com/@KoyanagiRou",
+      "title": "【MADTOWN】サンプル配信【小柳ロウ/にじさんじ】",
+      "thumbnail": "",
+      "channelId": "UC6WFKwYptsxVue56Lx218vg",
+      "channelTitle": "小柳ロウ / Koyanagi Rou【にじさんじ】",
+      "shortName": "小柳ロウ",
+      "isOwn": true,
+      "start": "2026-04-11T11:00:00.000Z",
+      "end": "2026-04-11T14:00:00.000Z",
+      "durationSec": 10800,
+      "status": "past",
+      "games": [
+        "MADTOWN"
+      ],
+      "tags": [],
+      "noOwnStream": false
+    },
+    {
+      "id": "sample-4-2",
+      "sample": true,
+      "url": "https://www.youtube.com/@KoyanagiRou",
+      "title": "【OW】サンプル配信【小柳ロウ/にじさんじ】",
+      "thumbnail": "",
+      "channelId": "UC6WFKwYptsxVue56Lx218vg",
+      "channelTitle": "小柳ロウ / Koyanagi Rou【にじさんじ】",
+      "shortName": "小柳ロウ",
+      "isOwn": true,
+      "start": "2026-04-19T11:00:00.000Z",
+      "end": "2026-04-19T15:00:00.000Z",
+      "durationSec": 14400,
+      "status": "past",
+      "games": [
+        "OW"
+      ],
+      "tags": [],
+      "noOwnStream": false
+    },
+    {
+      "id": "sample-5-0",
+      "sample": true,
+      "url": "https://www.youtube.com/@KoyanagiRou",
+      "title": "【MADTOWN】サンプル配信【小柳ロウ/にじさんじ】",
+      "thumbnail": "",
+      "channelId": "UC6WFKwYptsxVue56Lx218vg",
+      "channelTitle": "小柳ロウ / Koyanagi Rou【にじさんじ】",
+      "shortName": "小柳ロウ",
+      "isOwn": true,
+      "start": "2026-05-03T11:00:00.000Z",
+      "end": "2026-05-03T14:00:00.000Z",
+      "durationSec": 10800,
+      "status": "past",
+      "games": [
+        "MADTOWN"
+      ],
+      "tags": [],
+      "noOwnStream": false
+    },
+    {
+      "id": "sample-5-1",
+      "sample": true,
+      "url": "https://www.youtube.com/@KoyanagiRou",
+      "title": "【OW】サンプル配信【小柳ロウ/にじさんじ】",
+      "thumbnail": "",
+      "channelId": "UC6WFKwYptsxVue56Lx218vg",
+      "channelTitle": "小柳ロウ / Koyanagi Rou【にじさんじ】",
+      "shortName": "小柳ロウ",
+      "isOwn": true,
+      "start": "2026-05-11T11:00:00.000Z",
+      "end": "2026-05-11T15:00:00.000Z",
+      "durationSec": 14400,
+      "status": "past",
+      "games": [
+        "OW"
+      ],
+      "tags": [],
+      "noOwnStream": false
+    },
+    {
+      "id": "sample-5-2",
+      "sample": true,
+      "url": "https://www.youtube.com/@KoyanagiRou",
+      "title": "【APEX】サンプル配信【小柳ロウ/にじさんじ】",
+      "thumbnail": "",
+      "channelId": "UC6WFKwYptsxVue56Lx218vg",
+      "channelTitle": "小柳ロウ / Koyanagi Rou【にじさんじ】",
+      "shortName": "小柳ロウ",
+      "isOwn": true,
+      "start": "2026-05-19T11:00:00.000Z",
+      "end": "2026-05-19T16:00:00.000Z",
+      "durationSec": 18000,
+      "status": "past",
+      "games": [
+        "APEX"
+      ],
+      "tags": [],
+      "noOwnStream": false
+    },
+    {
+      "id": "sample-6-0",
+      "sample": true,
+      "url": "https://www.youtube.com/@KoyanagiRou",
+      "title": "【OW】サンプル配信【小柳ロウ/にじさんじ】",
+      "thumbnail": "",
+      "channelId": "UC6WFKwYptsxVue56Lx218vg",
+      "channelTitle": "小柳ロウ / Koyanagi Rou【にじさんじ】",
+      "shortName": "小柳ロウ",
+      "isOwn": true,
+      "start": "2026-06-03T11:00:00.000Z",
+      "end": "2026-06-03T15:00:00.000Z",
+      "durationSec": 14400,
+      "status": "past",
+      "games": [
+        "OW"
+      ],
+      "tags": [],
+      "noOwnStream": false
+    },
+    {
+      "id": "sample-6-1",
+      "sample": true,
+      "url": "https://www.youtube.com/@KoyanagiRou",
+      "title": "【APEX】サンプル配信【小柳ロウ/にじさんじ】",
+      "thumbnail": "",
+      "channelId": "UC6WFKwYptsxVue56Lx218vg",
+      "channelTitle": "小柳ロウ / Koyanagi Rou【にじさんじ】",
+      "shortName": "小柳ロウ",
+      "isOwn": true,
+      "start": "2026-06-11T11:00:00.000Z",
+      "end": "2026-06-11T16:00:00.000Z",
+      "durationSec": 18000,
+      "status": "past",
+      "games": [
+        "APEX"
+      ],
+      "tags": [],
+      "noOwnStream": false
+    },
+    {
+      "id": "sample-6-2",
+      "sample": true,
+      "url": "https://www.youtube.com/@KoyanagiRou",
+      "title": "【VALORANT】サンプル配信【小柳ロウ/にじさんじ】",
+      "thumbnail": "",
+      "channelId": "UC6WFKwYptsxVue56Lx218vg",
+      "channelTitle": "小柳ロウ / Koyanagi Rou【にじさんじ】",
+      "shortName": "小柳ロウ",
+      "isOwn": true,
+      "start": "2026-06-19T11:00:00.000Z",
+      "end": "2026-06-19T13:00:00.000Z",
+      "durationSec": 7200,
+      "status": "past",
+      "games": [
+        "VALORANT"
+      ],
+      "tags": [],
+      "noOwnStream": false
+    },
+    {
+      "id": "sample-7-0",
+      "sample": true,
+      "url": "https://www.youtube.com/@KoyanagiRou",
+      "title": "【APEX】サンプル配信【小柳ロウ/にじさんじ】",
+      "thumbnail": "",
+      "channelId": "UC6WFKwYptsxVue56Lx218vg",
+      "channelTitle": "小柳ロウ / Koyanagi Rou【にじさんじ】",
+      "shortName": "小柳ロウ",
+      "isOwn": true,
+      "start": "2026-07-03T11:00:00.000Z",
+      "end": "2026-07-03T16:00:00.000Z",
+      "durationSec": 18000,
+      "status": "past",
+      "games": [
+        "APEX"
+      ],
+      "tags": [],
+      "noOwnStream": false
+    },
+    {
+      "id": "sample-7-1",
+      "sample": true,
+      "url": "https://www.youtube.com/@KoyanagiRou",
+      "title": "【VALORANT】サンプル配信【小柳ロウ/にじさんじ】",
+      "thumbnail": "",
+      "channelId": "UC6WFKwYptsxVue56Lx218vg",
+      "channelTitle": "小柳ロウ / Koyanagi Rou【にじさんじ】",
+      "shortName": "小柳ロウ",
+      "isOwn": true,
+      "start": "2026-07-11T11:00:00.000Z",
+      "end": "2026-07-11T13:00:00.000Z",
+      "durationSec": 7200,
+      "status": "past",
+      "games": [
+        "VALORANT"
+      ],
+      "tags": [],
+      "noOwnStream": false
+    },
+    {
+      "id": "sample-7-2",
+      "sample": true,
+      "url": "https://www.youtube.com/@KoyanagiRou",
+      "title": "【スプラ】サンプル配信【小柳ロウ/にじさんじ】",
+      "thumbnail": "",
+      "channelId": "UC6WFKwYptsxVue56Lx218vg",
+      "channelTitle": "小柳ロウ / Koyanagi Rou【にじさんじ】",
+      "shortName": "小柳ロウ",
+      "isOwn": true,
+      "start": "2026-07-19T11:00:00.000Z",
+      "end": "2026-07-19T14:00:00.000Z",
+      "durationSec": 10800,
+      "status": "past",
+      "games": [
+        "スプラ"
+      ],
+      "tags": [],
+      "noOwnStream": false
+    },
+    {
+      "id": "sample-8-0",
+      "sample": true,
+      "url": "https://www.youtube.com/@KoyanagiRou",
+      "title": "【VALORANT】サンプル配信【小柳ロウ/にじさんじ】",
+      "thumbnail": "",
+      "channelId": "UC6WFKwYptsxVue56Lx218vg",
+      "channelTitle": "小柳ロウ / Koyanagi Rou【にじさんじ】",
+      "shortName": "小柳ロウ",
+      "isOwn": true,
+      "start": "2026-08-03T11:00:00.000Z",
+      "end": "2026-08-03T13:00:00.000Z",
+      "durationSec": 7200,
+      "status": "past",
+      "games": [
+        "VALORANT"
+      ],
+      "tags": [],
+      "noOwnStream": false
+    },
+    {
+      "id": "sample-8-1",
+      "sample": true,
+      "url": "https://www.youtube.com/@KoyanagiRou",
+      "title": "【スプラ】サンプル配信【小柳ロウ/にじさんじ】",
+      "thumbnail": "",
+      "channelId": "UC6WFKwYptsxVue56Lx218vg",
+      "channelTitle": "小柳ロウ / Koyanagi Rou【にじさんじ】",
+      "shortName": "小柳ロウ",
+      "isOwn": true,
+      "start": "2026-08-11T11:00:00.000Z",
+      "end": "2026-08-11T14:00:00.000Z",
+      "durationSec": 10800,
+      "status": "past",
+      "games": [
+        "スプラ"
+      ],
+      "tags": [],
+      "noOwnStream": false
+    },
+    {
+      "id": "sample-8-2",
+      "sample": true,
+      "url": "https://www.youtube.com/@KoyanagiRou",
+      "title": "【PUBG】サンプル配信【小柳ロウ/にじさんじ】",
+      "thumbnail": "",
+      "channelId": "UC6WFKwYptsxVue56Lx218vg",
+      "channelTitle": "小柳ロウ / Koyanagi Rou【にじさんじ】",
+      "shortName": "小柳ロウ",
+      "isOwn": true,
+      "start": "2026-08-19T11:00:00.000Z",
+      "end": "2026-08-19T15:00:00.000Z",
+      "durationSec": 14400,
+      "status": "past",
+      "games": [
+        "PUBG"
+      ],
+      "tags": [],
+      "noOwnStream": false
+    },
+    {
+      "id": "sample-9-0",
+      "sample": true,
+      "url": "https://www.youtube.com/@KoyanagiRou",
+      "title": "【スプラ】サンプル配信【小柳ロウ/にじさんじ】",
+      "thumbnail": "",
+      "channelId": "UC6WFKwYptsxVue56Lx218vg",
+      "channelTitle": "小柳ロウ / Koyanagi Rou【にじさんじ】",
+      "shortName": "小柳ロウ",
+      "isOwn": true,
+      "start": "2026-09-03T11:00:00.000Z",
+      "end": "2026-09-03T14:00:00.000Z",
+      "durationSec": 10800,
+      "status": "past",
+      "games": [
+        "スプラ"
+      ],
+      "tags": [],
+      "noOwnStream": false
+    },
+    {
+      "id": "sample-9-1",
+      "sample": true,
+      "url": "https://www.youtube.com/@KoyanagiRou",
+      "title": "【PUBG】サンプル配信【小柳ロウ/にじさんじ】",
+      "thumbnail": "",
+      "channelId": "UC6WFKwYptsxVue56Lx218vg",
+      "channelTitle": "小柳ロウ / Koyanagi Rou【にじさんじ】",
+      "shortName": "小柳ロウ",
+      "isOwn": true,
+      "start": "2026-09-11T11:00:00.000Z",
+      "end": "2026-09-11T15:00:00.000Z",
+      "durationSec": 14400,
+      "status": "past",
+      "games": [
+        "PUBG"
+      ],
+      "tags": [],
+      "noOwnStream": false
+    },
+    {
+      "id": "sample-9-2",
+      "sample": true,
+      "url": "https://www.youtube.com/@KoyanagiRou",
+      "title": "【MADTOWN】サンプル配信【小柳ロウ/にじさんじ】",
+      "thumbnail": "",
+      "channelId": "UC6WFKwYptsxVue56Lx218vg",
+      "channelTitle": "小柳ロウ / Koyanagi Rou【にじさんじ】",
+      "shortName": "小柳ロウ",
+      "isOwn": true,
+      "start": "2026-09-19T11:00:00.000Z",
+      "end": "2026-09-19T16:00:00.000Z",
+      "durationSec": 18000,
+      "status": "past",
+      "games": [
+        "MADTOWN"
+      ],
+      "tags": [],
+      "noOwnStream": false
+    },
+    {
+      "id": "sample-oct2",
+      "sample": true,
+      "url": "https://www.youtube.com/@KoyanagiRou",
+      "title": "【VALORANT】カスタム【小柳ロウ/にじさんじ】",
+      "thumbnail": "",
+      "channelId": "UC6WFKwYptsxVue56Lx218vg",
+      "channelTitle": "小柳ロウ / Koyanagi Rou【にじさんじ】",
+      "shortName": "小柳ロウ",
+      "isOwn": true,
+      "start": "2026-10-02T11:00:00.000Z",
+      "end": "2026-10-02T14:00:00.000Z",
+      "durationSec": 10800,
+      "status": "past",
+      "games": [
+        "VALORANT"
+      ],
+      "tags": [],
+      "noOwnStream": false
+    },
+    {
+      "id": "sample-oct5",
+      "sample": true,
+      "url": "https://www.youtube.com/@KoyanagiRou",
+      "title": "【OW】ランク【小柳ロウ/にじさんじ】",
+      "thumbnail": "",
+      "channelId": "UC6WFKwYptsxVue56Lx218vg",
+      "channelTitle": "小柳ロウ / Koyanagi Rou【にじさんじ】",
+      "shortName": "小柳ロウ",
+      "isOwn": true,
+      "start": "2026-10-05T12:00:00.000Z",
+      "end": "2026-10-05T16:00:00.000Z",
+      "durationSec": 14400,
+      "status": "past",
+      "games": [
+        "OW"
+      ],
+      "tags": [],
+      "noOwnStream": false
+    },
+    {
+      "id": "sample-oct8",
+      "sample": true,
+      "url": "https://www.youtube.com/@KoyanagiRou",
+      "title": "【APEX】ランク【小柳ロウ/にじさんじ】",
+      "thumbnail": "",
+      "channelId": "UC6WFKwYptsxVue56Lx218vg",
+      "channelTitle": "小柳ロウ / Koyanagi Rou【にじさんじ】",
+      "shortName": "小柳ロウ",
+      "isOwn": true,
+      "start": "2026-10-08T10:00:00.000Z",
+      "end": "2026-10-08T13:00:00.000Z",
+      "durationSec": 10800,
+      "status": "past",
+      "games": [
+        "APEX"
+      ],
+      "tags": [],
+      "noOwnStream": false
+    },
+    {
+      "id": "sample-mon-a",
+      "sample": true,
+      "url": "https://www.youtube.com/@KoyanagiRou",
+      "title": "【OW】深夜のカスタム【小柳ロウ/にじさんじ】",
+      "thumbnail": "",
+      "channelId": "UC6WFKwYptsxVue56Lx218vg",
+      "channelTitle": "小柳ロウ / Koyanagi Rou【にじさんじ】",
+      "shortName": "小柳ロウ",
+      "isOwn": true,
+      "start": "2026-10-11T17:10:00.000Z",
+      "end": "2026-10-11T19:40:00.000Z",
+      "durationSec": 9000,
+      "status": "past",
+      "games": [
+        "OW"
+      ],
+      "tags": [],
+      "noOwnStream": false
+    },
+    {
+      "id": "sample-mon-b",
+      "sample": true,
+      "url": "https://www.youtube.com/@KoyanagiRou",
+      "title": "【OW】ランク【小柳ロウ/にじさんじ】",
+      "thumbnail": "",
+      "channelId": "UC6WFKwYptsxVue56Lx218vg",
+      "channelTitle": "小柳ロウ / Koyanagi Rou【にじさんじ】",
+      "shortName": "小柳ロウ",
+      "isOwn": true,
+      "start": "2026-10-12T12:00:00.000Z",
+      "end": "2026-10-12T18:30:00.000Z",
+      "durationSec": 23400,
+      "status": "past",
+      "games": [
+        "OW"
+      ],
+      "tags": [],
+      "noOwnStream": false
+    },
+    {
+      "id": "sample-tue-a",
+      "sample": true,
+      "url": "https://www.youtube.com/@KoyanagiRou",
+      "title": "【OW】ヴェンデンタを嗜む【小柳ロウ/にじさんじ】",
+      "thumbnail": "",
+      "channelId": "UC6WFKwYptsxVue56Lx218vg",
+      "channelTitle": "小柳ロウ / Koyanagi Rou【にじさんじ】",
+      "shortName": "小柳ロウ",
+      "isOwn": true,
+      "start": "2026-10-12T22:29:00.000Z",
+      "end": "2026-10-13T04:29:00.000Z",
+      "durationSec": 21600,
+      "status": "past",
+      "games": [
+        "OW"
+      ],
+      "tags": [],
+      "noOwnStream": false
+    },
+    {
+      "id": "sample-tue-b",
+      "sample": true,
+      "url": "https://www.youtube.com/@KoyanagiRou",
+      "title": "【OW】エメラさんから【小柳ロウ/にじさんじ】",
+      "thumbnail": "",
+      "channelId": "UC6WFKwYptsxVue56Lx218vg",
+      "channelTitle": "小柳ロウ / Koyanagi Rou【にじさんじ】",
+      "shortName": "小柳ロウ",
+      "isOwn": true,
+      "start": "2026-10-13T01:41:00.000Z",
+      "end": "2026-10-13T04:41:00.000Z",
+      "durationSec": 10800,
+      "status": "past",
+      "games": [
+        "OW"
+      ],
+      "tags": [],
+      "noOwnStream": false
+    },
+    {
+      "id": "sample-tue-c",
+      "sample": true,
+      "url": "https://www.youtube.com/@KoyanagiRou",
+      "title": "【APEX】ベリーさんゴールド企画【小柳ロウ/にじさんじ】",
+      "thumbnail": "",
+      "channelId": "UC6WFKwYptsxVue56Lx218vg",
+      "channelTitle": "小柳ロウ / Koyanagi Rou【にじさんじ】",
+      "shortName": "小柳ロウ",
+      "isOwn": true,
+      "start": "2026-10-13T05:46:00.000Z",
+      "end": "2026-10-13T08:46:00.000Z",
+      "durationSec": 10800,
+      "status": "past",
+      "games": [
+        "APEX"
+      ],
+      "tags": [
+        "コラボ"
+      ],
+      "noOwnStream": false
+    },
+    {
+      "id": "sample-berry",
+      "sample": true,
+      "url": "https://www.youtube.com/@nijisanji",
+      "title": "【APEX】ロウ先輩ゴールド見守りたい",
+      "thumbnail": "",
+      "channelId": "sample-berry-ch",
+      "channelTitle": "幸乙女ベリー",
+      "shortName": "幸乙女ベリー",
+      "isOwn": false,
+      "start": "2026-10-13T05:46:00.000Z",
+      "end": "2026-10-13T08:46:00.000Z",
+      "durationSec": 10800,
+      "status": "past",
+      "games": [
+        "APEX"
+      ],
+      "tags": [
+        "コラボ"
+      ],
+      "noOwnStream": false
+    },
+    {
+      "id": "sample-tue-d",
+      "sample": true,
+      "url": "https://www.youtube.com/@KoyanagiRou",
+      "title": "【APEX】プレマスランク【小柳ロウ/にじさんじ】",
+      "thumbnail": "",
+      "channelId": "UC6WFKwYptsxVue56Lx218vg",
+      "channelTitle": "小柳ロウ / Koyanagi Rou【にじさんじ】",
+      "shortName": "小柳ロウ",
+      "isOwn": true,
+      "start": "2026-10-13T09:02:00.000Z",
+      "end": "2026-10-13T11:32:00.000Z",
+      "durationSec": 9000,
+      "status": "past",
+      "games": [
+        "APEX"
+      ],
+      "tags": [],
+      "noOwnStream": false
+    },
+    {
+      "id": "sample-tue-e",
+      "sample": true,
+      "url": "https://www.youtube.com/@KoyanagiRou",
+      "title": "【OW】夜のランク【小柳ロウ/にじさんじ】",
+      "thumbnail": "",
+      "channelId": "UC6WFKwYptsxVue56Lx218vg",
+      "channelTitle": "小柳ロウ / Koyanagi Rou【にじさんじ】",
+      "shortName": "小柳ロウ",
+      "isOwn": true,
+      "start": "2026-10-13T12:00:00.000Z",
+      "end": "2026-10-13T15:00:00.000Z",
+      "durationSec": 10800,
+      "status": "past",
+      "games": [
+        "OW"
+      ],
+      "tags": [],
+      "noOwnStream": false
+    },
+    {
+      "id": "sample-wed",
+      "sample": true,
+      "url": "https://www.youtube.com/@KoyanagiRou",
+      "title": "【OW】急遽クロとりりさん【小柳ロウ/にじさんじ】",
+      "thumbnail": "",
+      "channelId": "UC6WFKwYptsxVue56Lx218vg",
+      "channelTitle": "小柳ロウ / Koyanagi Rou【にじさんじ】",
+      "shortName": "小柳ロウ",
+      "isOwn": true,
+      "start": "2026-10-13T21:00:00.000Z",
+      "end": "2026-10-14T09:00:00.000Z",
+      "durationSec": 43200,
+      "status": "past",
+      "games": [
+        "OW"
+      ],
+      "tags": [],
+      "noOwnStream": false
+    },
+    {
+      "id": "sample-fri",
+      "sample": true,
+      "url": "https://www.youtube.com/@KoyanagiRou",
+      "title": "【スプラ】VCC INK【小柳ロウ/にじさんじ】",
+      "thumbnail": "",
+      "channelId": "UC6WFKwYptsxVue56Lx218vg",
+      "channelTitle": "小柳ロウ / Koyanagi Rou【にじさんじ】",
+      "shortName": "小柳ロウ",
+      "isOwn": true,
+      "start": "2026-10-16T10:57:00.000Z",
+      "end": "2026-10-16T14:27:00.000Z",
+      "durationSec": 12600,
+      "status": "past",
+      "games": [
+        "スプラ"
+      ],
+      "tags": [],
+      "noOwnStream": false
+    },
+    {
+      "id": "sample-sat",
+      "sample": true,
+      "url": "https://www.youtube.com/@KoyanagiRou",
+      "title": "【OW】にじOW練習【小柳ロウ/にじさんじ】",
+      "thumbnail": "",
+      "channelId": "UC6WFKwYptsxVue56Lx218vg",
+      "channelTitle": "小柳ロウ / Koyanagi Rou【にじさんじ】",
+      "shortName": "小柳ロウ",
+      "isOwn": true,
+      "start": "2026-10-17T10:16:00.000Z",
+      "end": "2026-10-17T14:16:00.000Z",
+      "durationSec": 14400,
+      "status": "past",
+      "games": [
+        "OW"
+      ],
+      "tags": [],
+      "noOwnStream": false
+    },
+    {
+      "id": "sample-sun-a",
+      "sample": true,
+      "url": "https://www.youtube.com/@KoyanagiRou",
+      "title": "【OW】DPS担当でランク【小柳ロウ/にじさんじ】",
+      "thumbnail": "",
+      "channelId": "UC6WFKwYptsxVue56Lx218vg",
+      "channelTitle": "小柳ロウ / Koyanagi Rou【にじさんじ】",
+      "shortName": "小柳ロウ",
+      "isOwn": true,
+      "start": "2026-10-17T23:00:00.000Z",
+      "end": "2026-10-18T03:30:00.000Z",
+      "durationSec": 16200,
+      "status": "past",
+      "games": [
+        "OW"
+      ],
+      "tags": [],
+      "noOwnStream": false
+    },
+    {
+      "id": "sample-sun-b",
+      "sample": true,
+      "url": "https://www.youtube.com/@KoyanagiRou",
+      "title": "【同時視聴】MECHATU-A 1st LIVE【小柳ロウ/にじさんじ】",
+      "thumbnail": "",
+      "channelId": "UC6WFKwYptsxVue56Lx218vg",
+      "channelTitle": "小柳ロウ / Koyanagi Rou【にじさんじ】",
+      "shortName": "小柳ロウ",
+      "isOwn": true,
+      "start": "2026-10-18T08:59:00.000Z",
+      "end": "2026-10-18T11:29:00.000Z",
+      "durationSec": 9000,
+      "status": "past",
+      "games": [],
+      "tags": [
+        "コラボ"
+      ],
+      "noOwnStream": false
+    },
+    {
+      "id": "sample-mecha",
+      "sample": true,
+      "url": "https://www.youtube.com/@nijisanji",
+      "title": "【3D Live】MECHATU-A 1st LIVE Over Drive!",
+      "thumbnail": "",
+      "channelId": "UCX7YkU9nEeaoZbkVLVajcMg",
+      "channelTitle": "にじさんじ",
+      "shortName": "にじさんじ",
+      "isOwn": false,
+      "start": "2026-10-18T08:59:00.000Z",
+      "end": "2026-10-18T11:41:00.000Z",
+      "durationSec": 9720,
+      "status": "past",
+      "games": [],
+      "tags": [
+        "コラボ"
+      ],
+      "noOwnStream": true
+    },
+    {
+      "id": "sample-sun-c",
+      "sample": true,
+      "url": "https://www.youtube.com/@KoyanagiRou",
+      "title": "【OW】練習【小柳ロウ/にじさんじ】",
+      "thumbnail": "",
+      "channelId": "UC6WFKwYptsxVue56Lx218vg",
+      "channelTitle": "小柳ロウ / Koyanagi Rou【にじさんじ】",
+      "shortName": "小柳ロウ",
+      "isOwn": true,
+      "start": "2026-10-18T13:37:00.000Z",
+      "end": "2026-10-18T15:07:00.000Z",
+      "durationSec": 5400,
+      "status": "past",
+      "games": [
+        "OW"
+      ],
+      "tags": [],
+      "noOwnStream": false
+    },
+    {
+      "id": "sample-oct21",
+      "sample": true,
+      "url": "https://www.youtube.com/@KoyanagiRou",
+      "title": "【OW】途中参加チーム練習【小柳ロウ/にじさんじ】",
+      "thumbnail": "",
+      "channelId": "UC6WFKwYptsxVue56Lx218vg",
+      "channelTitle": "小柳ロウ / Koyanagi Rou【にじさんじ】",
+      "shortName": "小柳ロウ",
+      "isOwn": true,
+      "start": "2026-10-21T11:00:00.000Z",
+      "end": "2026-10-21T14:00:00.000Z",
+      "durationSec": 10800,
+      "status": "past",
+      "games": [
+        "OW"
+      ],
+      "tags": [],
+      "noOwnStream": false
+    },
+    {
+      "id": "sample-oct24",
+      "sample": true,
+      "url": "https://www.youtube.com/@KoyanagiRou",
+      "title": "【スト6】カジュアル【小柳ロウ/にじさんじ】",
+      "thumbnail": "",
+      "channelId": "UC6WFKwYptsxVue56Lx218vg",
+      "channelTitle": "小柳ロウ / Koyanagi Rou【にじさんじ】",
+      "shortName": "小柳ロウ",
+      "isOwn": true,
+      "start": "2026-10-24T09:00:00.000Z",
+      "end": "2026-10-24T11:00:00.000Z",
+      "durationSec": 7200,
+      "status": "past",
+      "games": [
+        "スト6"
+      ],
+      "tags": [],
+      "noOwnStream": false
+    },
+    {
+      "id": "sample-11-0",
+      "sample": true,
+      "url": "https://www.youtube.com/@KoyanagiRou",
+      "title": "【MADTOWN】サンプル配信【小柳ロウ/にじさんじ】",
+      "thumbnail": "",
+      "channelId": "UC6WFKwYptsxVue56Lx218vg",
+      "channelTitle": "小柳ロウ / Koyanagi Rou【にじさんじ】",
+      "shortName": "小柳ロウ",
+      "isOwn": true,
+      "start": "2026-11-03T11:00:00.000Z",
+      "end": "2026-11-03T16:00:00.000Z",
+      "durationSec": 18000,
+      "status": "past",
+      "games": [
+        "MADTOWN"
+      ],
+      "tags": [],
+      "noOwnStream": false
+    },
+    {
+      "id": "sample-11-1",
+      "sample": true,
+      "url": "https://www.youtube.com/@KoyanagiRou",
+      "title": "【OW】サンプル配信【小柳ロウ/にじさんじ】",
+      "thumbnail": "",
+      "channelId": "UC6WFKwYptsxVue56Lx218vg",
+      "channelTitle": "小柳ロウ / Koyanagi Rou【にじさんじ】",
+      "shortName": "小柳ロウ",
+      "isOwn": true,
+      "start": "2026-11-11T11:00:00.000Z",
+      "end": "2026-11-11T13:00:00.000Z",
+      "durationSec": 7200,
+      "status": "past",
+      "games": [
+        "OW"
+      ],
+      "tags": [],
+      "noOwnStream": false
+    },
+    {
+      "id": "sample-11-2",
+      "sample": true,
+      "url": "https://www.youtube.com/@KoyanagiRou",
+      "title": "【APEX】サンプル配信【小柳ロウ/にじさんじ】",
+      "thumbnail": "",
+      "channelId": "UC6WFKwYptsxVue56Lx218vg",
+      "channelTitle": "小柳ロウ / Koyanagi Rou【にじさんじ】",
+      "shortName": "小柳ロウ",
+      "isOwn": true,
+      "start": "2026-11-19T11:00:00.000Z",
+      "end": "2026-11-19T14:00:00.000Z",
+      "durationSec": 10800,
+      "status": "past",
+      "games": [
+        "APEX"
+      ],
+      "tags": [],
+      "noOwnStream": false
+    },
+    {
+      "id": "sample-12-0",
+      "sample": true,
+      "url": "https://www.youtube.com/@KoyanagiRou",
+      "title": "【OW】サンプル配信【小柳ロウ/にじさんじ】",
+      "thumbnail": "",
+      "channelId": "UC6WFKwYptsxVue56Lx218vg",
+      "channelTitle": "小柳ロウ / Koyanagi Rou【にじさんじ】",
+      "shortName": "小柳ロウ",
+      "isOwn": true,
+      "start": "2026-12-03T11:00:00.000Z",
+      "end": "2026-12-03T13:00:00.000Z",
+      "durationSec": 7200,
+      "status": "past",
+      "games": [
+        "OW"
+      ],
+      "tags": [],
+      "noOwnStream": false
+    },
+    {
+      "id": "sample-12-1",
+      "sample": true,
+      "url": "https://www.youtube.com/@KoyanagiRou",
+      "title": "【APEX】サンプル配信【小柳ロウ/にじさんじ】",
+      "thumbnail": "",
+      "channelId": "UC6WFKwYptsxVue56Lx218vg",
+      "channelTitle": "小柳ロウ / Koyanagi Rou【にじさんじ】",
+      "shortName": "小柳ロウ",
+      "isOwn": true,
+      "start": "2026-12-11T11:00:00.000Z",
+      "end": "2026-12-11T14:00:00.000Z",
+      "durationSec": 10800,
+      "status": "past",
+      "games": [
+        "APEX"
+      ],
+      "tags": [],
+      "noOwnStream": false
+    },
+    {
+      "id": "sample-12-2",
+      "sample": true,
+      "url": "https://www.youtube.com/@KoyanagiRou",
+      "title": "【VALORANT】サンプル配信【小柳ロウ/にじさんじ】",
+      "thumbnail": "",
+      "channelId": "UC6WFKwYptsxVue56Lx218vg",
+      "channelTitle": "小柳ロウ / Koyanagi Rou【にじさんじ】",
+      "shortName": "小柳ロウ",
+      "isOwn": true,
+      "start": "2026-12-19T11:00:00.000Z",
+      "end": "2026-12-19T15:00:00.000Z",
+      "durationSec": 14400,
+      "status": "past",
+      "games": [
+        "VALORANT"
+      ],
+      "tags": [],
+      "noOwnStream": false
+    }
+  ]
+}

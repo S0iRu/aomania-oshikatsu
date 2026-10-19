@@ -1,0 +1,33 @@
+{
+  "displayName": "小柳ロウ",
+  "pageTitle": "小柳ロウ 配信スケジュール",
+  "timezone": "Asia/Tokyo",
+  "aliases": ["小柳", "ロウ", "Koyanagi"],
+  "ownChannel": {
+    "id": "UC6WFKwYptsxVue56Lx218vg",
+    "title": "小柳ロウ / Koyanagi Rou【にじさんじ】",
+    "shortName": "小柳ロウ",
+    "url": "https://www.youtube.com/@KoyanagiRou"
+  },
+  "channels": [
+    {
+      "id": "UCX7YkU9nEeaoZbkVLVajcMg",
+      "title": "にじさんじ",
+      "shortName": "にじさんじ",
+      "url": "https://www.youtube.com/@nijisanji",
+      "official": true,
+      "alsoInclude": ["MECHATU-A", "めちゃつえ", "MECHATUA"]
+    }
+  ],
+  "games": [
+    { "label": "OW", "patterns": ["オーバーウォッチ", "Overwatch", "OW"] },
+    { "label": "APEX", "patterns": ["エーペックス", "Apex", "APEX"] },
+    { "label": "スプラ", "patterns": ["スプラトゥーン", "Splatoon", "スプラ"] },
+    { "label": "VALORANT", "patterns": ["ヴァロラント", "VALORANT", "VALO"] },
+    { "label": "PUBG", "patterns": ["PUBG"] },
+    { "label": "MADTOWN", "patterns": ["MADTOWN", "マッドタウン"] },
+    { "label": "スト6", "patterns": ["スト6", "ストリートファイター"] },
+    { "label": "原神", "patterns": ["原神"] },
+    { "label": "VCR", "patterns": ["VCR"] }
+  ]
+}

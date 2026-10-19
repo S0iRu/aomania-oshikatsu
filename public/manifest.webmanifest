@@ -1,0 +1,18 @@
+{
+  "name": "小柳ロウ 配信スケジュール",
+  "short_name": "配信スケジュール",
+  "start_url": "/aomania-oshikatsu/",
+  "scope": "/aomania-oshikatsu/",
+  "display": "standalone",
+  "background_color": "#d7e2ee",
+  "theme_color": "#d7e2ee",
+  "lang": "ja",
+  "icons": [
+    {
+      "src": "favicon.svg",
+      "sizes": "any",
+      "type": "image/svg+xml",
+      "purpose": "any"
+    }
+  ]
+}

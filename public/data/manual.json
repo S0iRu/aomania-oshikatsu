@@ -1,0 +1,17 @@
+{
+  "deadlines": [
+    {
+      "id": "deadline-goods",
+      "title": "ライブ追加グッズ受注販売",
+      "at": "2026-10-25T23:59:00+09:00"
+    },
+    {
+      "id": "deadline-ufu",
+      "title": "にじUFU",
+      "at": "2026-11-06T23:59:00+09:00"
+    }
+  ],
+  "hiddenIds": [],
+  "thumbnailOverrides": {},
+  "extraStreams": []
+}
