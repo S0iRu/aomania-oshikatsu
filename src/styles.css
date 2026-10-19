@@ -47,25 +47,33 @@ h1 span { white-space: nowrap; }
   min-width: 36px;
   height: 32px;
 }
-.segment button.on, .today {
+.segment button.on {
   background: #6d86a8;
   color: white;
 }
 .segment button { padding: 0 12px; }
 
+.date-block { margin-top: 12px; }
 .datebar {
   display: flex;
   flex-wrap: wrap;
   align-items: center;
   gap: 6px;
-  margin-top: 12px;
+}
+.fetch-row {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  margin-top: 8px;
 }
 .fetch-btn {
   border: 0;
   border-radius: 999px;
-  padding: 6px 12px;
-  background: white;
+  padding: 8px 16px;
+  background: #4d6484;
+  color: white;
 }
+.fetch-btn:disabled { opacity: 0.6; }
 .fetch-label { font-size: 13px; color: #4f6790; }
 .fetch-label.failed { color: #a33d4a; }
 .date-label {
@@ -75,7 +83,11 @@ h1 span { white-space: nowrap; }
 }
 .date-label small { display: block; color: #7e8c9b; font-size: 11px; }
 .date-label strong { font-size: 16px; }
-.today { padding: 0 12px; }
+.datebar > button.today {
+  padding: 0 12px;
+  background: white;
+  color: #2c3a4a;
+}
 
 .chips {
   display: flex;

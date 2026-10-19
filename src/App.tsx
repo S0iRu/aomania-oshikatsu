@@ -332,28 +332,32 @@ function DateBar({
   const { y, m } = parseKey(mode === 'week' ? weekStart : cursor)
   const label = mode === 'week' ? `${parseKey(weekStart).m}/${parseKey(weekStart).d} - ${parseKey(weekEnd).m}/${parseKey(weekEnd).d}` : `${m}月`
   return (
-    <div className="datebar">
-      <button onClick={onPrev} aria-label="前へ">
-        ‹
-      </button>
-      <button className="date-label" onClick={onOpenYear}>
-        <small>{y}年</small>
-        <strong>
-          {label} <span>▾</span>
-        </strong>
-      </button>
-      <button className="today" onClick={onToday}>
-        今日
-      </button>
-      <button onClick={onNext} aria-label="次へ">
-        ›
-      </button>
-      <button className="fetch-btn" onClick={onFetch} disabled={fetchLabel === 'running'}>
-        手動取得
-      </button>
-      {fetchLabel === 'running' && <span className="fetch-label">取得中</span>}
-      {fetchLabel === 'done' && <span className="fetch-label">取得完了</span>}
-      {fetchLabel === 'failed' && <span className="fetch-label failed">取得に失敗しました</span>}
+    <div className="date-block">
+      <div className="datebar">
+        <button onClick={onPrev} aria-label="前へ">
+          ‹
+        </button>
+        <button className="date-label" onClick={onOpenYear}>
+          <small>{y}年</small>
+          <strong>
+            {label} <span>▾</span>
+          </strong>
+        </button>
+        <button className="today" onClick={onToday}>
+          今日
+        </button>
+        <button onClick={onNext} aria-label="次へ">
+          ›
+        </button>
+      </div>
+      <div className="fetch-row">
+        <button className="fetch-btn" onClick={onFetch} disabled={fetchLabel === 'running'}>
+          手動取得
+        </button>
+        {fetchLabel === 'running' && <span className="fetch-label">取得中</span>}
+        {fetchLabel === 'done' && <span className="fetch-label">取得完了</span>}
+        {fetchLabel === 'failed' && <span className="fetch-label failed">取得に失敗しました</span>}
+      </div>
     </div>
   )
 }
