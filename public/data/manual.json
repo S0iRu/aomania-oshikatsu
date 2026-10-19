@@ -2,5 +2,8 @@
   "deadlines": [],
   "hiddenIds": [],
   "thumbnailOverrides": {},
-  "extraStreams": []
+  "extraStreams": [],
+  "theme": "pink",
+  "customColor": "#8eabc4",
+  "presets": []
 }
