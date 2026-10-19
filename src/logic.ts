@@ -314,23 +314,6 @@ export function emptyManual(): ManualFile {
   return { deadlines: [], hiddenIds: [], thumbnailOverrides: {}, extraStreams: [] }
 }
 
-export function mergeManual(base: ManualFile, extra: ManualFile): ManualFile {
-  const deadlines = [...base.deadlines]
-  for (const item of extra.deadlines) {
-    if (!deadlines.some((d) => d.id === item.id)) deadlines.push(item)
-  }
-  const extraStreams = [...base.extraStreams]
-  for (const item of extra.extraStreams) {
-    if (!extraStreams.some((d) => d.id === item.id)) extraStreams.push(item)
-  }
-  return {
-    deadlines,
-    hiddenIds: [...new Set([...base.hiddenIds, ...extra.hiddenIds])],
-    thumbnailOverrides: { ...base.thumbnailOverrides, ...extra.thumbnailOverrides },
-    extraStreams,
-  }
-}
-
 export function applyManual(streams: Stream[], manual: ManualFile): Stream[] {
   const hidden = new Set(manual.hiddenIds)
   const merged = [...streams, ...manual.extraStreams]
@@ -341,26 +324,4 @@ export function applyManual(streams: Stream[], manual: ManualFile): Stream[] {
     byId.set(stream.id, thumb ? { ...stream, thumbnail: thumb } : stream)
   }
   return [...byId.values()]
-}
-
-const STORAGE_KEY = 'koyanagi-schedule-manual-v1'
-
-export function loadLocalManual(): ManualFile {
-  try {
-    const raw = localStorage.getItem(STORAGE_KEY)
-    if (!raw) return emptyManual()
-    const parsed = JSON.parse(raw) as Partial<ManualFile>
-    return {
-      deadlines: parsed.deadlines ?? [],
-      hiddenIds: parsed.hiddenIds ?? [],
-      thumbnailOverrides: parsed.thumbnailOverrides ?? {},
-      extraStreams: parsed.extraStreams ?? [],
-    }
-  } catch {
-    return emptyManual()
-  }
-}
-
-export function saveLocalManual(manual: ManualFile): void {
-  localStorage.setItem(STORAGE_KEY, JSON.stringify(manual))
 }

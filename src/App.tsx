@@ -18,14 +18,11 @@ import {
   formatHm,
   formatHours,
   gameHours,
-  loadLocalManual,
-  mergeManual,
   monthCells,
   parseKey,
   partnersOf,
   passesLegend,
   periodHours,
-  saveLocalManual,
   shiftMonth,
   shortTitle,
   slicesOf,
@@ -38,6 +35,7 @@ import {
   weekdayLabel,
   weekdayOf,
 } from './logic'
+import { clearToken, fetchRemoteManual, loadToken, normalizeManual, saveToken, writeManual } from './github'
 
 const AXIS_START = 60
 const AXIS_END = 24 * 60
@@ -75,9 +73,11 @@ function layout(slices: ReturnType<typeof slicesOf>) {
 
 function App() {
   const [streams, setStreams] = useState<Stream[]>([])
-  const [fileManual, setFileManual] = useState<ManualFile>(emptyManual())
-  const [localManual, setLocalManual] = useState<ManualFile>(loadLocalManual)
+  const [manual, setManual] = useState<ManualFile>(emptyManual())
   const [ready, setReady] = useState(false)
+  const [saving, setSaving] = useState(false)
+  const [notice, setNotice] = useState<string | null>(null)
+  const [pendingManual, setPendingManual] = useState<ManualFile | null>(null)
   const [mode, setMode] = useState<'week' | 'month' | 'game'>('week')
   const [cursor, setCursor] = useState(todayKey)
   const [game, setGame] = useState<string | null>(null)
@@ -92,16 +92,19 @@ function App() {
     const base = import.meta.env.BASE_URL
     Promise.all([
       fetch(`${base}data/streams.json`, { cache: 'no-store' }).then((res) => res.json()),
-      fetch(`${base}data/manual.json`, { cache: 'no-store' }).then((res) => res.json()),
+      fetchRemoteManual().catch(() =>
+        fetch(`${base}data/manual.json`, { cache: 'no-store' })
+          .then((res) => res.json())
+          .then((value) => normalizeManual(value)),
+      ),
     ])
-      .then(([streamFile, manual]: [StreamFile, ManualFile]) => {
+      .then(([streamFile, loaded]: [StreamFile, ManualFile]) => {
         setStreams(streamFile.streams ?? [])
-        setFileManual({ ...emptyManual(), ...manual })
+        setManual(normalizeManual(loaded))
       })
       .finally(() => setReady(true))
   }, [])
 
-  const manual = useMemo(() => mergeManual(fileManual, localManual), [fileManual, localManual])
   const listed = useMemo(() => applyManual(streams, manual), [streams, manual])
   const visible = useMemo(
     () => listed.filter((stream) => passesLegend(stream, legend)),
@@ -110,9 +113,35 @@ function App() {
   const selected = listed.find((stream) => stream.id === selectedId) ?? null
   const today = todayKey()
 
-  function updateLocal(next: ManualFile) {
-    setLocalManual(next)
-    saveLocalManual(next)
+  async function persist(next: ManualFile, token: string): Promise<boolean> {
+    setSaving(true)
+    setNotice(null)
+    try {
+      await writeManual(next, token)
+      setManual(next)
+      setPendingManual(null)
+      return true
+    } catch (error) {
+      const message = error instanceof Error ? error.message : '保存に失敗しました'
+      if (message === 'トークンが無効です') {
+        clearToken()
+        setPendingManual(next)
+      }
+      setNotice(message)
+      return false
+    } finally {
+      setSaving(false)
+    }
+  }
+
+  async function commitManual(next: ManualFile): Promise<boolean> {
+    const token = loadToken()
+    if (!token) {
+      setNotice(null)
+      setPendingManual(next)
+      return false
+    }
+    return persist(next, token)
   }
 
   function openGame(name: string) {
@@ -158,14 +187,34 @@ function App() {
         ) : (
           <>
             <Stats cursor={cursor} mode={mode} streams={visible} onGame={openGame} />
-            <DeadlineList items={upcomingDeadlines} today={today} />
+            <DeadlineList
+              items={upcomingDeadlines}
+              today={today}
+              saving={saving}
+              notice={notice}
+              onAdd={() => setAddOpen(true)}
+              onDelete={(id) =>
+                void commitManual({ ...manual, deadlines: manual.deadlines.filter((item) => item.id !== id) })
+              }
+            />
             <Legend enabled={legend} onToggle={(name) => setLegend({ ...legend, [name]: !legend[name] })} />
           </>
         )}
       </aside>
       <main className="stage">
         <MobileStats cursor={cursor} mode={mode === 'game' ? 'month' : mode} streams={visible} onGame={openGame} />
-        {mode !== 'game' && <DeadlineBanner item={upcomingDeadlines[0]} today={today} />}
+        {mode !== 'game' && (
+          <DeadlineBanner
+            item={upcomingDeadlines[0]}
+            today={today}
+            saving={saving}
+            notice={notice}
+            onAdd={() => setAddOpen(true)}
+            onDelete={(id) =>
+              void commitManual({ ...manual, deadlines: manual.deadlines.filter((item) => item.id !== id) })
+            }
+          />
+        )}
         <section className="board">
           <div className="binder" aria-hidden="true" />
           {mode === 'week' && <WeekView cursor={cursor} streams={visible} onOpen={setSelectedId} />}
@@ -184,9 +233,6 @@ function App() {
           )}
         </section>
       </main>
-      <button className="add-btn" onClick={() => setAddOpen(true)}>
-        追加
-      </button>
       {yearOpen && (
         <YearPicker
           cursor={cursor}
@@ -204,16 +250,37 @@ function App() {
           partners={partnersOf(selected, listed)}
           onClose={() => setSelectedId(null)}
           onExclude={(id) => {
-            updateLocal({ ...localManual, hiddenIds: [...localManual.hiddenIds, id] })
-            if (id === selected.id) setSelectedId(null)
+            void commitManual({ ...manual, hiddenIds: [...manual.hiddenIds, id] }).then((saved) => {
+              if (saved && id === selected.id) setSelectedId(null)
+            })
           }}
         />
       )}
       {addOpen && (
         <AddDialog
+          notice={notice}
+          saving={saving}
           onClose={() => setAddOpen(false)}
-          onDeadline={(item) => updateLocal({ ...localManual, deadlines: [...localManual.deadlines, item] })}
-          onStream={(item) => updateLocal({ ...localManual, extraStreams: [...localManual.extraStreams, item] })}
+          onDeadline={async (item) => {
+            const saved = await commitManual({ ...manual, deadlines: [...manual.deadlines, item] })
+            if (saved || !loadToken()) setAddOpen(false)
+          }}
+          onStream={async (item) => {
+            const saved = await commitManual({ ...manual, extraStreams: [...manual.extraStreams, item] })
+            if (saved || !loadToken()) setAddOpen(false)
+          }}
+        />
+      )}
+      {pendingManual && (
+        <TokenDialog
+          notice={notice}
+          saving={saving}
+          onClose={() => setPendingManual(null)}
+          onSubmit={async (token) => {
+            saveToken(token)
+            const saved = await persist(pendingManual, token)
+            if (saved) setAddOpen(false)
+          }}
         />
       )}
       {!ready && <p className="loading">読み込み中</p>}
@@ -332,28 +399,72 @@ function MobileStats({
   )
 }
 
-function DeadlineList({ items, today }: { items: Deadline[]; today: string }) {
-  if (items.length === 0) return null
+function DeadlineList({
+  items,
+  today,
+  saving,
+  notice,
+  onAdd,
+  onDelete,
+}: {
+  items: Deadline[]
+  today: string
+  saving: boolean
+  notice: string | null
+  onAdd: () => void
+  onDelete: (id: string) => void
+}) {
   return (
     <section className="deadlines">
       <h2>締切が近いもの</h2>
       {items.map((item) => (
-        <DeadlineCard key={item.id} item={item} today={today} />
+        <DeadlineCard key={item.id} item={item} today={today} saving={saving} onDelete={() => onDelete(item.id)} />
       ))}
+      <button className="add-btn" onClick={onAdd} disabled={saving}>
+        追加
+      </button>
+      {notice && <p className="notice">{notice}</p>}
     </section>
   )
 }
 
-function DeadlineBanner({ item, today }: { item?: Deadline; today: string }) {
-  if (!item) return null
+function DeadlineBanner({
+  item,
+  today,
+  saving,
+  notice,
+  onAdd,
+  onDelete,
+}: {
+  item?: Deadline
+  today: string
+  saving: boolean
+  notice: string | null
+  onAdd: () => void
+  onDelete: (id: string) => void
+}) {
   return (
     <div className="deadline-banner">
-      <DeadlineCard item={item} today={today} />
+      {item && <DeadlineCard item={item} today={today} saving={saving} onDelete={() => onDelete(item.id)} />}
+      <button className="add-btn" onClick={onAdd} disabled={saving}>
+        追加
+      </button>
+      {notice && <p className="notice">{notice}</p>}
     </div>
   )
 }
 
-function DeadlineCard({ item, today }: { item: Deadline; today: string }) {
+function DeadlineCard({
+  item,
+  today,
+  saving,
+  onDelete,
+}: {
+  item: Deadline
+  today: string
+  saving: boolean
+  onDelete: () => void
+}) {
   const left = daysUntil(item.at, today)
   const wall = parseKey(item.at.slice(0, 10))
   const time = item.at.slice(11, 16)
@@ -366,6 +477,9 @@ function DeadlineCard({ item, today }: { item: Deadline; today: string }) {
           {wall.m}/{wall.d}（{weekdayLabel(weekdayOf(item.at.slice(0, 10)))}） {time}
         </small>
       </div>
+      <button className="delete-memo" onClick={onDelete} disabled={saving}>
+        削除
+      </button>
     </article>
   )
 }
@@ -733,13 +847,17 @@ function AddDialog({
   onClose,
   onDeadline,
   onStream,
+  notice,
+  saving,
 }: {
   onClose: () => void
-  onDeadline: (item: Deadline) => void
-  onStream: (item: Stream) => void
+  onDeadline: (item: Deadline) => Promise<void>
+  onStream: (item: Stream) => Promise<void>
+  notice: string | null
+  saving: boolean
 }) {
   const [kind, setKind] = useState<'deadline' | 'stream'>('deadline')
-  function onSubmit(event: FormEvent<HTMLFormElement>) {
+  async function onSubmit(event: FormEvent<HTMLFormElement>) {
     event.preventDefault()
     const data = new FormData(event.currentTarget)
     const title = String(data.get('title') || '').trim()
@@ -747,7 +865,7 @@ function AddDialog({
     if (kind === 'deadline') {
       const at = String(data.get('at') || '')
       if (!at) return
-      onDeadline({ id: `local-${Date.now()}`, title, at: `${at}:00+09:00` })
+      await onDeadline({ id: `memo-${Date.now()}`, title, at: `${at}:00+09:00` })
     } else {
       const start = String(data.get('start') || '')
       const end = String(data.get('end') || '')
@@ -758,8 +876,8 @@ function AddDialog({
       const shortName = String(data.get('channel') || '手動追加').trim()
       const url = String(data.get('url') || '').trim()
       const thumbnail = String(data.get('thumbnail') || '').trim()
-      onStream({
-        id: `local-${Date.now()}`,
+      await onStream({
+        id: `memo-${Date.now()}`,
         title,
         url: url || undefined,
         thumbnail: thumbnail || undefined,
@@ -775,7 +893,6 @@ function AddDialog({
         isOwn: false,
       })
     }
-    onClose()
   }
   return (
     <div className="scrim" onClick={onClose}>
@@ -826,8 +943,43 @@ function AddDialog({
             </label>
           </>
         )}
-        <button className="open" type="submit">
+        {notice && <p className="notice">{notice}</p>}
+        <button className="open" type="submit" disabled={saving}>
           追加する
+        </button>
+      </form>
+    </div>
+  )
+}
+
+function TokenDialog({
+  notice,
+  saving,
+  onClose,
+  onSubmit,
+}: {
+  notice: string | null
+  saving: boolean
+  onClose: () => void
+  onSubmit: (token: string) => Promise<void>
+}) {
+  function submit(event: FormEvent<HTMLFormElement>) {
+    event.preventDefault()
+    const token = String(new FormData(event.currentTarget).get('token') || '').trim()
+    if (!token) return
+    void onSubmit(token)
+  }
+  return (
+    <div className="scrim" onClick={onClose}>
+      <form className="paper add" onClick={(event) => event.stopPropagation()} onSubmit={submit}>
+        <p>このブラウザだけがメモを保存できます。リポジトリへ書き込むトークンを入れてください。</p>
+        <label>
+          トークン
+          <input name="token" type="password" required autoComplete="off" />
+        </label>
+        {notice && <p className="notice">{notice}</p>}
+        <button className="open" type="submit" disabled={saving}>
+          保存する
         </button>
       </form>
     </div>
