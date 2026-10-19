@@ -1,13 +1,9 @@
-# 小柳ロウ 配信スケジュール
+# 専用ツール
 
-YouTube の配信枠を 30 分ごとに取得し、週・月のカレンダーで見る静的サイトです。
-
-## 公開
-
-GitHub の Settings → Pages で、Build and deployment の Source を GitHub Actions にします。公開先は `https://<ユーザー名>.github.io/aomania-oshikatsu/` です。
+YouTube の配信枠を 30 分ごとに取得し、週・月のカレンダーで見る静的サイト
 
 ## 配信の自動取得
 
-リポジトリの Secrets に `YOUTUBE_API_KEY` を追加します。値は Google Cloud で作った YouTube Data API v3 の API キーです。
+Google Cloud ： YouTube Data API v3 の API キー
 
-キーを入れたあと、Actions の `fetch` を手動実行すると取得が始まります。取得結果はサイトへ公開されます。以降は 30 分ごとに動きます。
+30 分ごと
