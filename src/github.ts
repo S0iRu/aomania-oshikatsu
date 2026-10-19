@@ -17,6 +17,13 @@ export function normalizeManual(value: Partial<ManualFile> | null | undefined): 
   }
 }
 
+function encodeBase64(text: string): string {
+  const bytes = new TextEncoder().encode(text)
+  let binary = ''
+  for (const byte of bytes) binary += String.fromCharCode(byte)
+  return btoa(binary)
+}
+
 function decodeBase64(content: string): string {
   const binary = atob(content.replace(/\n/g, ''))
   const bytes = Uint8Array.from(binary, (char) => char.charCodeAt(0))
@@ -35,26 +42,26 @@ export async function fetchRemoteManual(): Promise<ManualFile> {
 
 export async function writeManual(manual: ManualFile): Promise<void> {
   const token = import.meta.env.VITE_MEMO_TOKEN
-  if (!token) throw new Error('保存に失敗しました')
-  const expected = JSON.stringify(normalizeManual(manual))
-  const response = await fetch(`https://api.github.com/repos/${REPO}/dispatches`, {
-    method: 'POST',
-    headers: {
-      Accept: 'application/vnd.github+json',
-      Authorization: `Bearer ${token}`,
-      'Content-Type': 'application/json',
-    },
-    body: JSON.stringify({ event_type: 'save-memo', client_payload: { manual: normalizeManual(manual) } }),
-  })
-  if (!response.ok) throw new Error('保存に失敗しました')
-  for (let attempt = 0; attempt < 20; attempt += 1) {
-    await new Promise((resolve) => setTimeout(resolve, 2000))
-    try {
-      const current = await fetchRemoteManual()
-      if (JSON.stringify(current) === expected) return
-    } catch {
-      // 反映を待つ
-    }
+  if (!token) throw new Error('サイトに保存の設定がまだ入っていません。Actions の pages を再実行してください')
+  const headers = {
+    Accept: 'application/vnd.github+json',
+    Authorization: `Bearer ${token}`,
   }
-  throw new Error('保存に失敗しました')
+  const current = await fetch(`https://api.github.com/repos/${REPO}/contents/${PATH}?ref=${BRANCH}`, {
+    headers,
+    cache: 'no-store',
+  })
+  if (!current.ok) throw new Error(`保存に失敗しました (${current.status})`)
+  const meta = (await current.json()) as { sha?: string }
+  const response = await fetch(`https://api.github.com/repos/${REPO}/contents/${PATH}`, {
+    method: 'PUT',
+    headers: { ...headers, 'Content-Type': 'application/json' },
+    body: JSON.stringify({
+      message: 'メモを更新',
+      content: encodeBase64(`${JSON.stringify(normalizeManual(manual), null, 2)}\n`),
+      sha: meta.sha,
+      branch: BRANCH,
+    }),
+  })
+  if (!response.ok) throw new Error(`保存に失敗しました (${response.status})`)
 }
