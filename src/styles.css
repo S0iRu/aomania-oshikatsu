@@ -26,7 +26,7 @@ h1, h2, h3, p { margin: 0; }
 }
 .week, .month, .game-list, .stat, .games button, .more, .paper, .detail, .year-card, .add,
 .datebar > button.today, .theme-actions button, .theme-color, .delete-memo,
-.chips span, .chips button, .game-menu button, .legend button, .year-grid button, .partners button {
+.chips span, .chips button, .game-menu button, .year-grid button, .partners button {
   color: #2c3a4a;
 }
 .year-grid button.on, .fetch-btn, .add-btn, .open {
@@ -163,9 +163,8 @@ h1 span { white-space: nowrap; }
 }
 .stats { display: none; }
 .deadlines { display: none; }
-.legend { display: none; }
 .game-menu { margin-top: 16px; }
-.game-menu h2, .deadlines h2, .legend h2 {
+.game-menu h2, .deadlines h2 {
   font-size: 13px;
   color: #66788a;
   margin-bottom: 8px;
@@ -486,24 +485,6 @@ h1 span { white-space: nowrap; }
   padding: 4px 10px;
 }
 
-.legend div { display: flex; flex-wrap: wrap; gap: 6px; }
-.legend button {
-  border: 0;
-  background: white;
-  border-radius: 999px;
-  padding: 4px 8px;
-  display: inline-flex;
-  gap: 5px;
-  align-items: center;
-}
-.legend button.off { opacity: 0.4; }
-.dot { width: 8px; height: 8px; border-radius: 50%; display: inline-block; }
-.dot.ポスト { background: #9aa6b2; }
-.dot.配信告知 { background: #e2c15a; }
-.dot.コラボ { background: #8b7cc9; }
-.dot.配信予定 { background: #6aa0e0; }
-.dot.雑談 { background: #7dbb8a; }
-
 .theme-box.for-narrow { display: none; }
 @media (max-width: 959px) {
   .theme-box.for-wide { display: none; }
@@ -557,7 +538,7 @@ h1 span { white-space: nowrap; }
     padding: 28px 24px 40px;
   }
   .chips, .deadline-banner { display: none; }
-  .stats, .deadlines, .legend { display: block; }
+  .stats, .deadlines { display: block; }
   .stats {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
@@ -597,11 +578,6 @@ h1 span { white-space: nowrap; }
     background: transparent;
     background-image: none;
     padding: 6px 2px;
-  }
-  .legend { margin-top: 14px; }
-  .legend button {
-    background: white;
-    color: #2c3a4a;
   }
   .cell { min-height: 108px; }
   .mosaic { height: 72px; }

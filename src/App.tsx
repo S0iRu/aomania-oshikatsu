@@ -1,7 +1,6 @@
 import { FormEvent, useEffect, useMemo, useRef, useState } from 'react'
 import {
   Deadline,
-  LEGEND,
   ManualFile,
   Stream,
   StreamFile,
@@ -21,7 +20,6 @@ import {
   monthCells,
   parseKey,
   partnersOf,
-  passesLegend,
   periodHours,
   shiftMonth,
   shortTitle,
@@ -87,9 +85,6 @@ function App() {
   const [yearOpen, setYearOpen] = useState(false)
   const [selectedId, setSelectedId] = useState<string | null>(null)
   const [addOpen, setAddOpen] = useState(false)
-  const [legend, setLegend] = useState<Record<string, boolean>>(() =>
-    Object.fromEntries(LEGEND.map((name) => [name, true])),
-  )
   const [draftColor, setDraftColor] = useState<string | null>(null)
 
   useEffect(() => {
@@ -114,10 +109,6 @@ function App() {
   }, [])
 
   const listed = useMemo(() => applyManual(streams, manual), [streams, manual])
-  const visible = useMemo(
-    () => listed.filter((stream) => passesLegend(stream, legend)),
-    [listed, legend],
-  )
   const selected = listed.find((stream) => stream.id === selectedId) ?? null
   const today = todayKey()
 
@@ -218,13 +209,13 @@ function App() {
         {mode === 'game' ? (
           <GameMenu
             year={parseKey(cursor).y}
-            streams={visible}
+            streams={listed}
             selected={game}
             onSelect={setGame}
           />
         ) : (
           <>
-            <Stats cursor={cursor} mode={mode} streams={visible} onGame={openGame} />
+            <Stats cursor={cursor} mode={mode} streams={listed} onGame={openGame} />
             <DeadlineList
               items={upcomingDeadlines}
               today={today}
@@ -235,7 +226,6 @@ function App() {
                 void commitManual({ ...manual, deadlines: manual.deadlines.filter((item) => item.id !== id) })
               }
             />
-            <Legend enabled={legend} onToggle={(name) => setLegend({ ...legend, [name]: !legend[name] })} />
             <ThemePicker
               className="theme-box for-wide"
               manual={manual}
@@ -252,7 +242,7 @@ function App() {
         )}
       </aside>
       <main className="stage">
-        <MobileStats cursor={cursor} mode={mode === 'game' ? 'month' : mode} streams={visible} onGame={openGame} />
+        <MobileStats cursor={cursor} mode={mode === 'game' ? 'month' : mode} streams={listed} onGame={openGame} />
         {mode !== 'game' && (
           <DeadlineBanner
             item={upcomingDeadlines[0]}
@@ -267,15 +257,15 @@ function App() {
         )}
         <section className="board">
           <div className="binder" aria-hidden="true" />
-          {mode === 'week' && <WeekView cursor={cursor} streams={visible} onOpen={setSelectedId} />}
+          {mode === 'week' && <WeekView cursor={cursor} streams={listed} onOpen={setSelectedId} />}
           {mode === 'month' && (
-            <MonthView cursor={cursor} streams={visible} deadlines={deadlines} onOpen={setSelectedId} />
+            <MonthView cursor={cursor} streams={listed} deadlines={deadlines} onOpen={setSelectedId} />
           )}
           {mode === 'game' && (
             <GameList
               cursor={cursor}
               game={game}
-              streams={visible}
+              streams={listed}
               onPrev={() => setCursor(shiftMonth(cursor, -1))}
               onNext={() => setCursor(shiftMonth(cursor, 1))}
               onOpen={setSelectedId}
@@ -300,7 +290,7 @@ function App() {
       {yearOpen && (
         <YearPicker
           cursor={cursor}
-          streams={visible}
+          streams={listed}
           onClose={() => setYearOpen(false)}
           onPick={(key) => {
             setCursor(key)
@@ -676,22 +666,6 @@ function ThemePicker({
           </div>
         </div>
       )}
-    </section>
-  )
-}
-
-function Legend({ enabled, onToggle }: { enabled: Record<string, boolean>; onToggle: (name: string) => void }) {
-  return (
-    <section className="legend">
-      <h2>凡例</h2>
-      <div>
-        {LEGEND.map((name) => (
-          <button key={name} className={enabled[name] ? 'on' : 'off'} onClick={() => onToggle(name)}>
-            <i className={`dot ${name}`} />
-            {name}
-          </button>
-        ))}
-      </div>
     </section>
   )
 }

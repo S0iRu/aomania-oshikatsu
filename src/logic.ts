@@ -42,10 +42,6 @@ export type StreamFile = {
   streams: Stream[]
 }
 
-export const LEGEND = ['ポスト', '配信告知', 'コラボ', '配信予定', '雑談'] as const
-
-export type LegendKey = (typeof LEGEND)[number]
-
 export const TZ_MS = 9 * 60 * 60 * 1000
 const WEEKDAYS = ['日', '月', '火', '水', '木', '金', '土']
 
@@ -210,10 +206,6 @@ export function unionMinutes(ranges: [number, number][]): number {
     }
   }
   return total + (started ? curE - curS : 0)
-}
-
-export function passesLegend(stream: Stream, enabled: Record<string, boolean>): boolean {
-  return stream.tags.every((tag) => enabled[tag] !== false)
 }
 
 export function overlaps(a: Stream, b: Stream): boolean {
