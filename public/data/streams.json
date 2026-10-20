@@ -1,7 +1,7 @@
 {
   "backfillComplete": true,
   "resume": {
-    "UC6WFKwYptsxVue56Lx218vg": "EAAaHlBUOkNHUWlFRGM0TmpKR09ERkJSREV4TjBVNFJEQQ",
+    "UC6WFKwYptsxVue56Lx218vg": "EAAaHlBUOkNHUWlFREl3TjBNeVF6VXpSVVk0TWtWQ05qQQ",
     "UCX7YkU9nEeaoZbkVLVajcMg": "EAAaHlBUOkNHUWlFREpHTVRaRFJqSTFRMFF4TWpjek5qYw"
   },
   "scanned": {
@@ -17154,6 +17154,24 @@
       "end": "2026-10-19T15:54:14Z",
       "durationSec": 17251,
       "status": "past",
+      "games": [
+        "OW"
+      ],
+      "tags": [],
+      "isOwn": true
+    },
+    {
+      "id": "TMMKr9FaVuY",
+      "videoId": "TMMKr9FaVuY",
+      "url": "https://www.youtube.com/watch?v=TMMKr9FaVuY",
+      "title": "【OW】にじOW自主練【小柳ロウ/にじさんじ】",
+      "thumbnail": "https://i.ytimg.com/vi/TMMKr9FaVuY/mqdefault_live.jpg",
+      "channelId": "UC6WFKwYptsxVue56Lx218vg",
+      "channelTitle": "小柳ロウ / Koyanagi Rou【にじさんじ】",
+      "shortName": "小柳ロウ",
+      "start": "2026-10-20T11:00:00Z",
+      "durationSec": 0,
+      "status": "upcoming",
       "games": [
         "OW"
       ],
