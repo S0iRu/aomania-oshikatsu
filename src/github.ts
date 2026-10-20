@@ -46,7 +46,7 @@ export async function fetchRemoteManual(): Promise<ManualFile> {
   return normalizeManual(JSON.parse(decodeBase64(data.content)) as Partial<ManualFile>)
 }
 
-export async function writeManual(manual: ManualFile): Promise<void> {
+export async function writeManual(manual: ManualFile, message = 'メモを更新'): Promise<void> {
   const token = import.meta.env.VITE_MEMO_TOKEN
   if (!token) throw new Error('サイトに保存の設定がまだ入っていません。Actions の pages を再実行してください')
   const headers = {
@@ -63,7 +63,7 @@ export async function writeManual(manual: ManualFile): Promise<void> {
     method: 'PUT',
     headers: { ...headers, 'Content-Type': 'application/json' },
     body: JSON.stringify({
-      message: 'メモを更新',
+      message,
       content: encodeBase64(`${JSON.stringify(normalizeManual(manual), null, 2)}\n`),
       sha: meta.sha,
       branch: BRANCH,

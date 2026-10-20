@@ -121,11 +121,11 @@ function App() {
   const selected = listed.find((stream) => stream.id === selectedId) ?? null
   const today = todayKey()
 
-  async function commitManual(next: ManualFile): Promise<boolean> {
+  async function commitManual(next: ManualFile, message = 'メモを更新'): Promise<boolean> {
     setSaving(true)
     setNotice(null)
     try {
-      await writeManual(next)
+      await writeManual(next, message)
       setManual(normalizeManual(next))
       return true
     } catch (error) {
@@ -243,7 +243,7 @@ function App() {
               saving={saving}
               onDraft={setDraftColor}
               onCommit={async (next) => {
-                const saved = await commitManual(next)
+                const saved = await commitManual(next, '色変更')
                 setDraftColor(null)
                 return saved
               }}
@@ -291,7 +291,7 @@ function App() {
           saving={saving}
           onDraft={setDraftColor}
           onCommit={async (next) => {
-            const saved = await commitManual(next)
+            const saved = await commitManual(next, '色変更')
             setDraftColor(null)
             return saved
           }}
