@@ -366,7 +366,8 @@ h1 span { white-space: nowrap; }
 .month-head, .month-grid { display: grid; grid-template-columns: repeat(7, minmax(0, 1fr)); }
 .month-head { padding: 18px 0 6px; text-align: center; color: #607286; font-size: 13px; }
 .month-grid {
-  height: var(--cal-span);
+  /* week card also includes a taller header and the 12px gap under the time grid */
+  height: calc(var(--cal-span) + 56px);
   grid-auto-rows: minmax(0, 1fr);
 }
 .cell {
