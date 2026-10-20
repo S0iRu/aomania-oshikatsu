@@ -26,7 +26,7 @@ h1, h2, h3, p { margin: 0; }
 }
 .week, .month, .game-list, .stat, .games button, .more, .paper, .detail, .year-card, .add,
 .datebar > button.today, .theme-actions button, .theme-color, .delete-memo,
-.chips span, .chips button, .game-menu button, .year-grid button, .partners button {
+.chips span, .chips button, .game-menu button, .year-grid button, .partners button, .live-card {
   color: #2c3a4a;
 }
 .year-grid button.on, .fetch-btn, .add-btn, .open {
@@ -246,6 +246,61 @@ h1 span { white-space: nowrap; }
   white-space: nowrap;
 }
 .notice { color: #a33d4a; font-size: 13px; }
+
+.live-now {
+  margin-top: 14px;
+  border-radius: 16px;
+  padding: 12px;
+}
+.live-now h2 {
+  font-size: 13px;
+  color: #8b97a6;
+  letter-spacing: 0.08em;
+  margin-bottom: 8px;
+}
+.live-now h2 span {
+  color: #d4537a;
+  font-weight: 700;
+  letter-spacing: 0.14em;
+  margin-right: 8px;
+}
+.live-row { display: flex; flex-wrap: wrap; gap: 10px; }
+.live-card {
+  position: relative;
+  width: 168px;
+  border: 0;
+  background: white;
+  border-radius: 12px;
+  padding: 8px 8px 10px;
+  text-align: left;
+  box-shadow: 0 1px 0 rgba(70, 90, 110, 0.06);
+}
+.live-thumb {
+  display: block;
+  height: 96px;
+  border-radius: 8px;
+  background: #31465f center/cover no-repeat;
+}
+.live-pill {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  margin: -14px 0 0 6px;
+  position: relative;
+  background: #7f97c4;
+  color: white;
+  border-radius: 999px;
+  padding: 2px 8px;
+  font-size: 12px;
+  line-height: 1.4;
+}
+.live-pill b { font-weight: 700; }
+.live-title {
+  display: block;
+  margin-top: 6px;
+  font-size: 13px;
+  line-height: 1.35;
+}
 
 .week-head, .week-body {
   display: grid;
@@ -485,10 +540,11 @@ h1 span { white-space: nowrap; }
   padding: 4px 10px;
 }
 
-.theme-box.for-narrow { display: none; }
+.theme-box.for-narrow, .live-now.for-narrow { display: none; }
 @media (max-width: 959px) {
-  .theme-box.for-wide { display: none; }
+  .theme-box.for-wide, .live-now.for-wide { display: none; }
   .theme-box.for-narrow { display: block; margin-top: 18px; }
+  .live-now.for-narrow { display: block; margin-top: 4px; margin-bottom: 8px; }
 }
 .theme-box h2 { font-size: 13px; color: #66788a; margin-bottom: 8px; }
 .swatches { display: flex; flex-wrap: wrap; gap: 8px; }

@@ -216,6 +216,7 @@ function App() {
         ) : (
           <>
             <Stats cursor={cursor} mode={mode} streams={listed} onGame={openGame} />
+            <LiveNow className="live-now for-wide" streams={listed} onOpen={setSelectedId} />
             <DeadlineList
               items={upcomingDeadlines}
               today={today}
@@ -244,16 +245,19 @@ function App() {
       <main className="stage">
         <MobileStats cursor={cursor} mode={mode === 'game' ? 'month' : mode} streams={listed} onGame={openGame} />
         {mode !== 'game' && (
-          <DeadlineBanner
-            item={upcomingDeadlines[0]}
-            today={today}
-            saving={saving}
-            notice={notice}
-            onAdd={() => setAddOpen(true)}
-            onDelete={(id) =>
-              void commitManual({ ...manual, deadlines: manual.deadlines.filter((item) => item.id !== id) })
-            }
-          />
+          <>
+            <LiveNow className="live-now for-narrow" streams={listed} onOpen={setSelectedId} />
+            <DeadlineBanner
+              item={upcomingDeadlines[0]}
+              today={today}
+              saving={saving}
+              notice={notice}
+              onAdd={() => setAddOpen(true)}
+              onDelete={(id) =>
+                void commitManual({ ...manual, deadlines: manual.deadlines.filter((item) => item.id !== id) })
+              }
+            />
+          </>
         )}
         <section className="board">
           <div className="binder" aria-hidden="true" />
@@ -460,6 +464,48 @@ function MobileStats({
         </button>
       ))}
     </div>
+  )
+}
+
+function liveCaption(stream: Stream): string {
+  const raw = stream.title.replace(/【[^】]*】/g, '').trim()
+  const text = raw || stream.title
+  return text.length > 18 ? `${text.slice(0, 18)}…` : text
+}
+
+function LiveNow({
+  className,
+  streams,
+  onOpen,
+}: {
+  className: string
+  streams: Stream[]
+  onOpen: (id: string) => void
+}) {
+  const live = streams.filter((stream) => stream.status === 'live')
+  if (live.length === 0) return null
+  return (
+    <section className={`paper ${className}`}>
+      <h2>
+        <span>LIVE</span>
+        配信中
+      </h2>
+      <div className="live-row">
+        {live.map((stream) => {
+          const start = wallFromMs(new Date(stream.start).getTime())
+          return (
+            <button key={stream.id} type="button" className="live-card" onClick={() => onOpen(stream.id)}>
+              <span className="live-thumb" style={{ backgroundImage: thumb(stream) }} />
+              <span className="live-pill">
+                <b>{stream.shortName}</b>
+                {formatHm(start.mins)}〜
+              </span>
+              <span className="live-title">{liveCaption(stream)}</span>
+            </button>
+          )
+        })}
+      </div>
+    </section>
   )
 }
 
