@@ -1,7 +1,7 @@
 {
   "backfillComplete": true,
   "resume": {
-    "UC6WFKwYptsxVue56Lx218vg": "EAAaHlBUOkNHUWlFRFJDT0RZME5FTXlRekEyTjBNek5qTQ",
+    "UC6WFKwYptsxVue56Lx218vg": "EAAaHlBUOkNHUWlFRGM0TmpKR09ERkJSREV4TjBVNFJEQQ",
     "UCX7YkU9nEeaoZbkVLVajcMg": "EAAaHlBUOkNHUWlFRVZCTnpjeU56STJOekJGTnpBMVJqUQ"
   },
   "scanned": {
@@ -17146,13 +17146,14 @@
       "videoId": "CgP8spTPZs4",
       "url": "https://www.youtube.com/watch?v=CgP8spTPZs4",
       "title": "【OW】にじOW練習【小柳ロウ/にじさんじ】",
-      "thumbnail": "https://i.ytimg.com/vi/CgP8spTPZs4/mqdefault_live.jpg",
+      "thumbnail": "https://i.ytimg.com/vi/CgP8spTPZs4/mqdefault.jpg",
       "channelId": "UC6WFKwYptsxVue56Lx218vg",
       "channelTitle": "小柳ロウ / Koyanagi Rou【にじさんじ】",
       "shortName": "小柳ロウ",
       "start": "2026-10-19T11:06:43Z",
-      "durationSec": 0,
-      "status": "live",
+      "end": "2026-10-19T15:54:14Z",
+      "durationSec": 17251,
+      "status": "past",
       "games": [
         "OW"
       ],
