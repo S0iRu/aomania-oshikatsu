@@ -6,6 +6,7 @@
   --segment: #e6eef6;
   --segment-on: #c5d6ea;
   --segment-on-text: #2c3a4a;
+  --cal-span: 640px;
   color: var(--ink);
   background: var(--bg);
   font-family: "Hiragino Sans", "Noto Sans JP", "Segoe UI", sans-serif;
@@ -313,7 +314,7 @@ h1 span { white-space: nowrap; }
 .week-head .sun span, .month-head .sun, .cell-top .sun { color: #d15b6a; }
 .week-body {
   position: relative;
-  height: 640px;
+  height: var(--cal-span);
   margin: 0 8px 12px;
   background-image: repeating-linear-gradient(
     to bottom,
@@ -364,8 +365,15 @@ h1 span { white-space: nowrap; }
 
 .month-head, .month-grid { display: grid; grid-template-columns: repeat(7, minmax(0, 1fr)); }
 .month-head { padding: 18px 0 6px; text-align: center; color: #607286; font-size: 13px; }
+.month-grid {
+  height: var(--cal-span);
+  grid-auto-rows: minmax(0, 1fr);
+}
 .cell {
-  min-height: 78px;
+  min-height: 0;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
   border-top: 1px solid #eef2f6;
   border-left: 1px solid #eef2f6;
   position: relative;
@@ -374,7 +382,13 @@ h1 span { white-space: nowrap; }
 .cell.out { opacity: 0.38; }
 .cell-top { display: flex; justify-content: space-between; font-size: 12px; position: relative; z-index: 1; }
 .cell-top small { color: #5d7190; }
-.mosaic { display: grid; gap: 2px; height: 52px; margin-top: 2px; }
+.mosaic {
+  display: grid;
+  gap: 2px;
+  flex: 1 1 auto;
+  min-height: 0;
+  margin-top: 2px;
+}
 .mosaic.n1 { grid-template-columns: 1fr; }
 .mosaic.n2 { grid-template-columns: 1fr 1fr; }
 .mosaic.n3, .mosaic.n4 { grid-template-columns: 1fr 1fr; grid-template-rows: 1fr 1fr; }
@@ -382,7 +396,7 @@ h1 span { white-space: nowrap; }
   border: 0;
   border-radius: 4px;
   background: #31465f center/cover no-repeat;
-  min-height: 16px;
+  min-height: 0;
 }
 .due {
   position: absolute;
@@ -585,6 +599,7 @@ h1 span { white-space: nowrap; }
 .theme-color input { border: 0; background: transparent; width: 28px; height: 22px; padding: 0; }
 
 @media (min-width: 960px) {
+  :root { --cal-span: 760px; }
   .app {
     display: grid;
     grid-template-columns: 380px minmax(0, 1fr);
@@ -635,14 +650,11 @@ h1 span { white-space: nowrap; }
     background-image: none;
     padding: 6px 2px;
   }
-  .cell { min-height: 108px; }
-  .mosaic { height: 72px; }
-  .week-body { height: 760px; }
 }
 
 @media (max-width: 720px) {
+  :root { --cal-span: 560px; }
   .week-head b { font-size: 13px; }
-  .week-body { height: 560px; }
   .block span { font-size: 9px; }
   h1 { font-size: 22px; }
   .date-label strong { font-size: 22px; }
