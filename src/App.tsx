@@ -495,7 +495,11 @@ function LiveNow({
           const start = wallFromMs(new Date(stream.start).getTime())
           return (
             <button key={stream.id} type="button" className="live-card" onClick={() => onOpen(stream.id)}>
-              <span className="live-thumb" style={{ backgroundImage: thumb(stream) }} />
+              {stream.thumbnail ? (
+                <img className="live-thumb" src={stream.thumbnail} alt="" />
+              ) : (
+                <span className="live-thumb" style={{ backgroundImage: thumb(stream) }} />
+              )}
               <span className="live-pill">
                 <b>{stream.shortName}</b>
                 {formatHm(start.mins)}〜

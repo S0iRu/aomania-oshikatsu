@@ -278,9 +278,12 @@ h1 span { white-space: nowrap; }
 }
 .live-thumb {
   display: block;
-  height: 96px;
+  width: 100%;
+  height: auto;
+  aspect-ratio: 16 / 9;
   border-radius: 8px;
-  background: #31465f center/cover no-repeat;
+  object-fit: contain;
+  background: #31465f center/contain no-repeat;
 }
 .live-pill {
   display: inline-flex;
