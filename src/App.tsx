@@ -916,7 +916,11 @@ function Detail({
             ×
           </button>
         </header>
-        <div className="hero" style={{ backgroundImage: thumb(stream) }} />
+        {stream.thumbnail ? (
+          <img className="hero" src={stream.thumbnail} alt="" />
+        ) : (
+          <div className="hero" style={{ backgroundImage: thumb(stream) }} />
+        )}
         <h2>{stream.title}</h2>
         <dl>
           <div>
