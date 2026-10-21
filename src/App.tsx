@@ -33,7 +33,7 @@ import {
   weekdayLabel,
   weekdayOf,
 } from './logic'
-import { fetchRemoteManual, listFetchRuns, normalizeManual, startFetch, writeManual } from './github'
+import { fetchRemoteManual, listFetchRuns, listPagesRuns, normalizeManual, startFetch, writeManual } from './github'
 import { applyTheme, BUILTIN_THEMES } from './theme'
 
 const AXIS_START = 60
@@ -78,6 +78,7 @@ function App() {
   const [notice, setNotice] = useState<string | null>(null)
   const [fetchLabel, setFetchLabel] = useState<'idle' | 'running' | 'done' | 'failed'>('idle')
   const finishedAtLoad = useRef<Set<number> | null>(null)
+  const publishedAtLoad = useRef<Set<number> | null>(null)
   const waitingForStart = useRef(false)
   const [mode, setMode] = useState<'week' | 'month' | 'game'>('week')
   const [cursor, setCursor] = useState(todayKey)
@@ -157,6 +158,49 @@ function App() {
     return () => {
       stopped = true
       window.clearInterval(timer)
+    }
+  }, [])
+
+  useEffect(() => {
+    let stopped = false
+    let reloadTimer = 0
+    async function reloadPublished() {
+      const base = import.meta.env.BASE_URL
+      const [streamFile, loaded] = await Promise.all([
+        fetch(`${base}data/streams.json`, { cache: 'no-store' }).then((res) => res.json() as Promise<StreamFile>),
+        fetchRemoteManual().catch(() =>
+          fetch(`${base}data/manual.json`, { cache: 'no-store' })
+            .then((res) => res.json())
+            .then((value) => normalizeManual(value)),
+        ),
+      ])
+      if (stopped) return
+      setStreams(streamFile.streams ?? [])
+      setManual(normalizeManual(loaded))
+    }
+    async function pollPages() {
+      const runs = await listPagesRuns()
+      if (stopped) return
+      if (publishedAtLoad.current === null) {
+        publishedAtLoad.current = new Set(runs.filter((run) => run.status === 'completed').map((run) => run.id))
+        return
+      }
+      const known = publishedAtLoad.current
+      const fresh = runs.filter((run) => run.status === 'completed' && !known.has(run.id))
+      for (const run of fresh) known.add(run.id)
+      if (!fresh.some((run) => run.conclusion === 'success')) return
+      window.clearTimeout(reloadTimer)
+      reloadTimer = window.setTimeout(() => {
+        reloadTimer = 0
+        void reloadPublished()
+      }, 5000)
+    }
+    void pollPages()
+    const timer = window.setInterval(() => void pollPages(), 5000)
+    return () => {
+      stopped = true
+      window.clearInterval(timer)
+      window.clearTimeout(reloadTimer)
     }
   }, [])
 

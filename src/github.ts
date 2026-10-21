@@ -85,9 +85,9 @@ function authHeaders(): Record<string, string> {
   return headers
 }
 
-export async function listFetchRuns(): Promise<FetchRun[]> {
+async function listWorkflowRuns(workflow: string): Promise<FetchRun[]> {
   const response = await fetch(
-    `https://api.github.com/repos/${REPO}/actions/workflows/fetch.yml/runs?per_page=5`,
+    `https://api.github.com/repos/${REPO}/actions/workflows/${workflow}/runs?per_page=5`,
     { headers: authHeaders(), cache: 'no-store' },
   )
   if (!response.ok) return []
@@ -99,6 +99,14 @@ export async function listFetchRuns(): Promise<FetchRun[]> {
     status: run.status,
     conclusion: run.conclusion,
   }))
+}
+
+export function listFetchRuns(): Promise<FetchRun[]> {
+  return listWorkflowRuns('fetch.yml')
+}
+
+export function listPagesRuns(): Promise<FetchRun[]> {
+  return listWorkflowRuns('pages.yml')
 }
 
 export async function startFetch(): Promise<void> {
