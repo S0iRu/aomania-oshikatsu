@@ -1,7 +1,7 @@
 {
   "backfillComplete": true,
   "resume": {
-    "UC6WFKwYptsxVue56Lx218vg": "EAAaHlBUOkNHUWlFRUU1T0VOQk1VSkNRVE5GTjBGRVJVSQ",
+    "UC6WFKwYptsxVue56Lx218vg": "EAAaHlBUOkNHUWlFRUpCUXpaQk5rWTBNVVV3T1RZM05UVQ",
     "UCX7YkU9nEeaoZbkVLVajcMg": "EAAaHlBUOkNHUWlFREpHTVRaRFJqSTFRMFF4TWpjek5qYw"
   },
   "scanned": {
@@ -17173,6 +17173,24 @@
       "end": "2026-10-20T17:51:37Z",
       "durationSec": 23747,
       "status": "past",
+      "games": [
+        "OW"
+      ],
+      "tags": [],
+      "isOwn": true
+    },
+    {
+      "id": "5M2AdP8XVFw",
+      "videoId": "5M2AdP8XVFw",
+      "url": "https://www.youtube.com/watch?v=5M2AdP8XVFw",
+      "title": "【OW】にじOW試行回数【小柳ロウ/にじさんじ】",
+      "thumbnail": "https://i.ytimg.com/vi/5M2AdP8XVFw/mqdefault_live.jpg",
+      "channelId": "UC6WFKwYptsxVue56Lx218vg",
+      "channelTitle": "小柳ロウ / Koyanagi Rou【にじさんじ】",
+      "shortName": "小柳ロウ",
+      "start": "2026-10-21T05:30:00Z",
+      "durationSec": 0,
+      "status": "upcoming",
       "games": [
         "OW"
       ],
