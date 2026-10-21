@@ -110,6 +110,13 @@ function App() {
   }, [])
 
   const listed = useMemo(() => applyManual(streams, manual), [streams, manual])
+  const [clock, setClock] = useState(() => Date.now())
+  const hasLive = listed.some((stream) => stream.status === 'live')
+  useEffect(() => {
+    if (!hasLive) return
+    const timer = window.setInterval(() => setClock(Date.now()), 60_000)
+    return () => window.clearInterval(timer)
+  }, [hasLive])
   const selected = listed.find((stream) => stream.id === selectedId) ?? null
   const today = todayKey()
 
@@ -305,7 +312,7 @@ function App() {
         )}
         <section className="board">
           <div className="binder" aria-hidden="true" />
-          {mode === 'week' && <WeekView cursor={cursor} streams={listed} onOpen={setSelectedId} />}
+          {mode === 'week' && <WeekView cursor={cursor} streams={listed} now={clock} onOpen={setSelectedId} />}
           {mode === 'month' && (
             <MonthView cursor={cursor} streams={listed} deadlines={deadlines} onOpen={setSelectedId} />
           )}
@@ -767,10 +774,12 @@ function ThemePicker({
 function WeekView({
   cursor,
   streams,
+  now,
   onOpen,
 }: {
   cursor: string
   streams: Stream[]
+  now: number
   onOpen: (id: string) => void
 }) {
   const days = dayKeysOfWeek(cursor)
@@ -781,7 +790,7 @@ function WeekView({
         {days.map((day) => {
           const ranges: [number, number][] = []
           for (const stream of streams) {
-            for (const slice of slicesOf(stream)) {
+            for (const slice of slicesOf(stream, now)) {
               if (slice.dateKey === day) ranges.push([slice.startMin, slice.endMin])
             }
           }
@@ -805,7 +814,7 @@ function WeekView({
           ))}
         </div>
         {days.map((day) => {
-          const slices = streams.flatMap((stream) => slicesOf(stream).filter((slice) => slice.dateKey === day))
+          const slices = streams.flatMap((stream) => slicesOf(stream, now).filter((slice) => slice.dateKey === day))
           return (
             <div key={day} className="day-col">
               {layout(slices).map((slice) => {
@@ -950,6 +959,7 @@ function Detail({
 }) {
   const startWall = wallFromMs(new Date(stream.start).getTime())
   const endWall = wallFromMs(endMs(stream))
+  const live = stream.status === 'live'
   const href = stream.url || (stream.videoId ? `https://www.youtube.com/watch?v=${stream.videoId}` : 'https://www.youtube.com/@KoyanagiRou')
   return (
     <div className="scrim" onClick={onClose}>
@@ -978,15 +988,17 @@ function Detail({
           <div>
             <dt>時間</dt>
             <dd>
-              {formatHm(startWall.mins)} - {formatHm(endWall.mins)}
+              {formatHm(startWall.mins)} - {live ? '配信中' : formatHm(endWall.mins)}
             </dd>
           </div>
           <div>
             <dt>長さ</dt>
             <dd>
               {approxDuration(
-                stream.durationSec ||
-                  Math.max(0, Math.round((endMs(stream) - new Date(stream.start).getTime()) / 1000)),
+                live
+                  ? Math.max(0, Math.round((endMs(stream) - new Date(stream.start).getTime()) / 1000))
+                  : stream.durationSec ||
+                    Math.max(0, Math.round((endMs(stream) - new Date(stream.start).getTime()) / 1000)),
               )}
             </dd>
           </div>
@@ -1093,13 +1105,17 @@ function GameList({
         {items.map((stream) => {
           const startWall = wallFromMs(new Date(stream.start).getTime())
           const endWall = wallFromMs(endMs(stream))
+          const live = stream.status === 'live'
+          const lengthSec = live
+            ? Math.max(0, Math.round((endMs(stream) - new Date(stream.start).getTime()) / 1000))
+            : stream.durationSec
           return (
             <button key={stream.id} onClick={() => onOpen(stream.id)}>
               <i style={{ backgroundImage: thumb(stream) }} />
               <span>
                 <small>
-                  {dateLabel(startWall.key)} {formatHm(startWall.mins)}-{formatHm(endWall.mins)}・
-                  {formatHours(stream.durationSec)}h
+                  {dateLabel(startWall.key)} {formatHm(startWall.mins)}-{live ? '配信中' : formatHm(endWall.mins)}・
+                  {formatHours(lengthSec)}h
                 </small>
                 <b>{stream.title.replace(/【[^】]*】/g, '').trim() || stream.title}</b>
               </span>

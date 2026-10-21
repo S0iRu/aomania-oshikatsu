@@ -153,9 +153,11 @@ export function daysUntil(atIso: string, today: string): number {
   return Math.round((a - b) / 86400000)
 }
 
-export function endMs(stream: Stream): number {
+export function endMs(stream: Stream, now = Date.now()): number {
+  const start = new Date(stream.start).getTime()
+  if (stream.status === 'live') return Math.max(now, start)
   if (stream.end) return new Date(stream.end).getTime()
-  return new Date(stream.start).getTime() + Math.max(stream.durationSec, 0) * 1000
+  return start + Math.max(stream.durationSec, 0) * 1000
 }
 
 export type Slice = {
@@ -165,9 +167,9 @@ export type Slice = {
   endMin: number
 }
 
-export function slicesOf(stream: Stream): Slice[] {
+export function slicesOf(stream: Stream, now = Date.now()): Slice[] {
   const startMs = new Date(stream.start).getTime()
-  let end = endMs(stream)
+  let end = endMs(stream, now)
   if (!(end > startMs)) end = startMs + 30 * 60 * 1000
   const slices: Slice[] = []
   let cursor = startMs
