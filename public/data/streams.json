@@ -1,7 +1,7 @@
 {
   "backfillComplete": true,
   "resume": {
-    "UC6WFKwYptsxVue56Lx218vg": "EAAaHlBUOkNHUWlFRE00UkRZNE5UVkJNRUZCT1RWR1F6RQ",
+    "UC6WFKwYptsxVue56Lx218vg": "EAAaHlBUOkNHUWlFRFJGUWpGRE4wVXlRakF4UmtWQ05UWQ",
     "UCX7YkU9nEeaoZbkVLVajcMg": "EAAaHlBUOkNHUWlFREpFTjBVeFFVSTBOVGt5TlRjNE1rTQ"
   },
   "scanned": {
@@ -17192,6 +17192,24 @@
       "end": "2026-10-21T16:28:47Z",
       "durationSec": 38972,
       "status": "past",
+      "games": [
+        "OW"
+      ],
+      "tags": [],
+      "isOwn": true
+    },
+    {
+      "id": "0cFnrB5m1bw",
+      "videoId": "0cFnrB5m1bw",
+      "url": "https://www.youtube.com/watch?v=0cFnrB5m1bw",
+      "title": "【OW】明日からスクリム【小柳ロウ/にじさんじ】",
+      "thumbnail": "https://i.ytimg.com/vi/0cFnrB5m1bw/mqdefault.jpg?v=6ad9ebff",
+      "channelId": "UC6WFKwYptsxVue56Lx218vg",
+      "channelTitle": "小柳ロウ / Koyanagi Rou【にじさんじ】",
+      "shortName": "小柳ロウ",
+      "start": "2026-10-22T11:00:00Z",
+      "durationSec": 0,
+      "status": "upcoming",
       "games": [
         "OW"
       ],
