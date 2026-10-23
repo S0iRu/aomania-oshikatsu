@@ -1,7 +1,7 @@
 {
   "backfillComplete": true,
   "resume": {
-    "UC6WFKwYptsxVue56Lx218vg": "EAAaHlBUOkNHUWlFRVZGTWpKQ056ZzJOelE0TmpVNFJEZw",
+    "UC6WFKwYptsxVue56Lx218vg": "EAAaHlBUOkNHUWlFREE0UWtVMU1UWTNRall4TURNMU5URQ",
     "UCX7YkU9nEeaoZbkVLVajcMg": "EAAaHlBUOkNHUWlFRFpHT1RWRlJFVXhRVU13UXpaQlF6QQ"
   },
   "scanned": {
@@ -17222,13 +17222,14 @@
       "videoId": "HeC8chjjIxo",
       "url": "https://www.youtube.com/watch?v=HeC8chjjIxo",
       "title": "【にじEX_OW】スクリム１日目【小柳ロウ/にじさんじ】",
-      "thumbnail": "https://i.ytimg.com/vi/HeC8chjjIxo/mqdefault.jpg?v=6adb3b29",
+      "thumbnail": "https://i.ytimg.com/vi/HeC8chjjIxo/mqdefault.jpg",
       "channelId": "UC6WFKwYptsxVue56Lx218vg",
       "channelTitle": "小柳ロウ / Koyanagi Rou【にじさんじ】",
       "shortName": "小柳ロウ",
       "start": "2026-10-23T11:11:01Z",
-      "durationSec": 0,
-      "status": "live",
+      "end": "2026-10-23T17:03:21Z",
+      "durationSec": 21140,
+      "status": "past",
       "games": [
         "OW"
       ],
