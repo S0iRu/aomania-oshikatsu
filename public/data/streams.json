@@ -1,7 +1,7 @@
 {
   "backfillComplete": true,
   "resume": {
-    "UC6WFKwYptsxVue56Lx218vg": "EAAaHlBUOkNHUWlFRFl3T0VZek5VUXpOMEZET0VKRVEwWQ",
+    "UC6WFKwYptsxVue56Lx218vg": "EAAaHlBUOkNHUWlFRFl6T0VJd1JETTJNVVl5UWpNeE1qZw",
     "UCX7YkU9nEeaoZbkVLVajcMg": "EAAaHlBUOkNHUWlFREF3UmpKRE1EVkVRa1JFT0RWR01FVQ"
   },
   "scanned": {
@@ -17284,15 +17284,13 @@
       "channelId": "UC6WFKwYptsxVue56Lx218vg",
       "channelTitle": "小柳ロウ / Koyanagi Rou【にじさんじ】",
       "shortName": "小柳ロウ",
-      "start": "2026-10-25T06:00:00Z",
+      "start": "2026-10-25T06:40:34Z",
       "durationSec": 0,
-      "status": "upcoming",
+      "status": "live",
       "games": [
         "OW"
       ],
-      "tags": [
-        "コラボ"
-      ],
+      "tags": [],
       "isOwn": true
     }
   ]
