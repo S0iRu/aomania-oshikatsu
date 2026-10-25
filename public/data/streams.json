@@ -2,7 +2,7 @@
   "backfillComplete": true,
   "resume": {
     "UC6WFKwYptsxVue56Lx218vg": "EAAaHlBUOkNHUWlFRGd6UWpZNVFUTkNPRVZHT0RFeFJFVQ",
-    "UCX7YkU9nEeaoZbkVLVajcMg": "EAAaHlBUOkNHUWlFRVpGUWpBeU1rVXlSRGhHTXpNd05EUQ"
+    "UCX7YkU9nEeaoZbkVLVajcMg": "EAAaHlBUOkNHUWlFRVZDUkRVek5VRXdRVUUyTmpJMk16Yw"
   },
   "scanned": {
     "UC6WFKwYptsxVue56Lx218vg": true,
@@ -17265,8 +17265,9 @@
       "channelTitle": "にじさんじ",
       "shortName": "にじさんじ",
       "start": "2026-10-25T05:59:07Z",
-      "durationSec": 0,
-      "status": "live",
+      "end": "2026-10-25T13:15:10Z",
+      "durationSec": 26163,
+      "status": "past",
       "games": [
         "OW"
       ],
@@ -17290,7 +17291,9 @@
       "games": [
         "OW"
       ],
-      "tags": [],
+      "tags": [
+        "コラボ"
+      ],
       "isOwn": true
     }
   ]
