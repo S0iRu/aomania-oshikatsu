@@ -1,7 +1,7 @@
 {
   "backfillComplete": true,
   "resume": {
-    "UC6WFKwYptsxVue56Lx218vg": "EAAaHlBUOkNHUWlFRGd6UWpZNVFUTkNPRVZHT0RFeFJFVQ",
+    "UC6WFKwYptsxVue56Lx218vg": "EAAaHlBUOkNHUWlFREE0T0RGRFEwTTVSVVF5UkRBeE9FSQ",
     "UCX7YkU9nEeaoZbkVLVajcMg": "EAAaHlBUOkNHUWlFRGc1UVRkRE5EUTVOVUV4UkRCRlJUZw"
   },
   "scanned": {
@@ -17286,8 +17286,9 @@
       "channelTitle": "小柳ロウ / Koyanagi Rou【にじさんじ】",
       "shortName": "小柳ロウ",
       "start": "2026-10-25T06:40:34Z",
-      "durationSec": 0,
-      "status": "live",
+      "end": "2026-10-25T14:04:26Z",
+      "durationSec": 26632,
+      "status": "past",
       "games": [
         "OW"
       ],
