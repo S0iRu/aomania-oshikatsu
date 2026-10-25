@@ -1,8 +1,8 @@
 {
   "backfillComplete": true,
   "resume": {
-    "UC6WFKwYptsxVue56Lx218vg": "EAAaHlBUOkNHUWlFRGRGT0RaQlFUTTBOa05DTnpnNE9ETQ",
-    "UCX7YkU9nEeaoZbkVLVajcMg": "EAAaHlBUOkNHUWlFRFl4TWpRM1JEY3dSa1ZFUkVNM01VWQ"
+    "UC6WFKwYptsxVue56Lx218vg": "EAAaHlBUOkNHUWlFRFl3T0VZek5VUXpOMEZET0VKRVEwWQ",
+    "UCX7YkU9nEeaoZbkVLVajcMg": "EAAaHlBUOkNHUWlFREF3UmpKRE1EVkVRa1JFT0RWR01FVQ"
   },
   "scanned": {
     "UC6WFKwYptsxVue56Lx218vg": true,
@@ -17253,6 +17253,46 @@
         "OW"
       ],
       "tags": [],
+      "isOwn": true
+    },
+    {
+      "id": "27u1s-jLntM",
+      "videoId": "27u1s-jLntM",
+      "url": "https://www.youtube.com/watch?v=27u1s-jLntM",
+      "title": "NIJISANJI Extreme Match / Overwatch【#にじEX_OW】",
+      "thumbnail": "https://i.ytimg.com/vi/27u1s-jLntM/mqdefault.jpg?v=6adb0b00",
+      "channelId": "UCX7YkU9nEeaoZbkVLVajcMg",
+      "channelTitle": "にじさんじ",
+      "shortName": "にじさんじ",
+      "start": "2026-10-25T05:59:07Z",
+      "durationSec": 0,
+      "status": "live",
+      "games": [
+        "OW"
+      ],
+      "tags": [
+        "コラボ"
+      ],
+      "isOwn": false
+    },
+    {
+      "id": "h_48wDYTp6w",
+      "videoId": "h_48wDYTp6w",
+      "url": "https://www.youtube.com/watch?v=h_48wDYTp6w",
+      "title": "【にじEX_OW】ちる☆ぼた【小柳ロウ/にじさんじ】",
+      "thumbnail": "https://i.ytimg.com/vi/h_48wDYTp6w/mqdefault.jpg?v=6add966a",
+      "channelId": "UC6WFKwYptsxVue56Lx218vg",
+      "channelTitle": "小柳ロウ / Koyanagi Rou【にじさんじ】",
+      "shortName": "小柳ロウ",
+      "start": "2026-10-25T06:00:00Z",
+      "durationSec": 0,
+      "status": "upcoming",
+      "games": [
+        "OW"
+      ],
+      "tags": [
+        "コラボ"
+      ],
       "isOwn": true
     }
   ]
