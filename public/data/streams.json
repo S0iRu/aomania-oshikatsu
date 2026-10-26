@@ -1,7 +1,7 @@
 {
   "backfillComplete": true,
   "resume": {
-    "UC6WFKwYptsxVue56Lx218vg": "EAAaHlBUOkNHUWlFRFl5TURVNE0wSXlRVGt3UWpBME9ESQ",
+    "UC6WFKwYptsxVue56Lx218vg": "EAAaHlBUOkNHUWlFRVZGTmpGQ01UaEVRVVk1T1RneU0wSQ",
     "UCX7YkU9nEeaoZbkVLVajcMg": "EAAaHlBUOkNHUWlFRGc1UVRkRE5EUTVOVUV4UkRCRlJUZw"
   },
   "scanned": {
@@ -17302,13 +17302,14 @@
       "videoId": "BSlXJucCID4",
       "url": "https://www.youtube.com/watch?v=BSlXJucCID4",
       "title": "【VALORANT】リハビリ少々【小柳ロウ/にじさんじ】",
-      "thumbnail": "https://i.ytimg.com/vi/BSlXJucCID4/mqdefault.jpg?v=6adf26c4",
+      "thumbnail": "https://i.ytimg.com/vi/BSlXJucCID4/mqdefault.jpg",
       "channelId": "UC6WFKwYptsxVue56Lx218vg",
       "channelTitle": "小柳ロウ / Koyanagi Rou【にじさんじ】",
       "shortName": "小柳ロウ",
       "start": "2026-10-26T10:16:57Z",
-      "durationSec": 0,
-      "status": "live",
+      "end": "2026-10-26T12:31:01Z",
+      "durationSec": 8044,
+      "status": "past",
       "games": [
         "VALORANT"
       ],
