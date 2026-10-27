@@ -1,7 +1,7 @@
 {
   "backfillComplete": true,
   "resume": {
-    "UC6WFKwYptsxVue56Lx218vg": "EAAaHlBUOkNHUWlFRGswT1RBNFFrTkRRMEUwTkRFNVJrVQ",
+    "UC6WFKwYptsxVue56Lx218vg": "EAAaHlBUOkNHUWlFRU16UkRVNU9VWXdNMFZFUmpaQk1ERQ",
     "UCX7YkU9nEeaoZbkVLVajcMg": "EAAaHlBUOkNHUWlFRU5DT0VVMVJFSXdPVFZCUVRjM1FrRQ"
   },
   "scanned": {
@@ -17329,6 +17329,24 @@
       "end": "2026-10-27T14:02:23Z",
       "durationSec": 28574,
       "status": "past",
+      "games": [
+        "OW"
+      ],
+      "tags": [],
+      "isOwn": true
+    },
+    {
+      "id": "xZJWxlYDZYI",
+      "videoId": "xZJWxlYDZYI",
+      "url": "https://www.youtube.com/watch?v=xZJWxlYDZYI",
+      "title": "【OW】猫練【小柳ロウ/にじさんじ】",
+      "thumbnail": "https://i.ytimg.com/vi/xZJWxlYDZYI/mqdefault.jpg?v=6ae1332a",
+      "channelId": "UC6WFKwYptsxVue56Lx218vg",
+      "channelTitle": "小柳ロウ / Koyanagi Rou【にじさんじ】",
+      "shortName": "小柳ロウ",
+      "start": "2026-10-27T23:35:00Z",
+      "durationSec": 0,
+      "status": "upcoming",
       "games": [
         "OW"
       ],
