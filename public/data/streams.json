@@ -1,7 +1,7 @@
 {
   "backfillComplete": true,
   "resume": {
-    "UC6WFKwYptsxVue56Lx218vg": "EAAaHlBUOkNHUWlFRGc0UkVJNU5VTXpSVEkxUmpsR1JEZw",
+    "UC6WFKwYptsxVue56Lx218vg": "EAAaHlBUOkNHUWlFRVkxTkRZek1UZENOMFk1UVVOQ01qaw",
     "UCX7YkU9nEeaoZbkVLVajcMg": "EAAaHlBUOkNHUWlFRGhGUXpJek5qVTBSalkwTlVRNU1Uaw"
   },
   "scanned": {
@@ -17312,6 +17312,24 @@
       "status": "past",
       "games": [
         "VALORANT"
+      ],
+      "tags": [],
+      "isOwn": true
+    },
+    {
+      "id": "RlU1qzxJabo",
+      "videoId": "RlU1qzxJabo",
+      "url": "https://www.youtube.com/watch?v=RlU1qzxJabo",
+      "title": "【OW】ざーさんとランク【小柳ロウ/にじさんじ】",
+      "thumbnail": "https://i.ytimg.com/vi/RlU1qzxJabo/mqdefault.jpg?v=6ae03cb6",
+      "channelId": "UC6WFKwYptsxVue56Lx218vg",
+      "channelTitle": "小柳ロウ / Koyanagi Rou【にじさんじ】",
+      "shortName": "小柳ロウ",
+      "start": "2026-10-27T06:00:00Z",
+      "durationSec": 0,
+      "status": "upcoming",
+      "games": [
+        "OW"
       ],
       "tags": [],
       "isOwn": true
