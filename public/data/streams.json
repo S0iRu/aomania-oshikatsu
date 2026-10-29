@@ -1,7 +1,7 @@
 {
   "backfillComplete": true,
   "resume": {
-    "UC6WFKwYptsxVue56Lx218vg": "EAAaHlBUOkNHUWlFRVUxUVRsQlJqTXhORGxDUkRkRk4wWQ",
+    "UC6WFKwYptsxVue56Lx218vg": "EAAaHlBUOkNHUWlFRGRCTVRjeE4wSkNSVEpHTURORVJrWQ",
     "UCX7YkU9nEeaoZbkVLVajcMg": "EAAaHlBUOkNHUWlFREEyTXpJNE5rTkZSa1kyUXpZMFJEQQ"
   },
   "scanned": {
@@ -17348,6 +17348,24 @@
       "end": "2026-10-28T10:41:29Z",
       "durationSec": 39901,
       "status": "past",
+      "games": [
+        "OW"
+      ],
+      "tags": [],
+      "isOwn": true
+    },
+    {
+      "id": "X-8BnjWdBZU",
+      "videoId": "X-8BnjWdBZU",
+      "url": "https://www.youtube.com/watch?v=X-8BnjWdBZU",
+      "title": "【OW】クロとランク【小柳ロウ/にじさんじ】",
+      "thumbnail": "https://i.ytimg.com/vi/X-8BnjWdBZU/mqdefault.jpg?v=6ae2cc4a",
+      "channelId": "UC6WFKwYptsxVue56Lx218vg",
+      "channelTitle": "小柳ロウ / Koyanagi Rou【にじさんじ】",
+      "shortName": "小柳ロウ",
+      "start": "2026-10-29T04:43:26Z",
+      "durationSec": 0,
+      "status": "live",
       "games": [
         "OW"
       ],
