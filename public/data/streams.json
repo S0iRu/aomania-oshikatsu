@@ -2,7 +2,7 @@
   "backfillComplete": true,
   "resume": {
     "UC6WFKwYptsxVue56Lx218vg": "EAAaHlBUOkNHUWlFRFJCT0RneU1UWTBRalV3UXpKQ1JqSQ",
-    "UCX7YkU9nEeaoZbkVLVajcMg": "EAAaHlBUOkNHUWlFREkwTnpVeU1URkRNemcxTkVZMk1VRQ"
+    "UCX7YkU9nEeaoZbkVLVajcMg": "EAAaHlBUOkNHUWlFRGMyTWpGQk5qVkNRVGsyTWprMU1qZw"
   },
   "scanned": {
     "UC6WFKwYptsxVue56Lx218vg": true,
@@ -17372,6 +17372,48 @@
       ],
       "tags": [],
       "isOwn": true
+    },
+    {
+      "id": "j1b6bt9YGHk",
+      "videoId": "j1b6bt9YGHk",
+      "url": "https://www.youtube.com/watch?v=j1b6bt9YGHk",
+      "title": "【MV】Promised Future / Oriens",
+      "thumbnail": "https://i.ytimg.com/vi/j1b6bt9YGHk/mqdefault.jpg",
+      "channelId": "UCX7YkU9nEeaoZbkVLVajcMg",
+      "channelTitle": "にじさんじ",
+      "shortName": "にじさんじ",
+      "start": "2026-10-30T12:30:00Z",
+      "durationSec": 0,
+      "status": "upcoming",
+      "games": [
+        "MV"
+      ],
+      "tags": [
+        "コラボ"
+      ],
+      "isOwn": false,
+      "noOwnStream": true
+    },
+    {
+      "id": "TBftvVN_PtU",
+      "videoId": "TBftvVN_PtU",
+      "url": "https://www.youtube.com/watch?v=TBftvVN_PtU",
+      "title": "【MV】月下美人 / Dytica",
+      "thumbnail": "https://i.ytimg.com/vi/TBftvVN_PtU/mqdefault.jpg",
+      "channelId": "UCX7YkU9nEeaoZbkVLVajcMg",
+      "channelTitle": "にじさんじ",
+      "shortName": "にじさんじ",
+      "start": "2026-10-30T12:35:00Z",
+      "durationSec": 0,
+      "status": "upcoming",
+      "games": [
+        "MV"
+      ],
+      "tags": [
+        "コラボ"
+      ],
+      "isOwn": false,
+      "noOwnStream": true
     }
   ]
 }
