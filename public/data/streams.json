@@ -2,7 +2,7 @@
   "backfillComplete": true,
   "resume": {
     "UC6WFKwYptsxVue56Lx218vg": "EAAaHlBUOkNHUWlFRFJCT0RneU1UWTBRalV3UXpKQ1JqSQ",
-    "UCX7YkU9nEeaoZbkVLVajcMg": "EAAaHlBUOkNHUWlFRGMyTWpGQk5qVkNRVGsyTWprMU1qZw"
+    "UCX7YkU9nEeaoZbkVLVajcMg": "EAAaHlBUOkNHUWlFRGd3UWpFeE1UUTVOemcyTnpjMk1Uaw"
   },
   "scanned": {
     "UC6WFKwYptsxVue56Lx218vg": true,
@@ -17382,9 +17382,9 @@
       "channelId": "UCX7YkU9nEeaoZbkVLVajcMg",
       "channelTitle": "にじさんじ",
       "shortName": "にじさんじ",
-      "start": "2026-10-30T12:30:00Z",
+      "start": "2026-10-30T12:30:10Z",
       "durationSec": 0,
-      "status": "upcoming",
+      "status": "live",
       "games": [
         "MV"
       ],
