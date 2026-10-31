@@ -1,7 +1,7 @@
 {
   "backfillComplete": true,
   "resume": {
-    "UC6WFKwYptsxVue56Lx218vg": "EAAaHlBUOkNHUWlFRFJHUVRGRE9UUTBNRGRGTWtWR05Eaw",
+    "UC6WFKwYptsxVue56Lx218vg": "EAAaHlBUOkNHUWlFRVJCUXpBek9VRkJOREl5UXprMVJEWQ",
     "UCX7YkU9nEeaoZbkVLVajcMg": "EAAaHlBUOkNHUWlFREk0TlVJMk9ETkNRVGN5UVRSR01FWQ"
   },
   "scanned": {
@@ -17416,6 +17416,24 @@
       ],
       "isOwn": false,
       "noOwnStream": true
+    },
+    {
+      "id": "ubdHDFlwBVI",
+      "videoId": "ubdHDFlwBVI",
+      "url": "https://www.youtube.com/watch?v=ubdHDFlwBVI",
+      "title": "【APEX】ベリーさんゴールド企画【小柳ロウ/にじさんじ】",
+      "thumbnail": "https://i.ytimg.com/vi/ubdHDFlwBVI/mqdefault.jpg?v=6ae5d4be",
+      "channelId": "UC6WFKwYptsxVue56Lx218vg",
+      "channelTitle": "小柳ロウ / Koyanagi Rou【にじさんじ】",
+      "shortName": "小柳ロウ",
+      "start": "2026-10-31T11:56:59Z",
+      "durationSec": 0,
+      "status": "live",
+      "games": [
+        "APEX"
+      ],
+      "tags": [],
+      "isOwn": true
     }
   ]
 }
