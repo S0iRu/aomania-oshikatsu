@@ -1,7 +1,7 @@
 {
   "backfillComplete": true,
   "resume": {
-    "UC6WFKwYptsxVue56Lx218vg": "EAAaHlBUOkNHUWlFRGswUlVJeU9VUkNOMEZFTlRFd1JqZw",
+    "UC6WFKwYptsxVue56Lx218vg": "EAAaHlBUOkNHUWlFRFU1Tnpjd1JUVTRSREF6TWtORk4wRQ",
     "UCX7YkU9nEeaoZbkVLVajcMg": "EAAaHlBUOkNHUWlFRU5ETVRJeVFVRTFOREUxUVRVNFJqRQ"
   },
   "scanned": {
@@ -17445,9 +17445,9 @@
       "channelId": "UC6WFKwYptsxVue56Lx218vg",
       "channelTitle": "小柳ロウ / Koyanagi Rou【にじさんじ】",
       "shortName": "小柳ロウ",
-      "start": "2026-11-01T11:00:00Z",
+      "start": "2026-11-01T11:07:29Z",
       "durationSec": 0,
-      "status": "upcoming",
+      "status": "live",
       "games": [
         "スプラ"
       ],
