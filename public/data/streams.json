@@ -1,7 +1,7 @@
 {
   "backfillComplete": true,
   "resume": {
-    "UC6WFKwYptsxVue56Lx218vg": "EAAaHlBUOkNHUWlFRFU1Tnpjd1JUVTRSREF6TWtORk4wRQ",
+    "UC6WFKwYptsxVue56Lx218vg": "EAAaHlBUOkNHUWlFREUwTURRNVJrTTNOVGM0TnpFNU9VTQ",
     "UCX7YkU9nEeaoZbkVLVajcMg": "EAAaHlBUOkNHUWlFRU5ETVRJeVFVRTFOREUxUVRVNFJqRQ"
   },
   "scanned": {
@@ -17441,13 +17441,14 @@
       "videoId": "4uPhHn3oU14",
       "url": "https://www.youtube.com/watch?v=4uPhHn3oU14",
       "title": "【スプラ】顔合わせなど【小柳ロウ/にじさんじ】",
-      "thumbnail": "https://i.ytimg.com/vi/4uPhHn3oU14/mqdefault.jpg?v=6ae71ad1",
+      "thumbnail": "https://i.ytimg.com/vi/4uPhHn3oU14/mqdefault.jpg",
       "channelId": "UC6WFKwYptsxVue56Lx218vg",
       "channelTitle": "小柳ロウ / Koyanagi Rou【にじさんじ】",
       "shortName": "小柳ロウ",
       "start": "2026-11-01T11:07:29Z",
-      "durationSec": 0,
-      "status": "live",
+      "end": "2026-11-01T14:10:29Z",
+      "durationSec": 10980,
+      "status": "past",
       "games": [
         "スプラ"
       ],
