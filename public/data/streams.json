@@ -1,7 +1,7 @@
 {
   "backfillComplete": true,
   "resume": {
-    "UC6WFKwYptsxVue56Lx218vg": "EAAaHlBUOkNHUWlFRFZGTWtZNFEwWkVRMEZHUmtVMFJUZw",
+    "UC6WFKwYptsxVue56Lx218vg": "EAAaHlBUOkNHUWlFRGswUlVJeU9VUkNOMEZFTlRFd1JqZw",
     "UCX7YkU9nEeaoZbkVLVajcMg": "EAAaHlBUOkNHUWlFRU5ETVRJeVFVRTFOREUxUVRVNFJqRQ"
   },
   "scanned": {
@@ -17432,6 +17432,24 @@
       "status": "past",
       "games": [
         "APEX"
+      ],
+      "tags": [],
+      "isOwn": true
+    },
+    {
+      "id": "4uPhHn3oU14",
+      "videoId": "4uPhHn3oU14",
+      "url": "https://www.youtube.com/watch?v=4uPhHn3oU14",
+      "title": "【スプラ】顔合わせなど【小柳ロウ/にじさんじ】",
+      "thumbnail": "https://i.ytimg.com/vi/4uPhHn3oU14/mqdefault.jpg?v=6ae71ad1",
+      "channelId": "UC6WFKwYptsxVue56Lx218vg",
+      "channelTitle": "小柳ロウ / Koyanagi Rou【にじさんじ】",
+      "shortName": "小柳ロウ",
+      "start": "2026-11-01T11:00:00Z",
+      "durationSec": 0,
+      "status": "upcoming",
+      "games": [
+        "スプラ"
       ],
       "tags": [],
       "isOwn": true
