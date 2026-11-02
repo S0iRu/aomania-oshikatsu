@@ -1,7 +1,7 @@
 {
   "backfillComplete": true,
   "resume": {
-    "UC6WFKwYptsxVue56Lx218vg": "EAAaHlBUOkNHUWlFREUwTURRNVJrTTNOVGM0TnpFNU9VTQ",
+    "UC6WFKwYptsxVue56Lx218vg": "EAAaHlBUOkNHUWlFREJDTURZMk1EVkNRak13TVRNNU4wWQ",
     "UCX7YkU9nEeaoZbkVLVajcMg": "EAAaHlBUOkNHUWlFRU5ETVRJeVFVRTFOREUxUVRVNFJqRQ"
   },
   "scanned": {
@@ -17449,6 +17449,24 @@
       "end": "2026-11-01T14:10:29Z",
       "durationSec": 10980,
       "status": "past",
+      "games": [
+        "スプラ"
+      ],
+      "tags": [],
+      "isOwn": true
+    },
+    {
+      "id": "BMFlyLUsmLA",
+      "videoId": "BMFlyLUsmLA",
+      "url": "https://www.youtube.com/watch?v=BMFlyLUsmLA",
+      "title": "【スプラ】錆落とし【小柳ロウ/にじさんじ】",
+      "thumbnail": "https://i.ytimg.com/vi/BMFlyLUsmLA/mqdefault.jpg?v=6ae85e2f",
+      "channelId": "UC6WFKwYptsxVue56Lx218vg",
+      "channelTitle": "小柳ロウ / Koyanagi Rou【にじさんじ】",
+      "shortName": "小柳ロウ",
+      "start": "2026-11-02T10:00:00Z",
+      "durationSec": 0,
+      "status": "upcoming",
       "games": [
         "スプラ"
       ],
