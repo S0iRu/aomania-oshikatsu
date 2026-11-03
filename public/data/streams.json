@@ -1,7 +1,7 @@
 {
   "backfillComplete": true,
   "resume": {
-    "UC6WFKwYptsxVue56Lx218vg": "EAAaHlBUOkNHUWlFREEwTURGRlJqRkZSall4TnpCRU56VQ",
+    "UC6WFKwYptsxVue56Lx218vg": "EAAaHlBUOkNHUWlFRE5ETTBVMFFrRkZSa0UyTWtKRk5rUQ",
     "UCX7YkU9nEeaoZbkVLVajcMg": "EAAaHlBUOkNHUWlFRU5ETVRJeVFVRTFOREUxUVRVNFJqRQ"
   },
   "scanned": {
@@ -17468,6 +17468,24 @@
       "end": "2026-11-02T15:56:34Z",
       "durationSec": 21206,
       "status": "past",
+      "games": [
+        "スプラ"
+      ],
+      "tags": [],
+      "isOwn": true
+    },
+    {
+      "id": "K0LvAF2atCg",
+      "videoId": "K0LvAF2atCg",
+      "url": "https://www.youtube.com/watch?v=K0LvAF2atCg",
+      "title": "【スプラ】錆落としカスタム【小柳ロウ/にじさんじ】",
+      "thumbnail": "https://i.ytimg.com/vi/K0LvAF2atCg/mqdefault.jpg?v=6ae9992e",
+      "channelId": "UC6WFKwYptsxVue56Lx218vg",
+      "channelTitle": "小柳ロウ / Koyanagi Rou【にじさんじ】",
+      "shortName": "小柳ロウ",
+      "start": "2026-11-03T08:30:00Z",
+      "durationSec": 0,
+      "status": "upcoming",
       "games": [
         "スプラ"
       ],
