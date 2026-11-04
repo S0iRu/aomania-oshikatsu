@@ -1,8 +1,8 @@
 {
   "backfillComplete": true,
   "resume": {
-    "UC6WFKwYptsxVue56Lx218vg": "EAAaHlBUOkNHUWlFRU0yTlVSR1JqVkdPRGd4TVRVM056TQ",
-    "UCX7YkU9nEeaoZbkVLVajcMg": "EAAaHlBUOkNHUWlFRGM1TlRVNU1UUkRSRU0yUXpVNVJEQQ"
+    "UC6WFKwYptsxVue56Lx218vg": "EAAaHlBUOkNHUWlFRUUzUWtFMVF6bEdOVU5CTmpCQk1ETQ",
+    "UCX7YkU9nEeaoZbkVLVajcMg": "EAAaHlBUOkNHUWlFRUZHTnpKRE5rUkRNRVE0TkRKQ1EwSQ"
   },
   "scanned": {
     "UC6WFKwYptsxVue56Lx218vg": true,
@@ -17487,6 +17487,24 @@
       "end": "2026-11-03T16:21:03Z",
       "durationSec": 28065,
       "status": "past",
+      "games": [
+        "スプラ"
+      ],
+      "tags": [],
+      "isOwn": true
+    },
+    {
+      "id": "zU5dgDxavuQ",
+      "videoId": "zU5dgDxavuQ",
+      "url": "https://www.youtube.com/watch?v=zU5dgDxavuQ",
+      "title": "【スプラ】チム練【小柳ロウ/にじさんじ】",
+      "thumbnail": "https://i.ytimg.com/vi/zU5dgDxavuQ/mqdefault.jpg?v=6aeb00a8",
+      "channelId": "UC6WFKwYptsxVue56Lx218vg",
+      "channelTitle": "小柳ロウ / Koyanagi Rou【にじさんじ】",
+      "shortName": "小柳ロウ",
+      "start": "2026-11-04T10:05:25Z",
+      "durationSec": 0,
+      "status": "live",
       "games": [
         "スプラ"
       ],
