@@ -1,7 +1,7 @@
 {
   "backfillComplete": true,
   "resume": {
-    "UC6WFKwYptsxVue56Lx218vg": "EAAaHlBUOkNHUWlFRUpETkRBNVJUY3pOakJDT1RJNVF6QQ",
+    "UC6WFKwYptsxVue56Lx218vg": "EAAaHlBUOkNHUWlFREEyUmpaRVJrWkRSVU0zT1RaQlFVUQ",
     "UCX7YkU9nEeaoZbkVLVajcMg": "EAAaHlBUOkNHUWlFREF3UXpKRVEwUkNOa1V3TkRBd1JVSQ"
   },
   "scanned": {
@@ -17506,6 +17506,24 @@
       "end": "2026-11-04T16:27:07Z",
       "durationSec": 22902,
       "status": "past",
+      "games": [
+        "スプラ"
+      ],
+      "tags": [],
+      "isOwn": true
+    },
+    {
+      "id": "KlzY-LuDuyo",
+      "videoId": "KlzY-LuDuyo",
+      "url": "https://www.youtube.com/watch?v=KlzY-LuDuyo",
+      "title": "【スプラ】錆落とし→チム練【小柳ロウ/にじさんじ】",
+      "thumbnail": "https://i.ytimg.com/vi/KlzY-LuDuyo/mqdefault.jpg?v=6aec55ed",
+      "channelId": "UC6WFKwYptsxVue56Lx218vg",
+      "channelTitle": "小柳ロウ / Koyanagi Rou【にじさんじ】",
+      "shortName": "小柳ロウ",
+      "start": "2026-11-05T10:19:02Z",
+      "durationSec": 0,
+      "status": "live",
       "games": [
         "スプラ"
       ],
