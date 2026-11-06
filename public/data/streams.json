@@ -1,7 +1,7 @@
 {
   "backfillComplete": true,
   "resume": {
-    "UC6WFKwYptsxVue56Lx218vg": "EAAaHlBUOkNHUWlFRGsyTURJME1URTVRMEZGUmtJd016QQ",
+    "UC6WFKwYptsxVue56Lx218vg": "EAAaHlBUOkNHUWlFRVUzT0VVME4wTkVNME00TXpjNFF6Yw",
     "UCX7YkU9nEeaoZbkVLVajcMg": "EAAaHlBUOkNHUWlFRFJCTmpjek5FWkNPVFpFTlRKRU9UTQ"
   },
   "scanned": {
@@ -17536,13 +17536,14 @@
       "videoId": "wW1CXQ4M6-M",
       "url": "https://www.youtube.com/watch?v=wW1CXQ4M6-M",
       "title": "【スプラ】VSチーム16【小柳ロウ/にじさんじ】",
-      "thumbnail": "https://i.ytimg.com/vi/wW1CXQ4M6-M/mqdefault.jpg?v=6aedcdc6",
+      "thumbnail": "https://i.ytimg.com/vi/wW1CXQ4M6-M/mqdefault.jpg",
       "channelId": "UC6WFKwYptsxVue56Lx218vg",
       "channelTitle": "小柳ロウ / Koyanagi Rou【にじさんじ】",
       "shortName": "小柳ロウ",
       "start": "2026-11-06T13:05:50Z",
-      "durationSec": 0,
-      "status": "live",
+      "end": "2026-11-06T15:04:23Z",
+      "durationSec": 7113,
+      "status": "past",
       "games": [
         "スプラ"
       ],
