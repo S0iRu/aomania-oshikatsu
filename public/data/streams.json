@@ -1,8 +1,8 @@
 {
   "backfillComplete": true,
   "resume": {
-    "UC6WFKwYptsxVue56Lx218vg": "EAAaHlBUOkNHUWlFREF6TlRFeU0wVTVNak0xTlRRMlJUQQ",
-    "UCX7YkU9nEeaoZbkVLVajcMg": "EAAaHlBUOkNHUWlFRVV6UmtZMVJFRTJSakU0TWtZM1JESQ"
+    "UC6WFKwYptsxVue56Lx218vg": "EAAaHlBUOkNHUWlFRVF6TURZek5VTTFSRUZHTWtOQ04wRQ",
+    "UCX7YkU9nEeaoZbkVLVajcMg": "EAAaHlBUOkNHUWlFRGxETnpJNE1USkJOVGN5T0RBelJUTQ"
   },
   "scanned": {
     "UC6WFKwYptsxVue56Lx218vg": true,
@@ -17560,8 +17560,9 @@
       "channelTitle": "小柳ロウ / Koyanagi Rou【にじさんじ】",
       "shortName": "小柳ロウ",
       "start": "2026-11-07T06:41:17Z",
-      "durationSec": 0,
-      "status": "live",
+      "end": "2026-11-07T08:58:26Z",
+      "durationSec": 8229,
+      "status": "past",
       "games": [
         "#にじイカ祭り2026"
       ],
