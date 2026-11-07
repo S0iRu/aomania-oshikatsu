@@ -1,7 +1,7 @@
 {
   "backfillComplete": true,
   "resume": {
-    "UC6WFKwYptsxVue56Lx218vg": "EAAaHlBUOkNHUWlFREkwTlRJd1JrVXpNa0U1TUVaR1FUQQ",
+    "UC6WFKwYptsxVue56Lx218vg": "EAAaHlBUOkNHUWlFRFE1TVVNMlFrVkJNVFZGTlRaR1JrTQ",
     "UCX7YkU9nEeaoZbkVLVajcMg": "EAAaHlBUOkNHUWlFRVV6UmtZMVJFRTJSakU0TWtZM1JESQ"
   },
   "scanned": {
@@ -17546,6 +17546,24 @@
       "status": "past",
       "games": [
         "スプラ"
+      ],
+      "tags": [],
+      "isOwn": true
+    },
+    {
+      "id": "uAF9L73jfco",
+      "videoId": "uAF9L73jfco",
+      "url": "https://www.youtube.com/watch?v=uAF9L73jfco",
+      "title": "【#にじイカ祭り2026】Day1【小柳ロウ/にじさんじ】",
+      "thumbnail": "https://i.ytimg.com/vi/uAF9L73jfco/mqdefault.jpg?v=6aeec542",
+      "channelId": "UC6WFKwYptsxVue56Lx218vg",
+      "channelTitle": "小柳ロウ / Koyanagi Rou【にじさんじ】",
+      "shortName": "小柳ロウ",
+      "start": "2026-11-07T06:30:00Z",
+      "durationSec": 0,
+      "status": "upcoming",
+      "games": [
+        "#にじイカ祭り2026"
       ],
       "tags": [],
       "isOwn": true
