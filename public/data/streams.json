@@ -1,7 +1,7 @@
 {
   "backfillComplete": true,
   "resume": {
-    "UC6WFKwYptsxVue56Lx218vg": "EAAaHlBUOkNHUWlFRUZHTXpORE1qUXhPVE0zUmtaQ05qUQ",
+    "UC6WFKwYptsxVue56Lx218vg": "EAAaHlBUOkNHUWlFRVZCUkVFeE16VTBRMFJGTlRnMFJFVQ",
     "UCX7YkU9nEeaoZbkVLVajcMg": "EAAaHlBUOkNHUWlFRVpEUkVNd05rVkdOa0ZEUkRBeE4wRQ"
   },
   "scanned": {
@@ -17590,6 +17590,24 @@
       "tags": [
         "コラボ"
       ],
+      "isOwn": true
+    },
+    {
+      "id": "Be14jNSUwxc",
+      "videoId": "Be14jNSUwxc",
+      "url": "https://www.youtube.com/watch?v=Be14jNSUwxc",
+      "title": "【#にじイカ祭り2026】絶対優勝ドロップス【小柳ロウ/にじさんじ】",
+      "thumbnail": "https://i.ytimg.com/vi/Be14jNSUwxc/mqdefault.jpg?v=6af0137f",
+      "channelId": "UC6WFKwYptsxVue56Lx218vg",
+      "channelTitle": "小柳ロウ / Koyanagi Rou【にじさんじ】",
+      "shortName": "小柳ロウ",
+      "start": "2026-11-08T06:30:00Z",
+      "durationSec": 0,
+      "status": "upcoming",
+      "games": [
+        "#にじイカ祭り2026"
+      ],
+      "tags": [],
       "isOwn": true
     }
   ]
