@@ -2,7 +2,7 @@
   "backfillComplete": true,
   "resume": {
     "UC6WFKwYptsxVue56Lx218vg": "EAAaHlBUOkNHUWlFRGRETTBFNE1qZzVNRUV3UmpORk9EUQ",
-    "UCX7YkU9nEeaoZbkVLVajcMg": "EAAaHlBUOkNHUWlFRE01TmpkRVJFVkVSamc1TXpNeE5FUQ"
+    "UCX7YkU9nEeaoZbkVLVajcMg": "EAAaHlBUOkNHUWlFRGcwUWpjMVJqUXlPVGczUkRZME1qYw"
   },
   "scanned": {
     "UC6WFKwYptsxVue56Lx218vg": true,
@@ -17593,6 +17593,27 @@
       "isOwn": true
     },
     {
+      "id": "fiKw9dLQksQ",
+      "videoId": "fiKw9dLQksQ",
+      "url": "https://www.youtube.com/watch?v=fiKw9dLQksQ",
+      "title": "塗りまくれ！にじさんじイカ祭り2026 Day2【スプラトゥーン3】#にじイカ祭り2026",
+      "thumbnail": "https://i.ytimg.com/vi/fiKw9dLQksQ/mqdefault.jpg?v=6ae80d62",
+      "channelId": "UCX7YkU9nEeaoZbkVLVajcMg",
+      "channelTitle": "にじさんじ",
+      "shortName": "にじさんじ",
+      "start": "2026-11-08T04:59:05Z",
+      "end": "2026-11-08T12:09:18Z",
+      "durationSec": 25813,
+      "status": "past",
+      "games": [
+        "スプラ"
+      ],
+      "tags": [
+        "コラボ"
+      ],
+      "isOwn": false
+    },
+    {
       "id": "Be14jNSUwxc",
       "videoId": "Be14jNSUwxc",
       "url": "https://www.youtube.com/watch?v=Be14jNSUwxc",
@@ -17608,7 +17629,9 @@
       "games": [
         "#にじイカ祭り2026"
       ],
-      "tags": [],
+      "tags": [
+        "コラボ"
+      ],
       "isOwn": true
     }
   ]
