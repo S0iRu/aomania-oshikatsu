@@ -1,7 +1,7 @@
 {
   "backfillComplete": true,
   "resume": {
-    "UC6WFKwYptsxVue56Lx218vg": "EAAaHlBUOkNHUWlFRGRETTBFNE1qZzVNRUV3UmpORk9EUQ",
+    "UC6WFKwYptsxVue56Lx218vg": "EAAaHlBUOkNHUWlFRVpHTURJNVJqUTJNekV5UWpCRVF6TQ",
     "UCX7YkU9nEeaoZbkVLVajcMg": "EAAaHlBUOkNHUWlFREpCUXpGRlJrWXdNamc0TWpRM1JFUQ"
   },
   "scanned": {
@@ -17632,6 +17632,24 @@
       "tags": [
         "コラボ"
       ],
+      "isOwn": true
+    },
+    {
+      "id": "cZQ4HPcAf04",
+      "videoId": "cZQ4HPcAf04",
+      "url": "https://www.youtube.com/watch?v=cZQ4HPcAf04",
+      "title": "【APEX】天月さん、セリーさん【小柳ロウ/にじさんじ】",
+      "thumbnail": "https://i.ytimg.com/vi/cZQ4HPcAf04/mqdefault.jpg?v=6af1a724",
+      "channelId": "UC6WFKwYptsxVue56Lx218vg",
+      "channelTitle": "小柳ロウ / Koyanagi Rou【にじさんじ】",
+      "shortName": "小柳ロウ",
+      "start": "2026-11-09T11:00:00Z",
+      "durationSec": 0,
+      "status": "upcoming",
+      "games": [
+        "APEX"
+      ],
+      "tags": [],
       "isOwn": true
     }
   ]
