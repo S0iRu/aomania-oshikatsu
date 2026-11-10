@@ -1,7 +1,7 @@
 {
   "backfillComplete": true,
   "resume": {
-    "UC6WFKwYptsxVue56Lx218vg": "EAAaHlBUOkNHUWlFRGt4TXpCQ1FUa3lPRUl6UmtaQ1F6Zw",
+    "UC6WFKwYptsxVue56Lx218vg": "EAAaHlBUOkNHUWlFRGxGT1RZd1FrVTBRemd5UXpJNFFUYw",
     "UCX7YkU9nEeaoZbkVLVajcMg": "EAAaHlBUOkNHUWlFREkxT1RsRVFrVkZRVVZFUmtJMlFrUQ"
   },
   "scanned": {
@@ -17677,13 +17677,14 @@
       "videoId": "gQBb8TXhFb4",
       "url": "https://www.youtube.com/watch?v=gQBb8TXhFb4",
       "title": "【ガチグラ２】のんびりやります。【小柳ロウ/にじさんじ】",
-      "thumbnail": "https://i.ytimg.com/vi/gQBb8TXhFb4/mqdefault.jpg?v=6af2fba4",
+      "thumbnail": "https://i.ytimg.com/vi/gQBb8TXhFb4/mqdefault.jpg",
       "channelId": "UC6WFKwYptsxVue56Lx218vg",
       "channelTitle": "小柳ロウ / Koyanagi Rou【にじさんじ】",
       "shortName": "小柳ロウ",
       "start": "2026-11-10T11:16:46Z",
-      "durationSec": 0,
-      "status": "live",
+      "end": "2026-11-10T17:02:03Z",
+      "durationSec": 20717,
+      "status": "past",
       "games": [
         "ガチグラ２"
       ],
