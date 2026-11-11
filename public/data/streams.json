@@ -1,8 +1,8 @@
 {
   "backfillComplete": true,
   "resume": {
-    "UC6WFKwYptsxVue56Lx218vg": "EAAaHlBUOkNHUWlFREl3UXpFM05EQkdORFZEUWpOQk5VWQ",
-    "UCX7YkU9nEeaoZbkVLVajcMg": "EAAaHlBUOkNHUWlFREZGUWpReFF6SXhPVGs1TWpBd09UWQ"
+    "UC6WFKwYptsxVue56Lx218vg": "EAAaHlBUOkNHUWlFRVUyTkRkRU5FWkdRMFF3UmtZNE5VRQ",
+    "UCX7YkU9nEeaoZbkVLVajcMg": "EAAaHlBUOkNHUWlFRGxHTTBaRk1UUkRSRE0zTlVRMk5qaw"
   },
   "scanned": {
     "UC6WFKwYptsxVue56Lx218vg": true,
@@ -17706,6 +17706,24 @@
       "status": "past",
       "games": [
         "APEX"
+      ],
+      "tags": [],
+      "isOwn": true
+    },
+    {
+      "id": "MkL8eZr83o0",
+      "videoId": "MkL8eZr83o0",
+      "url": "https://www.youtube.com/watch?v=MkL8eZr83o0",
+      "title": "【ガチグラ２】個人医です。【小柳ロウ/にじさんじ】",
+      "thumbnail": "https://i.ytimg.com/vi/MkL8eZr83o0/mqdefault.jpg?v=6af44acd",
+      "channelId": "UC6WFKwYptsxVue56Lx218vg",
+      "channelTitle": "小柳ロウ / Koyanagi Rou【にじさんじ】",
+      "shortName": "小柳ロウ",
+      "start": "2026-11-11T11:10:00Z",
+      "durationSec": 0,
+      "status": "upcoming",
+      "games": [
+        "ガチグラ２"
       ],
       "tags": [],
       "isOwn": true
