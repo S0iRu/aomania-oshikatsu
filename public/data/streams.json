@@ -1,7 +1,7 @@
 {
   "backfillComplete": true,
   "resume": {
-    "UC6WFKwYptsxVue56Lx218vg": "EAAaHlBUOkNHUWlFREJGTXpCQ05VWTJOVEF6UlRFek5qVQ",
+    "UC6WFKwYptsxVue56Lx218vg": "EAAaHlBUOkNHUWlFRFl5UVVKR1JqTkVRVVl5T1RVeFFqUQ",
     "UCX7YkU9nEeaoZbkVLVajcMg": "EAAaHlBUOkNHUWlFRGs1T1VORVJrTkdNVUUxUlRKQ1FUYw"
   },
   "scanned": {
@@ -17715,13 +17715,14 @@
       "videoId": "MkL8eZr83o0",
       "url": "https://www.youtube.com/watch?v=MkL8eZr83o0",
       "title": "【ガチグラ２】個人医です。【小柳ロウ/にじさんじ】",
-      "thumbnail": "https://i.ytimg.com/vi/MkL8eZr83o0/mqdefault.jpg?v=6af44acd",
+      "thumbnail": "https://i.ytimg.com/vi/MkL8eZr83o0/mqdefault.jpg",
       "channelId": "UC6WFKwYptsxVue56Lx218vg",
       "channelTitle": "小柳ロウ / Koyanagi Rou【にじさんじ】",
       "shortName": "小柳ロウ",
       "start": "2026-11-11T11:12:10Z",
-      "durationSec": 0,
-      "status": "live",
+      "end": "2026-11-11T17:01:45Z",
+      "durationSec": 20975,
+      "status": "past",
       "games": [
         "ガチグラ２"
       ],
