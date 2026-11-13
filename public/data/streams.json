@@ -1,7 +1,7 @@
 {
   "backfillComplete": true,
   "resume": {
-    "UC6WFKwYptsxVue56Lx218vg": "EAAaHlBUOkNHUWlFRUpHTmtZeVFUTkVNemRHTkRZMU1qRQ",
+    "UC6WFKwYptsxVue56Lx218vg": "EAAaHlBUOkNHUWlFRUpGTTBNM01ESTBPRFk1UkRnM016Yw",
     "UCX7YkU9nEeaoZbkVLVajcMg": "EAAaHlBUOkNHUWlFREEzTVVKQ09VWkNNek0yT1VWRE4wSQ"
   },
   "scanned": {
@@ -17753,13 +17753,14 @@
       "videoId": "BrbBsOtF-aw",
       "url": "https://www.youtube.com/watch?v=BrbBsOtF-aw",
       "title": "【ガチグラ２】闇医者日和【小柳ロウ/にじさんじ】",
-      "thumbnail": "https://i.ytimg.com/vi/BrbBsOtF-aw/mqdefault.jpg?v=6af71087",
+      "thumbnail": "https://i.ytimg.com/vi/BrbBsOtF-aw/mqdefault.jpg",
       "channelId": "UC6WFKwYptsxVue56Lx218vg",
       "channelTitle": "小柳ロウ / Koyanagi Rou【にじさんじ】",
       "shortName": "小柳ロウ",
       "start": "2026-11-13T13:34:24Z",
-      "durationSec": 0,
-      "status": "live",
+      "end": "2026-11-13T17:02:18Z",
+      "durationSec": 12474,
+      "status": "past",
       "games": [
         "ガチグラ２"
       ],
