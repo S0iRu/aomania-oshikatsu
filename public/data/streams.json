@@ -1,7 +1,7 @@
 {
   "backfillComplete": true,
   "resume": {
-    "UC6WFKwYptsxVue56Lx218vg": "EAAaHlBUOkNHUWlFRGxFTWtKQk5VSTVNVEF3TTBJM01rUQ",
+    "UC6WFKwYptsxVue56Lx218vg": "EAAaHlBUOkNHUWlFRE5DUVRORU16azFNVUpHUlRFek5rUQ",
     "UCX7YkU9nEeaoZbkVLVajcMg": "EAAaHlBUOkNHUWlFREEzTVVKQ09VWkNNek0yT1VWRE4wSQ"
   },
   "scanned": {
@@ -17777,8 +17777,9 @@
       "channelTitle": "小柳ロウ / Koyanagi Rou【にじさんじ】",
       "shortName": "小柳ロウ",
       "start": "2026-11-14T11:05:42Z",
-      "durationSec": 0,
-      "status": "live",
+      "end": "2026-11-14T17:01:23Z",
+      "durationSec": 21341,
+      "status": "past",
       "games": [
         "ガチグラ２"
       ],
