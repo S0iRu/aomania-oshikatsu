@@ -1,7 +1,7 @@
 {
   "backfillComplete": true,
   "resume": {
-    "UC6WFKwYptsxVue56Lx218vg": "EAAaHlBUOkNHUWlFRUpGTTBNM01ESTBPRFk1UkRnM016Yw",
+    "UC6WFKwYptsxVue56Lx218vg": "EAAaHlBUOkNHUWlFRVJHUWtRek1EazNORGs0TTBGRFJEaw",
     "UCX7YkU9nEeaoZbkVLVajcMg": "EAAaHlBUOkNHUWlFREEzTVVKQ09VWkNNek0yT1VWRE4wSQ"
   },
   "scanned": {
@@ -17761,6 +17761,24 @@
       "end": "2026-11-13T17:02:18Z",
       "durationSec": 12474,
       "status": "past",
+      "games": [
+        "ガチグラ２"
+      ],
+      "tags": [],
+      "isOwn": true
+    },
+    {
+      "id": "0iCfVRPBFvI",
+      "videoId": "0iCfVRPBFvI",
+      "url": "https://www.youtube.com/watch?v=0iCfVRPBFvI",
+      "title": "【ガチグラ２】人命救助【小柳ロウ/にじさんじ】",
+      "thumbnail": "https://i.ytimg.com/vi/0iCfVRPBFvI/mqdefault.jpg?v=6af83f0b",
+      "channelId": "UC6WFKwYptsxVue56Lx218vg",
+      "channelTitle": "小柳ロウ / Koyanagi Rou【にじさんじ】",
+      "shortName": "小柳ロウ",
+      "start": "2026-11-14T11:05:00Z",
+      "durationSec": 0,
+      "status": "upcoming",
       "games": [
         "ガチグラ２"
       ],
