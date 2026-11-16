@@ -1,7 +1,7 @@
 {
   "backfillComplete": true,
   "resume": {
-    "UC6WFKwYptsxVue56Lx218vg": "EAAaHlBUOkNHUWlFRFpGTmpWRU9VSXhNVUpETmpoQlF6TQ",
+    "UC6WFKwYptsxVue56Lx218vg": "EAAaHlBUOkNHUWlFRVZCT1RFM016SkdNa1kyT1RJeU9VRQ",
     "UCX7YkU9nEeaoZbkVLVajcMg": "EAAaHlBUOkNHUWlFRGczUVRBeU9UUTNPVUpGT0VORE1EWQ"
   },
   "scanned": {
@@ -17827,13 +17827,14 @@
       "videoId": "KJtTk_D7uY4",
       "url": "https://www.youtube.com/watch?v=KJtTk_D7uY4",
       "title": "【ガチグラ２】極楽【小柳ロウ/にじさんじ】",
-      "thumbnail": "https://i.ytimg.com/vi/KJtTk_D7uY4/mqdefault.jpg?v=6afb1099",
+      "thumbnail": "https://i.ytimg.com/vi/KJtTk_D7uY4/mqdefault.jpg",
       "channelId": "UC6WFKwYptsxVue56Lx218vg",
       "channelTitle": "小柳ロウ / Koyanagi Rou【にじさんじ】",
       "shortName": "小柳ロウ",
       "start": "2026-11-16T14:23:08Z",
-      "durationSec": 0,
-      "status": "live",
+      "end": "2026-11-16T17:01:21Z",
+      "durationSec": 9493,
+      "status": "past",
       "games": [
         "ガチグラ２"
       ],
