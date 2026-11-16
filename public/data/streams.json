@@ -1,7 +1,7 @@
 {
   "backfillComplete": true,
   "resume": {
-    "UC6WFKwYptsxVue56Lx218vg": "EAAaHlBUOkNHUWlFRVE0TTBKQlFUWTJRMFkxTmpnMk56Yw",
+    "UC6WFKwYptsxVue56Lx218vg": "EAAaHlBUOkNHUWlFRE01UkVZeU4wVXlNVFkxTjBOR05VTQ",
     "UCX7YkU9nEeaoZbkVLVajcMg": "EAAaHlBUOkNHUWlFRGczUVRBeU9UUTNPVUpGT0VORE1EWQ"
   },
   "scanned": {
@@ -17810,14 +17810,33 @@
       "videoId": "95AguTJfpF0",
       "url": "https://www.youtube.com/watch?v=95AguTJfpF0",
       "title": "【Cursed Companions】ちる☆ぼた二次会【小柳ロウ/にじさんじ】",
-      "thumbnail": "https://i.ytimg.com/vi/95AguTJfpF0/mqdefault.jpg?v=6afaef9d",
+      "thumbnail": "https://i.ytimg.com/vi/95AguTJfpF0/mqdefault.jpg",
       "channelId": "UC6WFKwYptsxVue56Lx218vg",
       "channelTitle": "小柳ロウ / Koyanagi Rou【にじさんじ】",
       "shortName": "小柳ロウ",
       "start": "2026-11-16T12:08:11Z",
+      "end": "2026-11-16T14:14:37Z",
+      "durationSec": 7586,
+      "status": "past",
+      "games": [],
+      "tags": [],
+      "isOwn": true
+    },
+    {
+      "id": "KJtTk_D7uY4",
+      "videoId": "KJtTk_D7uY4",
+      "url": "https://www.youtube.com/watch?v=KJtTk_D7uY4",
+      "title": "【ガチグラ２】極楽【小柳ロウ/にじさんじ】",
+      "thumbnail": "https://i.ytimg.com/vi/KJtTk_D7uY4/mqdefault.jpg?v=6afb1099",
+      "channelId": "UC6WFKwYptsxVue56Lx218vg",
+      "channelTitle": "小柳ロウ / Koyanagi Rou【にじさんじ】",
+      "shortName": "小柳ロウ",
+      "start": "2026-11-16T14:23:08Z",
       "durationSec": 0,
       "status": "live",
-      "games": [],
+      "games": [
+        "ガチグラ２"
+      ],
       "tags": [],
       "isOwn": true
     }
