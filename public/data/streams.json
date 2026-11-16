@@ -1,7 +1,7 @@
 {
   "backfillComplete": true,
   "resume": {
-    "UC6WFKwYptsxVue56Lx218vg": "EAAaHlBUOkNHUWlFRGN6UmpJeFJrWkZSakUzTXpSR01qaw",
+    "UC6WFKwYptsxVue56Lx218vg": "EAAaHlBUOkNHUWlFRUZGUWpFek16QTBSVGsxTXpBNFFVSQ",
     "UCX7YkU9nEeaoZbkVLVajcMg": "EAAaHlBUOkNHUWlFRGczUVRBeU9UUTNPVUpGT0VORE1EWQ"
   },
   "scanned": {
@@ -17802,6 +17802,22 @@
       "games": [
         "ガチグラ２"
       ],
+      "tags": [],
+      "isOwn": true
+    },
+    {
+      "id": "95AguTJfpF0",
+      "videoId": "95AguTJfpF0",
+      "url": "https://www.youtube.com/watch?v=95AguTJfpF0",
+      "title": "【Cursed Companions】ちる☆ぼた二次会【小柳ロウ/にじさんじ】",
+      "thumbnail": "https://i.ytimg.com/vi/95AguTJfpF0/mqdefault.jpg?v=6afaef9d",
+      "channelId": "UC6WFKwYptsxVue56Lx218vg",
+      "channelTitle": "小柳ロウ / Koyanagi Rou【にじさんじ】",
+      "shortName": "小柳ロウ",
+      "start": "2026-11-16T12:00:00Z",
+      "durationSec": 0,
+      "status": "upcoming",
+      "games": [],
       "tags": [],
       "isOwn": true
     }
