@@ -1,7 +1,7 @@
 {
   "backfillComplete": true,
   "resume": {
-    "UC6WFKwYptsxVue56Lx218vg": "EAAaHlBUOkNHUWlFRVV4TVVaRlJrTXlOMFV4UkRrME1UWQ",
+    "UC6WFKwYptsxVue56Lx218vg": "EAAaHlBUOkNHUWlFRGd3UkVNNFFVWXdOME13UkVOQ1FqTQ",
     "UCX7YkU9nEeaoZbkVLVajcMg": "EAAaHlBUOkNHUWlFRU0zTVRjeU9FTTNPVFUzTkVRNFFrTQ"
   },
   "scanned": {
@@ -17846,13 +17846,14 @@
       "videoId": "yNmn2Ud5pU4",
       "url": "https://www.youtube.com/watch?v=yNmn2Ud5pU4",
       "title": "【ガチグラ２】賑やかな職場【小柳ロウ/にじさんじ】",
-      "thumbnail": "https://i.ytimg.com/vi/yNmn2Ud5pU4/mqdefault.jpg?v=6afc34e6",
+      "thumbnail": "https://i.ytimg.com/vi/yNmn2Ud5pU4/mqdefault.jpg",
       "channelId": "UC6WFKwYptsxVue56Lx218vg",
       "channelTitle": "小柳ロウ / Koyanagi Rou【にじさんじ】",
       "shortName": "小柳ロウ",
       "start": "2026-11-17T11:10:20Z",
-      "durationSec": 0,
-      "status": "live",
+      "end": "2026-11-17T17:02:11Z",
+      "durationSec": 21111,
+      "status": "past",
       "games": [
         "ガチグラ２"
       ],
