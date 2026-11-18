@@ -1,8 +1,8 @@
 {
   "backfillComplete": true,
   "resume": {
-    "UC6WFKwYptsxVue56Lx218vg": "EAAaHlBUOkNHUWlFRGd3UkVNNFFVWXdOME13UkVOQ1FqTQ",
-    "UCX7YkU9nEeaoZbkVLVajcMg": "EAAaHlBUOkNHUWlFRGxCUXpBd016STNSREpHTmtaR1FqRQ"
+    "UC6WFKwYptsxVue56Lx218vg": "EAAaHlBUOkNHUWlFRVV6TWtKQ09FVTBSa1ZHTVVFMU5qRQ",
+    "UCX7YkU9nEeaoZbkVLVajcMg": "EAAaHlBUOkNHUWlFREZFTWtWRFFrSkNSVVkzTUVJMFFqQQ"
   },
   "scanned": {
     "UC6WFKwYptsxVue56Lx218vg": true,
@@ -17854,6 +17854,24 @@
       "end": "2026-11-17T17:02:11Z",
       "durationSec": 21111,
       "status": "past",
+      "games": [
+        "ガチグラ２"
+      ],
+      "tags": [],
+      "isOwn": true
+    },
+    {
+      "id": "sTyde4-Ab_U",
+      "videoId": "sTyde4-Ab_U",
+      "url": "https://www.youtube.com/watch?v=sTyde4-Ab_U",
+      "title": "【ガチグラ２】ちょけなし【小柳ロウ/にじさんじ】",
+      "thumbnail": "https://i.ytimg.com/vi/sTyde4-Ab_U/mqdefault.jpg?v=6afd866b",
+      "channelId": "UC6WFKwYptsxVue56Lx218vg",
+      "channelTitle": "小柳ロウ / Koyanagi Rou【にじさんじ】",
+      "shortName": "小柳ロウ",
+      "start": "2026-11-18T11:09:47Z",
+      "durationSec": 0,
+      "status": "live",
       "games": [
         "ガチグラ２"
       ],
