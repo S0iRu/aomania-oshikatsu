@@ -1,7 +1,7 @@
 {
   "backfillComplete": true,
   "resume": {
-    "UC6WFKwYptsxVue56Lx218vg": "EAAaHlBUOkNHUWlFRU5GTVRBM056UkVPRU0wTVRVeVFVRQ",
+    "UC6WFKwYptsxVue56Lx218vg": "EAAaHlBUOkNHUWlFRUpFTkRJeE9EVXhORUUzTWtFeU1EYw",
     "UCX7YkU9nEeaoZbkVLVajcMg": "EAAaHlBUOkNHUWlFREZFTWtWRFFrSkNSVVkzTUVJMFFqQQ"
   },
   "scanned": {
@@ -17875,6 +17875,24 @@
       "status": "past",
       "games": [
         "ガチグラ２"
+      ],
+      "tags": [],
+      "isOwn": true
+    },
+    {
+      "id": "VVgf_dXwavk",
+      "videoId": "VVgf_dXwavk",
+      "url": "https://www.youtube.com/watch?v=VVgf_dXwavk",
+      "title": "【APEX】テンくん、水無瀬【小柳ロウ/にじさんじ】",
+      "thumbnail": "https://i.ytimg.com/vi/VVgf_dXwavk/mqdefault.jpg?v=6afe486e",
+      "channelId": "UC6WFKwYptsxVue56Lx218vg",
+      "channelTitle": "小柳ロウ / Koyanagi Rou【にじさんじ】",
+      "shortName": "小柳ロウ",
+      "start": "2026-11-19T00:59:49Z",
+      "durationSec": 0,
+      "status": "live",
+      "games": [
+        "APEX"
       ],
       "tags": [],
       "isOwn": true
