@@ -1,7 +1,7 @@
 {
   "backfillComplete": true,
   "resume": {
-    "UC6WFKwYptsxVue56Lx218vg": "EAAaHlBUOkNHUWlFREpGTURCQk5qRTRPVFl6UWpVeU5EWQ",
+    "UC6WFKwYptsxVue56Lx218vg": "EAAaHlBUOkNHUWlFRVEwUkRVNE1FTTNRek5GUlVaRFJqYw",
     "UCX7YkU9nEeaoZbkVLVajcMg": "EAAaHlBUOkNHUWlFRVF4UTBRM05UazBSa1JHUmtWRU9VUQ"
   },
   "scanned": {
@@ -17941,11 +17941,30 @@
       "videoId": "PDN0EIfIgas",
       "url": "https://www.youtube.com/watch?v=PDN0EIfIgas",
       "title": "【ガチグラ２】ラストピック【小柳ロウ/にじさんじ】",
-      "thumbnail": "https://i.ytimg.com/vi/PDN0EIfIgas/mqdefault.jpg?v=6b017ca5",
+      "thumbnail": "https://i.ytimg.com/vi/PDN0EIfIgas/mqdefault.jpg",
       "channelId": "UC6WFKwYptsxVue56Lx218vg",
       "channelTitle": "小柳ロウ / Koyanagi Rou【にじさんじ】",
       "shortName": "小柳ロウ",
       "start": "2026-11-21T11:16:53Z",
+      "end": "2026-11-21T12:39:33Z",
+      "durationSec": 4960,
+      "status": "past",
+      "games": [
+        "ガチグラ２"
+      ],
+      "tags": [],
+      "isOwn": true
+    },
+    {
+      "id": "ifRxf9AEXh8",
+      "videoId": "ifRxf9AEXh8",
+      "url": "https://www.youtube.com/watch?v=ifRxf9AEXh8",
+      "title": "【ガチグラ２】ラストピック【小柳ロウ/にじさんじ】",
+      "thumbnail": "https://i.ytimg.com/vi/ifRxf9AEXh8/mqdefault.jpg?v=6b019217",
+      "channelId": "UC6WFKwYptsxVue56Lx218vg",
+      "channelTitle": "小柳ロウ / Koyanagi Rou【にじさんじ】",
+      "shortName": "小柳ロウ",
+      "start": "2026-11-21T12:46:01Z",
       "durationSec": 0,
       "status": "live",
       "games": [
