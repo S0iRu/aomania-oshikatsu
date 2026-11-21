@@ -1,7 +1,7 @@
 {
   "backfillComplete": true,
   "resume": {
-    "UC6WFKwYptsxVue56Lx218vg": "EAAaHlBUOkNHUWlFREV6UVVJeE9UUkZRa013TVRBNU16TQ",
+    "UC6WFKwYptsxVue56Lx218vg": "EAAaHlBUOkNHUWlFRGczTlVFNU1qQkRNak00UXpJME5qTQ",
     "UCX7YkU9nEeaoZbkVLVajcMg": "EAAaHlBUOkNHUWlFRVl5UlVReVF6ZERNVFUzTkVFd1FqSQ"
   },
   "scanned": {
@@ -17913,6 +17913,24 @@
       "status": "past",
       "games": [
         "ガチグラ２"
+      ],
+      "tags": [],
+      "isOwn": true
+    },
+    {
+      "id": "NIeY6K9E6VU",
+      "videoId": "NIeY6K9E6VU",
+      "url": "https://www.youtube.com/watch?v=NIeY6K9E6VU",
+      "title": "【APEX】大地君、レヨン君【小柳ロウ/にじさんじ】",
+      "thumbnail": "https://i.ytimg.com/vi/NIeY6K9E6VU/mqdefault.jpg?v=6b0124a2",
+      "channelId": "UC6WFKwYptsxVue56Lx218vg",
+      "channelTitle": "小柳ロウ / Koyanagi Rou【にじさんじ】",
+      "shortName": "小柳ロウ",
+      "start": "2026-11-21T05:00:00Z",
+      "durationSec": 0,
+      "status": "upcoming",
+      "games": [
+        "APEX"
       ],
       "tags": [],
       "isOwn": true
