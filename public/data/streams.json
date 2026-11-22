@@ -1,8 +1,8 @@
 {
   "backfillComplete": true,
   "resume": {
-    "UC6WFKwYptsxVue56Lx218vg": "EAAaHlBUOkNHUWlFRVpGTVRJMFF6UTBORVZDTWpsQ1FUaw",
-    "UCX7YkU9nEeaoZbkVLVajcMg": "EAAaHlBUOkNHUWlFRVF4UTBRM05UazBSa1JHUmtWRU9VUQ"
+    "UC6WFKwYptsxVue56Lx218vg": "EAAaHlBUOkNHUWlFRUpHUmpFMVJVRXhRalE0TURJME9VVQ",
+    "UCX7YkU9nEeaoZbkVLVajcMg": "EAAaHlBUOkNHUWlFRFJDUmpZNU1EUkZRamcwUlVGQk1URQ"
   },
   "scanned": {
     "UC6WFKwYptsxVue56Lx218vg": true,
@@ -17970,6 +17970,24 @@
       "status": "past",
       "games": [
         "ガチグラ２"
+      ],
+      "tags": [],
+      "isOwn": true
+    },
+    {
+      "id": "QzVfDVpVb9Y",
+      "videoId": "QzVfDVpVb9Y",
+      "url": "https://www.youtube.com/watch?v=QzVfDVpVb9Y",
+      "title": "【APEX】ぶいすぽGGスクリム【小柳ロウ/にじさんじ】",
+      "thumbnail": "https://i.ytimg.com/vi/QzVfDVpVb9Y/mqdefault.jpg?v=6b02bacc",
+      "channelId": "UC6WFKwYptsxVue56Lx218vg",
+      "channelTitle": "小柳ロウ / Koyanagi Rou【にじさんじ】",
+      "shortName": "小柳ロウ",
+      "start": "2026-11-22T10:00:27Z",
+      "durationSec": 0,
+      "status": "live",
+      "games": [
+        "APEX"
       ],
       "tags": [],
       "isOwn": true
