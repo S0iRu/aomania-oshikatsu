@@ -1,7 +1,7 @@
 {
   "backfillComplete": true,
   "resume": {
-    "UC6WFKwYptsxVue56Lx218vg": "EAAaHlBUOkNHUWlFRVF4UXpjM01FWXpPRFF3UmtGQ00wWQ",
+    "UC6WFKwYptsxVue56Lx218vg": "EAAaHlBUOkNHUWlFRUkyUmtSR1EwSXdPVVJDTkVGRE1FVQ",
     "UCX7YkU9nEeaoZbkVLVajcMg": "EAAaHlBUOkNHUWlFRE5EUWpVM1F6aEVNMFEzTmpZeE5VTQ"
   },
   "scanned": {
@@ -17987,6 +17987,24 @@
       "end": "2026-11-22T12:58:59Z",
       "durationSec": 10712,
       "status": "past",
+      "games": [
+        "APEX"
+      ],
+      "tags": [],
+      "isOwn": true
+    },
+    {
+      "id": "7HemVc-Wles",
+      "videoId": "7HemVc-Wles",
+      "url": "https://www.youtube.com/watch?v=7HemVc-Wles",
+      "title": "【APEX】9時~フルパ【小柳ロウ/にじさんじ】",
+      "thumbnail": "https://i.ytimg.com/vi/7HemVc-Wles/mqdefault.jpg?v=6b036cf6",
+      "channelId": "UC6WFKwYptsxVue56Lx218vg",
+      "channelTitle": "小柳ロウ / Koyanagi Rou【にじさんじ】",
+      "shortName": "小柳ロウ",
+      "start": "2026-11-22T22:35:00Z",
+      "durationSec": 0,
+      "status": "upcoming",
       "games": [
         "APEX"
       ],
