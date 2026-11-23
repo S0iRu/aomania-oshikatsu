@@ -1,7 +1,7 @@
 {
   "backfillComplete": true,
   "resume": {
-    "UC6WFKwYptsxVue56Lx218vg": "EAAaHlBUOkNHUWlFRE5FTkVZNE1FVXlSREZCTURGQk5ESQ",
+    "UC6WFKwYptsxVue56Lx218vg": "EAAaHlBUOkNHUWlFRVkxTkRBMU9ETXlPVEUyTWtVMk4wVQ",
     "UCX7YkU9nEeaoZbkVLVajcMg": "EAAaHlBUOkNHUWlFRE5EUWpVM1F6aEVNMFEzTmpZeE5VTQ"
   },
   "scanned": {
@@ -18017,13 +18017,14 @@
       "videoId": "l8RN1mui1io",
       "url": "https://www.youtube.com/watch?v=l8RN1mui1io",
       "title": "【APEX】ぶいすぽGG【小柳ロウ/にじさんじ】",
-      "thumbnail": "https://i.ytimg.com/vi/l8RN1mui1io/mqdefault.jpg?v=6b040b4b",
+      "thumbnail": "https://i.ytimg.com/vi/l8RN1mui1io/mqdefault.jpg",
       "channelId": "UC6WFKwYptsxVue56Lx218vg",
       "channelTitle": "小柳ロウ / Koyanagi Rou【にじさんじ】",
       "shortName": "小柳ロウ",
       "start": "2026-11-23T09:58:02Z",
-      "durationSec": 0,
-      "status": "live",
+      "end": "2026-11-23T13:05:52Z",
+      "durationSec": 11270,
+      "status": "past",
       "games": [
         "APEX"
       ],
