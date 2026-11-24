@@ -1,7 +1,7 @@
 {
   "backfillComplete": true,
   "resume": {
-    "UC6WFKwYptsxVue56Lx218vg": "EAAaHlBUOkNHUWlFRVkxTkRBMU9ETXlPVEUyTWtVMk4wVQ",
+    "UC6WFKwYptsxVue56Lx218vg": "EAAaHlBUOkNHUWlFRUV3TVRjd1FVUXlRemd4UkVRd05qZw",
     "UCX7YkU9nEeaoZbkVLVajcMg": "EAAaHlBUOkNHUWlFRGxDTUROQk1ETkZOamsyUlRrelFqWQ"
   },
   "scanned": {
@@ -18025,6 +18025,24 @@
       "end": "2026-11-23T13:05:52Z",
       "durationSec": 11270,
       "status": "past",
+      "games": [
+        "APEX"
+      ],
+      "tags": [],
+      "isOwn": true
+    },
+    {
+      "id": "2i7cBD58ODo",
+      "videoId": "2i7cBD58ODo",
+      "url": "https://www.youtube.com/watch?v=2i7cBD58ODo",
+      "title": "【APEX】テンくん、ゆうく【小柳ロウ/にじさんじ】",
+      "thumbnail": "https://i.ytimg.com/vi/2i7cBD58ODo/mqdefault.jpg?v=6b058809",
+      "channelId": "UC6WFKwYptsxVue56Lx218vg",
+      "channelTitle": "小柳ロウ / Koyanagi Rou【にじさんじ】",
+      "shortName": "小柳ロウ",
+      "start": "2026-11-24T12:54:02Z",
+      "durationSec": 0,
+      "status": "live",
       "games": [
         "APEX"
       ],
