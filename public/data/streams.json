@@ -1,7 +1,7 @@
 {
   "backfillComplete": true,
   "resume": {
-    "UC6WFKwYptsxVue56Lx218vg": "EAAaHlBUOkNHUWlFRVl5TjBZNFJqUTRNME0zUXpBMlF6Zw",
+    "UC6WFKwYptsxVue56Lx218vg": "EAAaHlBUOkNHUWlFRUkyTVRNME56TTVNRGxETURoR05USQ",
     "UCX7YkU9nEeaoZbkVLVajcMg": "EAAaHlBUOkNHUWlFRGRDUmpFek9EYzNSRU15UkVSQlJFSQ"
   },
   "scanned": {
@@ -18046,6 +18046,24 @@
       "status": "past",
       "games": [
         "APEX"
+      ],
+      "tags": [],
+      "isOwn": true
+    },
+    {
+      "id": "z1aBMTQrLZE",
+      "videoId": "z1aBMTQrLZE",
+      "url": "https://www.youtube.com/watch?v=z1aBMTQrLZE",
+      "title": "【新衣装】パフォ【小柳ロウ/にじさんじ】",
+      "thumbnail": "https://i.ytimg.com/vi/z1aBMTQrLZE/mqdefault.jpg?v=6b06dd7a",
+      "channelId": "UC6WFKwYptsxVue56Lx218vg",
+      "channelTitle": "小柳ロウ / Koyanagi Rou【にじさんじ】",
+      "shortName": "小柳ロウ",
+      "start": "2026-11-25T13:16:19Z",
+      "durationSec": 0,
+      "status": "live",
+      "games": [
+        "新衣装"
       ],
       "tags": [],
       "isOwn": true
