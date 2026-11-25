@@ -1,7 +1,7 @@
 {
   "backfillComplete": true,
   "resume": {
-    "UC6WFKwYptsxVue56Lx218vg": "EAAaHlBUOkNHUWlFRUkyTVRNME56TTVNRGxETURoR05USQ",
+    "UC6WFKwYptsxVue56Lx218vg": "EAAaHlBUOkNHUWlFRFl5TVVNeFJrWTVSVEV5T1RBeE1qZw",
     "UCX7YkU9nEeaoZbkVLVajcMg": "EAAaHlBUOkNHUWlFRGRDUmpFek9EYzNSRU15UkVSQlJFSQ"
   },
   "scanned": {
@@ -18060,8 +18060,9 @@
       "channelTitle": "小柳ロウ / Koyanagi Rou【にじさんじ】",
       "shortName": "小柳ロウ",
       "start": "2026-11-25T13:16:19Z",
-      "durationSec": 0,
-      "status": "live",
+      "end": "2026-11-25T13:58:50Z",
+      "durationSec": 2551,
+      "status": "past",
       "games": [
         "新衣装"
       ],
