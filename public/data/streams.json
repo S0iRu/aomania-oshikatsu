@@ -1,7 +1,7 @@
 {
   "backfillComplete": true,
   "resume": {
-    "UC6WFKwYptsxVue56Lx218vg": "EAAaHlBUOkNHUWlFRU5FTkVZMk1qQXdRVFJDUkVZMk4wUQ",
+    "UC6WFKwYptsxVue56Lx218vg": "EAAaHlBUOkNHUWlFREZFTnpJeU5qRkJRME15UmpVd01EQQ",
     "UCX7YkU9nEeaoZbkVLVajcMg": "EAAaHlBUOkNHUWlFRGRDUmpFek9EYzNSRU15UkVSQlJFSQ"
   },
   "scanned": {
@@ -18065,6 +18065,24 @@
       "status": "past",
       "games": [
         "新衣装"
+      ],
+      "tags": [],
+      "isOwn": true
+    },
+    {
+      "id": "gmdV_gdayQA",
+      "videoId": "gmdV_gdayQA",
+      "url": "https://www.youtube.com/watch?v=gmdV_gdayQA",
+      "title": "【APEX】5,6時まで【小柳ロウ/にじさんじ】",
+      "thumbnail": "https://i.ytimg.com/vi/gmdV_gdayQA/mqdefault.jpg?v=6b07b518",
+      "channelId": "UC6WFKwYptsxVue56Lx218vg",
+      "channelTitle": "小柳ロウ / Koyanagi Rou【にじさんじ】",
+      "shortName": "小柳ロウ",
+      "start": "2026-11-26T04:30:00Z",
+      "durationSec": 0,
+      "status": "upcoming",
+      "games": [
+        "APEX"
       ],
       "tags": [],
       "isOwn": true
