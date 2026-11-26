@@ -1,7 +1,7 @@
 {
   "backfillComplete": true,
   "resume": {
-    "UC6WFKwYptsxVue56Lx218vg": "EAAaHlBUOkNHUWlFREZFTnpJeU5qRkJRME15UmpVd01EQQ",
+    "UC6WFKwYptsxVue56Lx218vg": "EAAaHlBUOkNHUWlFRUZCT1RoR1FqTTFOekZDTTBZeE56Zw",
     "UCX7YkU9nEeaoZbkVLVajcMg": "EAAaHlBUOkNHUWlFRGRDUmpFek9EYzNSRU15UkVSQlJFSQ"
   },
   "scanned": {
@@ -18078,9 +18078,9 @@
       "channelId": "UC6WFKwYptsxVue56Lx218vg",
       "channelTitle": "小柳ロウ / Koyanagi Rou【にじさんじ】",
       "shortName": "小柳ロウ",
-      "start": "2026-11-26T04:30:00Z",
+      "start": "2026-11-26T04:32:31Z",
       "durationSec": 0,
-      "status": "upcoming",
+      "status": "live",
       "games": [
         "APEX"
       ],
