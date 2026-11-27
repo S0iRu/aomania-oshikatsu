@@ -1,7 +1,7 @@
 {
   "backfillComplete": true,
   "resume": {
-    "UC6WFKwYptsxVue56Lx218vg": "EAAaHlBUOkNHUWlFREF5T0VWRE1rVTRSRFU1TnpKQk5rTQ",
+    "UC6WFKwYptsxVue56Lx218vg": "EAAaHlBUOkNHUWlFRGsxTWpKQ1JEVXhOVEk1TlRNeE5VWQ",
     "UCX7YkU9nEeaoZbkVLVajcMg": "EAAaHlBUOkNHUWlFRGRDUmpFek9EYzNSRU15UkVSQlJFSQ"
   },
   "scanned": {
@@ -18082,6 +18082,24 @@
       "end": "2026-11-26T08:59:13Z",
       "durationSec": 16002,
       "status": "past",
+      "games": [
+        "APEX"
+      ],
+      "tags": [],
+      "isOwn": true
+    },
+    {
+      "id": "wC5wO5hI-vw",
+      "videoId": "wC5wO5hI-vw",
+      "url": "https://www.youtube.com/watch?v=wC5wO5hI-vw",
+      "title": "【APEX】オルター練習【小柳ロウ/にじさんじ】",
+      "thumbnail": "https://i.ytimg.com/vi/wC5wO5hI-vw/mqdefault.jpg?v=6b08f8ce",
+      "channelId": "UC6WFKwYptsxVue56Lx218vg",
+      "channelTitle": "小柳ロウ / Koyanagi Rou【にじさんじ】",
+      "shortName": "小柳ロウ",
+      "start": "2026-11-27T03:40:00Z",
+      "durationSec": 0,
+      "status": "upcoming",
       "games": [
         "APEX"
       ],
