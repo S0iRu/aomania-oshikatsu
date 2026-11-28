@@ -1,7 +1,7 @@
 {
   "backfillComplete": true,
   "resume": {
-    "UC6WFKwYptsxVue56Lx218vg": "EAAaHlBUOkNHUWlFRFF5UWtJNE9FSXhSRVkzUWprM01EZw",
+    "UC6WFKwYptsxVue56Lx218vg": "EAAaHlBUOkNHUWlFRFZGUWpnME5VUTJOMFJHUmtVd01ERQ",
     "UCX7YkU9nEeaoZbkVLVajcMg": "EAAaHlBUOkNHUWlFRE00TlRKRU5qY3dRa1ZGTkRFNVJUVQ"
   },
   "scanned": {
@@ -18103,6 +18103,24 @@
       "status": "past",
       "games": [
         "APEX"
+      ],
+      "tags": [],
+      "isOwn": true
+    },
+    {
+      "id": "9kEHStMwidk",
+      "videoId": "9kEHStMwidk",
+      "url": "https://www.youtube.com/watch?v=9kEHStMwidk",
+      "title": "【lol】暇つぶし【小柳ロウ/にじさんじ】",
+      "thumbnail": "https://i.ytimg.com/vi/9kEHStMwidk/mqdefault.jpg?v=6b0a6acd",
+      "channelId": "UC6WFKwYptsxVue56Lx218vg",
+      "channelTitle": "小柳ロウ / Koyanagi Rou【にじさんじ】",
+      "shortName": "小柳ロウ",
+      "start": "2026-11-28T05:50:51Z",
+      "durationSec": 0,
+      "status": "live",
+      "games": [
+        "lol"
       ],
       "tags": [],
       "isOwn": true
